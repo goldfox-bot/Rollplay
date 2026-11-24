@@ -49,7 +49,11 @@
           "name": "Spectral Form",
           "kind": "passive",
           "actionType": "passive",
-          "additionalEffect": "Traverse la matière non magique • résistance aux dégâts nécrotiques."
+          "additionalEffect": "Traverse la matière non magique • résistance aux dégâts nécrotiques.",
+          "narration": {
+            "description": "Mes doigts spectraux traversent la porte. Les ferrures vibrent une à une quand je retire la main.",
+            "quotes": []
+          }
         },
         {
           "name": "Blight",
@@ -67,7 +71,13 @@
           "damageDice": "8d8",
           "damageType": "Nécrotiques",
           "additionalEffect": "Moitié en cas de réussite.",
-          "description": "La sève et l'humeur vitale de la cible se flétrissent au contact du reliquaire."
+          "description": "La sève et l'humeur vitale de la cible se flétrissent au contact du reliquaire.",
+          "narration": {
+            "description": "Je referme les doigts du Reliquaire sur sa peau. Sous ma paume, les veines noircissent jusqu’au bord de la manche.",
+            "quotes": [
+              "Tu peux lâcher prise."
+            ]
+          }
         },
         {
           "name": "Unseen Servant",
@@ -80,7 +90,13 @@
           },
           "range": "18 m",
           "additionalEffect": "Serviteur invisible • 1 heure.",
-          "description": "Le serviteur apparaît comme une présence funéraire : mains spectrales, voile, reliques flottantes."
+          "description": "Le serviteur apparaît comme une présence funéraire : mains spectrales, voile, reliques flottantes.",
+          "narration": {
+            "description": "Je pose ma coupe dans le vide. Une main sous un voile de deuil la reçoit et attend que je lui indique la table.",
+            "quotes": [
+              "Sois aimable. Sers d’abord l’invité."
+            ]
+          }
         }
       ]
     },
@@ -144,7 +160,13 @@
           "damageDice": "4d6",
           "damageType": "Nécrotiques",
           "additionalEffect": "Moitié en cas de réussite.",
-          "description": "Une couronne de deuil s'élève du sol, ensevelissant la zone sous un silence funèbre."
+          "description": "Une couronne de deuil s'élève du sol, ensevelissant la zone sous un silence funèbre.",
+          "narration": {
+            "description": "J’abaisse la pointe. Une couronne de deuil monte du sol et, sous son cercle, les voix s’éteignent.",
+            "quotes": [
+              "À genoux. Sa Majesté entre."
+            ]
+          }
         },
         {
           "name": "Déni par la Garde",
@@ -158,7 +180,13 @@
           "damageDice": "-2d10",
           "damageType": "Dégâts subis",
           "additionalEffect": "Réduit les dégâts reçus.",
-          "description": "La garde en couronne happe le trait ou l'énergie et l'avale dans la tombe."
+          "description": "La garde en couronne happe le trait ou l'énergie et l'avale dans la tombe.",
+          "narration": {
+            "description": "Je tourne la garde vers le trait qui m’atteint. Les pointes de la couronne se referment sur lui et n’en laissent passer qu’un éclat.",
+            "quotes": [
+              "Sa Majesté ne reçoit pas."
+            ]
+          }
         },
         {
           "name": "Procession de la Tombe",
@@ -175,7 +203,13 @@
           "damageDice": "5d8",
           "damageType": "Nécrotiques",
           "additionalEffect": "Moitié en cas de réussite • traverse toutes les créatures.",
-          "description": "Un cortège spectral marche en ligne droite et emporte ce qu'il croise."
+          "description": "Un cortège spectral marche en ligne droite et emporte ce qu'il croise.",
+          "narration": {
+            "description": "Je trace une ligne de la pointe. Le cortège sort dans mon dos, passe de part et d’autre de moi et poursuit sa marche à travers leurs rangs.",
+            "quotes": [
+              "Faites place au cortège."
+            ]
+          }
         }
       ]
     },
@@ -235,7 +269,13 @@
           "damageDice": "2d8",
           "damageType": "Nécrotiques",
           "additionalEffect": "Durée 10 minutes • résistance aux dégâts radiants • nécrose qui vous frappe au corps à corps.",
-          "description": "Version mortuaire de Fire Shield. Ne nécessite aucune concentration."
+          "description": "Version mortuaire de Fire Shield. Ne nécessite aucune concentration.",
+          "narration": {
+            "description": "Je fais glisser la faux autour de moi. Un voile gris retombe sur mes épaules. Là où l’on me frappe au contact, le tissu s’ouvre un instant et la peau de l’assaillant se flétrit.",
+            "quotes": [
+              "Ne soulève pas le voile."
+            ]
+          }
         }
       ]
     },
@@ -300,7 +340,13 @@
           "damageDice": "3d10",
           "damageType": "Force",
           "additionalEffect": "Dégâts complète en cas d'échec, moitié en cas de réussite. Perce créatures et objets fragiles ; arrêté par la pierre et le métal.",
-          "description": "Quand tu lances Eldritch Blast à travers cette arme, chaque rayon devient une ligne d'énergie arcanique brûlante infligeant 3d10 dégâts de force. Tu tires autant de rayons que l'invocation ne te permet normalement."
+          "description": "Quand tu lances Eldritch Blast à travers cette arme, chaque rayon devient une ligne d'énergie arcanique brûlante infligeant 3d10 dégâts de force. Tu tires autant de rayons que l'invocation ne te permet normalement.",
+          "narration": {
+            "description": "Je tiens les cristaux dans l’axe. Le rayon les quitte d’un seul trait et traverse les silhouettes alignées avant de se briser sur la pierre.",
+            "quotes": [
+              "Serrez-vous un peu."
+            ]
+          }
         },
         {
           "name": "Solar Ricochet",
@@ -310,7 +356,13 @@
           "savingThrow": "DEX",
           "savingThrowDC": "DD 15",
           "additionalEffect": "Jusqu'à 3 ricochets • 9 m par segment • nouveaux jets de sauvegarde.",
-          "description": "Si un rayon frappe une surface de pierre, de métal ou de cristal à un angle d'environ 45°, il rebondit. Chaque segment impose un nouveau jet de DEX et inflige les mêmes dégâts."
+          "description": "Si un rayon frappe une surface de pierre, de métal ou de cristal à un angle d'environ 45°, il rebondit. Chaque segment impose un nouveau jet de DEX et inflige les mêmes dégâts.",
+          "narration": {
+            "description": "J’incline Horizon Brûlée vers la paroi. Le rayon frappe la pierre en biais et repart derrière l’abri.",
+            "quotes": [
+              "Tu croyais que je te visais ?"
+            ]
+          }
         },
         {
           "name": "Primeval Awareness — Horizon Variant",
@@ -322,7 +374,13 @@
           },
           "range": "1,6 km",
           "additionalEffect": "Durée 1 minute • détecte la présence, pas la position.",
-          "description": "Tu sens la présence des Fiélons, des Morts-vivants et des Élémentaires."
+          "description": "Tu sens la présence des Fiélons, des Morts-vivants et des Élémentaires.",
+          "narration": {
+            "description": "Je serre les racines autour du cristal. Une pulsation remonte jusqu’à mon coude. Je relève la tête et écoute.",
+            "quotes": [
+              "Il y a autre chose avec nous."
+            ]
+          }
         }
       ]
     },
@@ -387,7 +445,13 @@
           "damageDice": "-2d8",
           "damageType": "Dégâts subis",
           "additionalEffect": "La sphère s’interpose et absorbe une partie de l’impact. L’attaquant subit désavantage sur son prochain jet d’attaque.",
-          "description": "La réduction s’applique aux dégâts de l’attaque déclencheuse."
+          "description": "La réduction s’applique aux dégâts de l’attaque déclencheuse.",
+          "narration": {
+            "description": "La sphère s’interpose au dernier instant. L’impact la fait reculer d’un pouce. Quand elle se dégage, l’arme adverse oscille encore.",
+            "quotes": [
+              "Reprends ta garde. Si tu peux."
+            ]
+          }
         },
         {
           "name": "Orbite Brisée",
@@ -403,7 +467,13 @@
           "savingThrowDC": "DD 15",
           "damageDice": "3d8",
           "damageType": "Nécrotiques",
-          "additionalEffect": "Échec : dégâts complets + Étourdi jusqu’à la fin du prochain tour de la cible. Réussite : moitié des dégâts, aucun étourdissement. La sphère revient immédiatement."
+          "additionalEffect": "Échec : dégâts complets + Étourdi jusqu’à la fin du prochain tour de la cible. Réussite : moitié des dégâts, aucun étourdissement. La sphère revient immédiatement.",
+          "narration": {
+            "description": "D’un coup de poignet, je lance la sphère hors de son orbite. Elle percute sa cible et revient aussitôt se ranger près de mon épaule.",
+            "quotes": [
+              "Elle revient toujours."
+            ]
+          }
         },
         {
           "name": "Effondrement du Monde",
@@ -421,7 +491,13 @@
           "damageDice": "4d10",
           "damageType": "Nécrotiques",
           "additionalEffect": "Échec : dégâts complets + Entravé jusqu’à la fin du prochain tour de la créature. Réussite : moitié des dégâts, aucune entrave.",
-          "description": "La sphère crée momentanément une zone de gravité nécrotique autour du point choisi."
+          "description": "La sphère crée momentanément une zone de gravité nécrotique autour du point choisi.",
+          "narration": {
+            "description": "Je désigne un point du sol. La sphère s’y abaisse. Les gravats glissent vers elle et les jambes se mettent à plier.",
+            "quotes": [
+              "Restez. Je n’ai pas fini."
+            ]
+          }
         }
       ]
     },
@@ -482,7 +558,13 @@
           "areaType": "rayon",
           "areaSize": "rayon 6 m",
           "additionalEffect": "Lumière vive sur 6 m : les créatures invisibles dans la zone sont révélées et ne peuvent bénéficier de leur invisibilité tant qu'elles y restent.",
-          "description": "Orgueil émet une lumière vive pendant toute la durée."
+          "description": "Orgueil émet une lumière vive pendant toute la durée.",
+          "narration": {
+            "description": "Je lève Orgueil. Sa lumière remplit l’espace autour de moi. Un visage apparaît là où, une seconde plus tôt, je ne voyais qu’un mur.",
+            "quotes": [
+              "Ah. Tu étais invité, toi aussi ?"
+            ]
+          }
         },
         {
           "name": "Disparition d'Entropie",
@@ -495,7 +577,13 @@
           },
           "range": "Soi-même • jusqu'à 1 minute",
           "additionalEffect": "Tu deviens invisible jusqu'à la fin de la durée, jusqu'à ce que tu attaques ou lances un sort.",
-          "description": "Aucun maintien de concentration indiqué sur l'objet."
+          "description": "Aucun maintien de concentration indiqué sur l'objet.",
+          "narration": {
+            "description": "Je baisse Entropie le long de ma jambe. Mon reflet s’efface le premier, puis mes contours disparaissent devant eux.",
+            "quotes": [
+              "Continue, je t’écoute."
+            ]
+          }
         },
         {
           "name": "Masque de Chair",
@@ -508,7 +596,13 @@
           },
           "range": "Contact • 1 heure",
           "additionalEffect": "Après avoir touché une créature, tu prends exactement son apparence physique.",
-          "description": "La transformation reproduit parfaitement l'apparence visuelle, mais pas la voix, les capacités ou les pouvoirs. (Disguise Self)"
+          "description": "La transformation reproduit parfaitement l'apparence visuelle, mais pas la voix, les capacités ou les pouvoirs. (Disguise Self)",
+          "narration": {
+            "description": "Je lui effleure la joue. Mes traits se déplacent sous mes doigts jusqu’à prendre les siens. Quand je parle, ma voix est toujours la mienne.",
+            "quotes": [
+              "Regarde-moi bien."
+            ]
+          }
         }
       ]
     },
@@ -570,7 +664,11 @@
           "actionType": "passive",
           "range": "Tant que l'arme est maniée",
           "additionalEffect": "Vitesse +3 m.",
-          "description": "Tant que Caput Tauri est en main, ta vitesse de déplacement augmente de 3 m."
+          "description": "Tant que Caput Tauri est en main, ta vitesse de déplacement augmente de 3 m.",
+          "narration": {
+            "description": "Je serre le manche. Mon pas s’allonge et mes semelles mordent le sol à chaque appui.",
+            "quotes": []
+          }
         },
         {
           "name": "Charge",
@@ -586,7 +684,13 @@
           "damageDice": "+2d6",
           "damageType": "Contondants",
           "additionalEffect": "Après t'être déplacée d'au moins 4,5 m en ligne droite : échec — la cible est Renversée ; réussite — elle reste debout.",
-          "description": "Les 2d6 s'ajoutent aux dégâts normaux de Caput Tauri. Attaque chargée totale : 4d6 + 6 contondants."
+          "description": "Les 2d6 s'ajoutent aux dégâts normaux de Caput Tauri. Attaque chargée totale : 4d6 + 6 contondants.",
+          "narration": {
+            "description": "Je prends mon élan dans l’axe et ramène la tête du maillet à hauteur de ses hanches. L’impact lui arrache un pas en arrière.",
+            "quotes": [
+              "Tu peux encore t’écarter."
+            ]
+          }
         },
         {
           "name": "Ruée du Chariot",
@@ -604,7 +708,13 @@
           "damageDice": "4d6 + 6",
           "damageType": "Contondants",
           "additionalEffect": "Chaque créature sur la ligne : échec — Renversée ; réussite — elle reste debout.",
-          "description": "Tu prolonges ta Charge en une ruée spectrale. Les dégâts correspondent à l'attaque normale de Caput Tauri + les 2d6 de Charge."
+          "description": "Tu prolonges ta Charge en une ruée spectrale. Les dégâts correspondent à l'attaque normale de Caput Tauri + les 2d6 de Charge.",
+          "narration": {
+            "description": "Je prolonge ma course. Le taureau spectral me rejoint à l’épaule et traverse avec moi toute la ligne.",
+            "quotes": [
+              "Je l’avais dit à celui de devant."
+            ]
+          }
         }
       ]
     },
@@ -669,7 +779,13 @@
           "damageDice": "2d8",
           "damageType": "Foudre",
           "additionalEffect": "Sans provoquer d'attaque d'opportunité • une attaque par créature traversée.",
-          "description": "1ère forme : déplacement ultra-rapide ; pour chaque créature traversée, un jet d'attaque avec 2d8 foudre supplémentaires."
+          "description": "1ère forme : déplacement ultra-rapide ; pour chaque créature traversée, un jet d'attaque avec 2d8 foudre supplémentaires.",
+          "narration": {
+            "description": "Je file droit devant moi. À chaque silhouette croisée, j’incline la lame. L’éclair éclate dans la trace de chacun de mes coups.",
+            "quotes": [
+              "Première forme. Tu m’as vue passer ?"
+            ]
+          }
         },
         {
           "name": "Ni No Kata — Raijin Gyokusa",
@@ -686,7 +802,13 @@
           "damageDice": "6d8",
           "damageType": "Foudre",
           "additionalEffect": "Moitié en cas de réussite.",
-          "description": "2ème forme : chaque créature dans la ligne subit 6d8 foudre, jet de DEX pour la moitié."
+          "description": "2ème forme : chaque créature dans la ligne subit 6d8 foudre, jet de DEX pour la moitié.",
+          "narration": {
+            "description": "Je ramène Omen à la hanche et taille devant moi. L’éclair quitte le fil et prend toute la largeur du passage.",
+            "quotes": [
+              "Deuxième forme. Vous pouvez essayer de vous baisser."
+            ]
+          }
         },
         {
           "name": "San No Kata — Soten Ryodan Tachi",
@@ -700,7 +822,14 @@
           "damageDice": "1d12 + 1d12",
           "damageType": "Foudre",
           "additionalEffect": "Combo avec « Ruin, Hollow Reign » • à la fin de l'attaque, les deux armes tombent à 0 charge.",
-          "description": "3ème forme : les deux porteurs se téléportent au corps-à-corps de la même cible (9 m max chacun). Le lanceur du combo fait une attaque d'arme normale ; l'autre ajoute gratuitement 1d12 + 1d12 par charge restante sur son arme, sans consommer son tour ni son action."
+          "description": "3ème forme : les deux porteurs se téléportent au corps-à-corps de la même cible (9 m max chacun). Le lanceur du combo fait une attaque d'arme normale ; l'autre ajoute gratuitement 1d12 + 1d12 par charge restante sur son arme, sans consommer son tour ni son action.",
+          "narration": {
+            "description": "Au même instant, je reparais au contact de la cible avec le porteur de Ruin. Je taille avec Omen et la foudre de Ruin suit mon coup. Les deux lames s’éteignent.",
+            "quotes": [
+              "Philippa — « Troisième forme. À toi. »",
+              "Porteur de Ruin — « Je suis déjà là. »"
+            ]
+          }
         }
       ]
     },
@@ -754,7 +883,11 @@
           "kind": "passive",
           "actionType": "passive",
           "range": "Tant que l'arme est maniée",
-          "additionalEffect": "+1 CA si tu ne portes pas d'armure lourde et n'utilises pas de bouclier."
+          "additionalEffect": "+1 CA si tu ne portes pas d'armure lourde et n'utilises pas de bouclier.",
+          "narration": {
+            "description": "Libre de mes deux bras, je pivote sur le pied arrière. La pointe reste entre l’adversaire et moi pendant que je lui cède un demi-pas.",
+            "quotes": []
+          }
         },
         {
           "name": "Attaque menaçante",
@@ -768,7 +901,13 @@
           "savingThrow": "SAG",
           "savingThrowDC": "DD 13",
           "additionalEffect": "Échec : la cible a désavantage à ses jets d'attaque contre toute créature autre que toi jusqu'à la fin de son prochain tour.",
-          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8).",
+          "narration": {
+            "description": "J’avance la pointe sous son menton et je soutiens son regard jusqu’à ce qu’il cesse de surveiller mes alliés.",
+            "quotes": [
+              "Quand je te parle, regarde-moi."
+            ]
+          }
         },
         {
           "name": "Frappe distrayante",
@@ -780,7 +919,13 @@
           },
           "range": "Quand tu touches avec une attaque d'arme",
           "additionalEffect": "Le prochain jet d'attaque contre la cible, effectué par une créature autre que toi, bénéficie de l'avantage.",
-          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8).",
+          "narration": {
+            "description": "Je fais chanter la lame contre sa garde. Je le force à suivre ma pointe du regard tandis que mon allié approche.",
+            "quotes": [
+              "Par ici, mon cher."
+            ]
+          }
         },
         {
           "name": "Attaque désarmante",
@@ -794,7 +939,13 @@
           "savingThrow": "FOR",
           "savingThrowDC": "DD 13",
           "additionalEffect": "Échec : la cible lâche un objet de ton choix qu'elle tient.",
-          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8).",
+          "narration": {
+            "description": "Je fais glisser le fer jusqu’à sa main et relève la garde d’un quart de tour pour lui ouvrir les doigts.",
+            "quotes": [
+              "Tu tiens donc tant que ça à cet objet ?"
+            ]
+          }
         },
         {
           "name": "Riposte",
@@ -806,7 +957,13 @@
           },
           "trigger": "Une créature te rate avec une attaque de corps à corps",
           "additionalEffect": "Tu effectues une attaque d'arme de corps à corps contre elle.",
-          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8).",
+          "narration": {
+            "description": "Son arme passe à côté de moi. Je prends le temps de le regarder, puis je glisse ma pointe sous sa garde encore ouverte.",
+            "quotes": [
+              "À mon tour, si tu permets."
+            ]
+          }
         }
       ]
     }
