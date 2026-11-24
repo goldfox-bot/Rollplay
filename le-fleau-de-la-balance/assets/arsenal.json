@@ -1,0 +1,1425 @@
+{
+  "statblocks": [
+    {
+      "id": "justice",
+      "category": "[JUSTICE]",
+      "name": "La main du Reliquaire",
+      "subtitle": "Bras spectral • Très rare",
+      "lore": "Le bras traverse la matière : seul le coupable en garde la marque.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon",
+        "Harmonisation"
+      ],
+      "aura": "oklch(0.78 0.22 145)",
+      "image": "assets/arsenal/reliquaire-hand.webp",
+      "imageAlt": "Bras spectral verdoyant du Reliquaire",
+      "attack": {
+        "label": "Reliquary Rend",
+        "hit": "+13",
+        "damageDice": "1d6 + 14",
+        "damageType": "Tranchants",
+        "context": "Corps à corps • Allonge 1,5 m",
+        "note": "2 attaques par action"
+      },
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Corps à corps"
+        },
+        {
+          "label": "Allonge",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Poids",
+          "value": "0,9 kg"
+        },
+        {
+          "label": "Maîtrise",
+          "value": "Oui"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Attachée • Légère"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Spectral Form",
+          "kind": "passive",
+          "actionType": "passive",
+          "additionalEffect": "Traverse la matière non magique • résistance aux dégâts nécrotiques."
+        },
+        {
+          "name": "Blight",
+          "kind": "spell",
+          "actionType": "action",
+          "level": "4e",
+          "uses": {
+            "max": 1,
+            "recharge": "jour"
+          },
+          "range": "Contact",
+          "areaType": "cible",
+          "savingThrow": "CON",
+          "savingThrowDC": "DD de sort",
+          "damageDice": "8d8",
+          "damageType": "Nécrotiques",
+          "additionalEffect": "Moitié en cas de réussite.",
+          "description": "La sève et l'humeur vitale de la cible se flétrissent au contact du reliquaire."
+        },
+        {
+          "name": "Unseen Servant",
+          "kind": "spell",
+          "actionType": "action",
+          "level": "1er",
+          "uses": {
+            "max": 1,
+            "recharge": "volonté"
+          },
+          "range": "18 m",
+          "additionalEffect": "Serviteur invisible • 1 heure.",
+          "description": "Le serviteur apparaît comme une présence funéraire : mains spectrales, voile, reliques flottantes."
+        }
+      ]
+    },
+    {
+      "id": "requiem-reine-morte",
+      "category": "[DEATH]",
+      "name": "Requiem de la Reine-Morte",
+      "subtitle": "Grande hache • Très rare",
+      "lore": "Plantée dans le sol, elle couronne les morts et fauche les vivants.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.82 0.24 138)",
+      "image": "assets/arsenal/requiem-reine-morte.webp",
+      "imageAlt": "Grande lame noire épineuse au cœur incandescent vert nécrotique",
+      "attack": {
+        "label": "Requiem Funèbre",
+        "hit": "+12",
+        "damageDice": "1d12 + 7",
+        "damageType": "Tranchants",
+        "context": "Corps à corps • Allonge 1,5 m",
+        "note": "Cleave : une cible adjacente subit 1d12."
+      },
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Corps à corps"
+        },
+        {
+          "label": "Allonge",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Poids",
+          "value": "3,2 kg"
+        },
+        {
+          "label": "Maîtrise",
+          "value": "Cleave"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Lourde • Deux mains • Cleave"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Couronnement du Repos Noir",
+          "kind": "activeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 1,
+            "recharge": "jour"
+          },
+          "range": "9 m",
+          "areaType": "cylindre",
+          "areaSize": "Rayon 3 m • hauteur 6 m",
+          "savingThrow": "DEX",
+          "savingThrowDC": "DD de sort",
+          "damageDice": "4d6",
+          "damageType": "Nécrotiques",
+          "additionalEffect": "Moitié en cas de réussite.",
+          "description": "Une couronne de deuil s'élève du sol, ensevelissant la zone sous un silence funèbre."
+        },
+        {
+          "name": "Déni par la Garde",
+          "kind": "reaction",
+          "actionType": "reaction",
+          "uses": {
+            "max": 2,
+            "recharge": "repos"
+          },
+          "trigger": "Un sort ciblé ou un projectile vous touche",
+          "damageDice": "-2d10",
+          "damageType": "Dégâts subis",
+          "additionalEffect": "Réduit les dégâts reçus.",
+          "description": "La garde en couronne happe le trait ou l'énergie et l'avale dans la tombe."
+        },
+        {
+          "name": "Procession de la Tombe",
+          "kind": "activeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 1,
+            "recharge": "jour"
+          },
+          "areaType": "ligne",
+          "areaSize": "18 m × 1,5 m",
+          "savingThrow": "DEX",
+          "savingThrowDC": "DD de sort",
+          "damageDice": "5d8",
+          "damageType": "Nécrotiques",
+          "additionalEffect": "Moitié en cas de réussite • traverse toutes les créatures.",
+          "description": "Un cortège spectral marche en ligne droite et emporte ce qu'il croise."
+        }
+      ]
+    },
+    {
+      "id": "scythe-liturgie",
+      "category": "[THE SUN]",
+      "name": "Scythe de la Lithurgie des Cendres",
+      "subtitle": "Faux dorée • Rare",
+      "lore": "La lame est longue, mate, constellée de gravures funéraires. Elle ne brûle plus. Elle fauche avec lenteur et certitude.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.8 0.23 140)",
+      "image": "assets/arsenal/scythe-liturgie-cendres.webp",
+      "imageAlt": "Grande faux dorée constellée de gravures funéraires",
+      "attack": {
+        "label": "Fauche des Cendres",
+        "hit": "+11",
+        "damageDice": "2d6 + 6",
+        "damageType": "Tranchants",
+        "context": "Corps à corps • Allonge 1,5 m",
+        "note": "Lourde • À deux mains"
+      },
+      "stats": [
+        {
+          "label": "Dégâts",
+          "value": "2d6 + 6 tranchants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Lourde • À deux mains"
+        },
+        {
+          "label": "Type",
+          "value": "Faux dorée"
+        },
+        {
+          "label": "Rareté",
+          "value": "Rare"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Veil Shield — Quiet Passing",
+          "kind": "spell",
+          "actionType": "action",
+          "uses": {
+            "max": 1,
+            "recharge": "repos long"
+          },
+          "range": "Personnelle",
+          "damageDice": "2d8",
+          "damageType": "Nécrotiques",
+          "additionalEffect": "Durée 10 minutes • résistance aux dégâts radiants • nécrose qui vous frappe au corps à corps.",
+          "description": "Version mortuaire de Fire Shield. Ne nécessite aucune concentration."
+        }
+      ]
+    },
+    {
+      "id": "horizon-brulee",
+      "category": "[THE STAR]",
+      "name": "Horizon Brûlée",
+      "subtitle": "Focus d'incantation • Très rare",
+      "lore": "Forgée à partir d'une racine calcinée de l'Arbre-Soleil enroulée autour d'un cœur de Nolbrim cristallisé, Horizon Brûlée transforme Eldritch Blast en rayons brûlants de feu du désert concentré.",
+      "tags": [
+        "Pact Weapon",
+        "Harmonisation"
+      ],
+      "aura": "oklch(0.72 0.19 255)",
+      "image": "assets/arsenal/horizon-brulee.webp",
+      "imageAlt": "Deux lames de cristal bleu liées par des racines noueuses",
+      "attack": {
+        "label": "Eldritch Blast",
+        "hit": "+12",
+        "damageDice": "3d10",
+        "damageType": "Force",
+        "context": "Sort • Ligne 36 m × 1,5 m",
+        "note": "2 rayons (niveau 8) • 3d10 force par rayon • DEX DD 15 pour demi-dégâts"
+      },
+      "stats": [
+        {
+          "label": "Type",
+          "value": "Focus d'incantation"
+        },
+        {
+          "label": "Portée",
+          "value": "Ligne 36 m × 1,5 m"
+        },
+        {
+          "label": "Dégâts",
+          "value": "3d10 force par rayon"
+        },
+        {
+          "label": "Sauvegarde",
+          "value": "DEX DD 15"
+        },
+        {
+          "label": "Harmonisation",
+          "value": "Philippa Rougetoison"
+        },
+        {
+          "label": "Rareté",
+          "value": "Très rare"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Arc-Beam Discharge",
+          "kind": "spell",
+          "actionType": "action",
+          "level": "Tour de magie",
+          "range": "36 m",
+          "areaType": "ligne",
+          "areaSize": "Ligne 36 m × 1,5 m",
+          "savingThrow": "DEX",
+          "savingThrowDC": "DD 15",
+          "damageDice": "3d10",
+          "damageType": "Force",
+          "additionalEffect": "Dégâts complète en cas d'échec, moitié en cas de réussite. Perce créatures et objets fragiles ; arrêté par la pierre et le métal.",
+          "description": "Quand tu lances Eldritch Blast à travers cette arme, chaque rayon devient une ligne d'énergie arcanique brûlante infligeant 3d10 dégâts de force. Tu tires autant de rayons que l'invocation ne te permet normalement."
+        },
+        {
+          "name": "Solar Ricochet",
+          "kind": "passive",
+          "actionType": "passive",
+          "level": "Arc-Beam",
+          "savingThrow": "DEX",
+          "savingThrowDC": "DD 15",
+          "additionalEffect": "Jusqu'à 3 ricochets • 9 m par segment • nouveaux jets de sauvegarde.",
+          "description": "Si un rayon frappe une surface de pierre, de métal ou de cristal à un angle d'environ 45°, il rebondit. Chaque segment impose un nouveau jet de DEX et inflige les mêmes dégâts."
+        },
+        {
+          "name": "Primeval Awareness — Horizon Variant",
+          "kind": "bonusAction",
+          "actionType": "bonusAction",
+          "uses": {
+            "max": 1,
+            "recharge": "repos long"
+          },
+          "range": "1,6 km",
+          "additionalEffect": "Durée 1 minute • détecte la présence, pas la position.",
+          "description": "Tu sens la présence des Fiélons, des Morts-vivants et des Élémentaires."
+        }
+      ]
+    },
+    {
+      "id": "satellite-du-monde",
+      "charges": 5,
+      "category": "[THE WORLD]",
+      "name": "Satellite du Monde Enseveli",
+      "subtitle": "Cimeterre • Rare",
+      "lore": "Une sphère funéraire gravite autour de la lame, vestige d’un monde disparu qui refuse encore de tomber.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.75 0.2 145)",
+      "image": "assets/arsenal/satellite-du-monde.webp",
+      "imageAlt": "Cimeterre courbe à lame de jade veinée et sphère funéraire gravitationnelle",
+      "attack": {
+        "label": "Tranchant Orbital",
+        "hit": "+11",
+        "damageDice": "1d6 + 6",
+        "damageType": "Tranchants",
+        "context": "Corps à corps • Allonge 1,5 m",
+        "note": "Finesse • Légère • Nick • CA +1 tant que l'arme est tenue"
+      },
+      "stats": [
+        {
+          "label": "Dégâts",
+          "value": "1d6 + 6 tranchants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Finesse • Légère • Nick"
+        },
+        {
+          "label": "Défense",
+          "value": "+1 CA tant que l'arme est tenue"
+        },
+        {
+          "label": "Charges",
+          "value": "5"
+        },
+        {
+          "label": "Poids",
+          "value": "1,36 kg"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Gravité Funèbre",
+          "kind": "reaction",
+          "actionType": "reaction",
+          "uses": {
+            "max": 1,
+            "recharge": "charges"
+          },
+          "trigger": "Tu es touchée par une attaque",
+          "damageDice": "-2d8",
+          "damageType": "Dégâts subis",
+          "additionalEffect": "La sphère s’interpose et absorbe une partie de l’impact. L’attaquant subit désavantage sur son prochain jet d’attaque.",
+          "description": "La réduction s’applique aux dégâts de l’attaque déclencheuse."
+        },
+        {
+          "name": "Orbite Brisée",
+          "kind": "activeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 2,
+            "recharge": "charges"
+          },
+          "range": "18 m",
+          "areaType": "cible",
+          "savingThrow": "CON",
+          "savingThrowDC": "DD 15",
+          "damageDice": "3d8",
+          "damageType": "Nécrotiques",
+          "additionalEffect": "Échec : dégâts complets + Étourdi jusqu’à la fin du prochain tour de la cible. Réussite : moitié des dégâts, aucun étourdissement. La sphère revient immédiatement."
+        },
+        {
+          "name": "Effondrement du Monde",
+          "kind": "activeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 3,
+            "recharge": "charges"
+          },
+          "range": "9 m",
+          "areaType": "sphere",
+          "areaSize": "Rayon 6 m",
+          "savingThrow": "FOR",
+          "savingThrowDC": "DD 15",
+          "damageDice": "4d10",
+          "damageType": "Nécrotiques",
+          "additionalEffect": "Échec : dégâts complets + Entravé jusqu’à la fin du prochain tour de la créature. Réussite : moitié des dégâts, aucune entrave.",
+          "description": "La sphère crée momentanément une zone de gravité nécrotique autour du point choisi."
+        }
+      ]
+    },
+    {
+      "id": "orgueil-entropie",
+      "category": "[THE LOVERS]",
+      "name": "Balance & Entropie",
+      "subtitle": "Dagues jumelles • Rare",
+      "lore": "Deux lames opposées : l'une révèle ce qui se cache, l'autre efface ce qui devrait être vu.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.78 0.22 140)",
+      "image": "assets/arsenal/orgueil-entropie.webp",
+      "imageAlt": "Deux dagues jumelles noires épineuses nimbées de flammes vertes",
+      "attack": {
+        "label": "Danse des Amants",
+        "hit": "+11",
+        "damageDice": "1d4 + 5",
+        "damageType": "Perforants",
+        "context": "Corps à corps 1,5 m • Lancer 6 / 18 m • Finesse • Légère • Nick",
+        "note": "Orgueil (principale) : 2 attaques / action • Entropie (secondaire) : 1 attaque / action bonus — Tour complet : 3 × (1d4 + 5) • Sneak Attack : 3d4 + 3d6 + 15"
+      },
+      "stats": [
+        {
+          "label": "Dégâts",
+          "value": "1d4 + 5 perforants par attaque"
+        },
+        {
+          "label": "Sneak Attack",
+          "value": "+3d6 perforants, 1 fois par tour"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m • lancer 6 / 18 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Finesse • Légère • Lancer • Nick"
+        },
+        {
+          "label": "Poids",
+          "value": "0,45 kg"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Révélation d'Orgueil",
+          "kind": "spell",
+          "actionType": "bonusAction",
+          "level": "Revelation",
+          "uses": {
+            "max": 1,
+            "recharge": "repos long"
+          },
+          "range": "Soi-même • 1 minute",
+          "areaType": "rayon",
+          "areaSize": "rayon 6 m",
+          "additionalEffect": "Lumière vive sur 6 m : les créatures invisibles dans la zone sont révélées et ne peuvent bénéficier de leur invisibilité tant qu'elles y restent.",
+          "description": "Orgueil émet une lumière vive pendant toute la durée."
+        },
+        {
+          "name": "Disparition d'Entropie",
+          "kind": "spell",
+          "actionType": "bonusAction",
+          "level": "Invisibility",
+          "uses": {
+            "max": 1,
+            "recharge": "repos long"
+          },
+          "range": "Soi-même • jusqu'à 1 minute",
+          "additionalEffect": "Tu deviens invisible jusqu'à la fin de la durée, jusqu'à ce que tu attaques ou lances un sort.",
+          "description": "Aucun maintien de concentration indiqué sur l'objet."
+        },
+        {
+          "name": "Masque de Chair",
+          "kind": "spell",
+          "actionType": "bonusAction",
+          "level": "Mask of Flesh",
+          "uses": {
+            "max": 1,
+            "recharge": "repos long"
+          },
+          "range": "Contact • 1 heure",
+          "additionalEffect": "Après avoir touché une créature, tu prends exactement son apparence physique.",
+          "description": "La transformation reproduit parfaitement l'apparence visuelle, mais pas la voix, les capacités ou les pouvoirs. (Disguise Self)"
+        }
+      ]
+    },
+    {
+      "id": "caput-tauri",
+      "category": "[THE CHARIOT]",
+      "name": "Caput Tauri",
+      "subtitle": "Maillet de guerre • Rare",
+      "lore": "Une masse née pour briser l'inertie. Plus son porteur prend de vitesse, plus le Taureau frappe comme un bélier lancé contre le monde.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.76 0.21 150)",
+      "image": "assets/arsenal/caput-tauri.webp",
+      "imageAlt": "Maillet de guerre à tête de taureau noire veinée de malachite verte",
+      "attack": {
+        "label": "Percussion du Taureau",
+        "hit": "+11",
+        "damageDice": "2d6 + 6",
+        "damageType": "Contondants",
+        "context": "Corps à corps • 1,5 m",
+        "note": "Lourde • À deux mains"
+      },
+      "stats": [
+        {
+          "label": "Dégâts",
+          "value": "2d6 + 6 contondants"
+        },
+        {
+          "label": "Charge",
+          "value": "+2d6 contondants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Bonus de vitesse",
+          "value": "+3 m"
+        },
+        {
+          "label": "Sauvegarde",
+          "value": "FOR DD 15"
+        },
+        {
+          "label": "Poids",
+          "value": "4,5 kg"
+        },
+        {
+          "label": "Rareté",
+          "value": "Rare"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Rage du Taureau",
+          "kind": "passive",
+          "actionType": "passive",
+          "range": "Tant que l'arme est maniée",
+          "additionalEffect": "Vitesse +3 m.",
+          "description": "Tant que Caput Tauri est en main, ta vitesse de déplacement augmente de 3 m."
+        },
+        {
+          "name": "Charge",
+          "kind": "activeAbility",
+          "actionType": "attack",
+          "uses": {
+            "max": 1,
+            "recharge": "volonté"
+          },
+          "range": "Déplacement + attaque • ligne droite d'au moins 4,5 m",
+          "savingThrow": "FOR",
+          "savingThrowDC": "DD 15",
+          "damageDice": "+2d6",
+          "damageType": "Contondants",
+          "additionalEffect": "Après t'être déplacée d'au moins 4,5 m en ligne droite : échec — la cible est Renversée ; réussite — elle reste debout.",
+          "description": "Les 2d6 s'ajoutent aux dégâts normaux de Caput Tauri. Attaque chargée totale : 4d6 + 6 contondants."
+        },
+        {
+          "name": "Ruée du Chariot",
+          "kind": "activeAbility",
+          "actionType": "attack",
+          "uses": {
+            "max": 1,
+            "recharge": "repos long"
+          },
+          "range": "Lors d'une Charge",
+          "areaType": "ligne",
+          "areaSize": "Ligne de 15 m",
+          "savingThrow": "FOR",
+          "savingThrowDC": "DD 15",
+          "damageDice": "4d6 + 6",
+          "damageType": "Contondants",
+          "additionalEffect": "Chaque créature sur la ligne : échec — Renversée ; réussite — elle reste debout.",
+          "description": "Tu prolonges ta Charge en une ruée spectrale. Les dégâts correspondent à l'attaque normale de Caput Tauri + les 2d6 de Charge."
+        }
+      ]
+    },
+    {
+      "id": "omen-broken-sky",
+      "charges": 3,
+      "category": "[THE EMPRESS]",
+      "name": "Omen, Broken Sky",
+      "subtitle": "Épée longue (katana) • Très rare",
+      "lore": "Une lame brisée par le ciel : chaque forme qu'elle prend annonce l'orage du prochain coup.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.8 0.21 285)",
+      "image": "assets/arsenal/omen-broken-sky.webp",
+      "imageAlt": "Katana noir et or orné de crânes, lame fêlée parcourue d'éclairs verts",
+      "attack": {
+        "label": "Taillade d'Omen",
+        "hit": "+11",
+        "damageDice": "1d8 + 7",
+        "damageType": "Tranchants + 1d12 foudre",
+        "context": "Corps à corps • 1,5 m",
+        "note": "1d10 + 7 à deux mains • 3 charges, recharge à l'aube"
+      },
+      "stats": [
+        {
+          "label": "Dégâts",
+          "value": "1d8 + 7 (1d10 + 7 à deux mains)"
+        },
+        {
+          "label": "Foudre",
+          "value": "+1d12 foudre"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Charges",
+          "value": "3 • recharge à l'aube"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Lourde • À deux mains (variante)"
+        },
+        {
+          "label": "Poids",
+          "value": "1,36 kg"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Ichi No Kata — Raijin Tobari",
+          "kind": "chargeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 1,
+            "recharge": "charges"
+          },
+          "range": "Déplacement 9 m en ligne droite",
+          "damageDice": "2d8",
+          "damageType": "Foudre",
+          "additionalEffect": "Sans provoquer d'attaque d'opportunité • une attaque par créature traversée.",
+          "description": "1ère forme : déplacement ultra-rapide ; pour chaque créature traversée, un jet d'attaque avec 2d8 foudre supplémentaires."
+        },
+        {
+          "name": "Ni No Kata — Raijin Gyokusa",
+          "kind": "chargeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 2,
+            "recharge": "charges"
+          },
+          "areaType": "ligne",
+          "areaSize": "Ligne 9 m × 1,5 m",
+          "savingThrow": "DEX",
+          "savingThrowDC": "DD 15",
+          "damageDice": "6d8",
+          "damageType": "Foudre",
+          "additionalEffect": "Moitié en cas de réussite.",
+          "description": "2ème forme : chaque créature dans la ligne subit 6d8 foudre, jet de DEX pour la moitié."
+        },
+        {
+          "name": "San No Kata — Soten Ryodan Tachi",
+          "kind": "chargeAbility",
+          "actionType": "action",
+          "uses": {
+            "max": 3,
+            "recharge": "charges"
+          },
+          "range": "Téléportation 9 m max par porteur",
+          "damageDice": "1d12 + 1d12",
+          "damageType": "Foudre",
+          "additionalEffect": "Combo avec « Ruin, Hollow Reign » • à la fin de l'attaque, les deux armes tombent à 0 charge.",
+          "description": "3ème forme : les deux porteurs se téléportent au corps-à-corps de la même cible (9 m max chacun). Le lanceur du combo fait une attaque d'arme normale ; l'autre ajoute gratuitement 1d12 + 1d12 par charge restante sur son arme, sans consommer son tour ni son action."
+        }
+      ]
+    },
+    {
+      "id": "rapiere-corsaire-noye",
+      "charges": 2,
+      "category": "[THE HANGED MAN]",
+      "name": "Rapière du Corsaire Noyé",
+      "subtitle": "Rapière • +1",
+      "image": "assets/arsenal/rapiere-corsaire-noye.webp",
+      "imageAlt": "Rapière à lame fine bleu acier, garde dorée ouvragée sertie de gemmes violettes et pommeau courbe",
+      "lore": "Remontée des abysses avec son capitaine, elle n'attaque jamais la première — mais elle répond toujours.",
+      "tags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "aura": "oklch(0.72 0.14 195)",
+      "attack": {
+        "label": "Estocade du Noyé",
+        "hit": "+11",
+        "damageDice": "1d8 + 4",
+        "damageType": "Perforants",
+        "context": "Corps à corps • 1,5 m",
+        "note": "Finesse • +1 magique • 2 dés de supériorité (d8), récupérés sur repos court ou long"
+      },
+      "stats": [
+        {
+          "label": "Dégâts",
+          "value": "1d8 + 4 perforants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Finesse • +1 attaque et dégâts"
+        },
+        {
+          "label": "Dés de supériorité",
+          "value": "2 × d8 • repos court ou long"
+        },
+        {
+          "label": "Défense",
+          "value": "+1 CA sans armure lourde ni bouclier"
+        }
+      ],
+      "abilities": [
+        {
+          "name": "Agilité du bretteur",
+          "kind": "passive",
+          "actionType": "passive",
+          "range": "Tant que l'arme est maniée",
+          "additionalEffect": "+1 CA si tu ne portes pas d'armure lourde et n'utilises pas de bouclier."
+        },
+        {
+          "name": "Attaque menaçante",
+          "kind": "chargeAbility",
+          "actionType": "attack",
+          "uses": {
+            "max": 1,
+            "recharge": "charges"
+          },
+          "range": "Quand tu touches avec une attaque d'arme",
+          "savingThrow": "SAG",
+          "savingThrowDC": "DD 13",
+          "additionalEffect": "Échec : la cible a désavantage à ses jets d'attaque contre toute créature autre que toi jusqu'à la fin de son prochain tour.",
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+        },
+        {
+          "name": "Frappe distrayante",
+          "kind": "chargeAbility",
+          "actionType": "attack",
+          "uses": {
+            "max": 1,
+            "recharge": "charges"
+          },
+          "range": "Quand tu touches avec une attaque d'arme",
+          "additionalEffect": "Le prochain jet d'attaque contre la cible, effectué par une créature autre que toi, bénéficie de l'avantage.",
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+        },
+        {
+          "name": "Attaque désarmante",
+          "kind": "chargeAbility",
+          "actionType": "attack",
+          "uses": {
+            "max": 1,
+            "recharge": "charges"
+          },
+          "range": "Quand tu touches avec une attaque d'arme",
+          "savingThrow": "FOR",
+          "savingThrowDC": "DD 13",
+          "additionalEffect": "Échec : la cible lâche un objet de ton choix qu'elle tient.",
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+        },
+        {
+          "name": "Riposte",
+          "kind": "chargeAbility",
+          "actionType": "reaction",
+          "uses": {
+            "max": 1,
+            "recharge": "charges"
+          },
+          "trigger": "Une créature te rate avec une attaque de corps à corps",
+          "additionalEffect": "Tu effectues une attaque d'arme de corps à corps contre elle.",
+          "description": "Manœuvre du Maître de guerre — dépense 1 dé de supériorité (d8)."
+        }
+      ]
+    }
+  ],
+  "weapons": [
+    {
+      "id": "scythe-liturgie",
+      "name": "Scythe de la Lithurgie des Cendres",
+      "tag": "[THE SUN]",
+      "keyword": "Quiet Passing",
+      "lore": "La lame est longue, mate, constellée de gravures funéraires. Elle ne brûle plus. Elle fauche avec lenteur et certitude.",
+      "shape": "faux",
+      "image": "assets/arsenal/scythe-liturgie-cendres.webp",
+      "imageAlt": "Grande faux dorée constellée de gravures funéraires",
+      "aura": "oklch(0.8 0.23 140)",
+      "attack": {
+        "label": "Fauche des Cendres",
+        "damage": "2d6 + 6",
+        "note": "Toucher +11 — Lourde • À deux mains"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Dégâts",
+          "value": "2d6 + 6 tranchants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Lourde • À deux mains"
+        },
+        {
+          "label": "Type",
+          "value": "Faux dorée"
+        },
+        {
+          "label": "Rareté",
+          "value": "Rare"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Veil Shield",
+          "text": "Quiet Passing — résistance aux dégâts radiants, nécrose les assaillants au corps à corps."
+        }
+      ],
+      "spells": [
+        {
+          "name": "Veil Shield — Quiet Passing",
+          "level": "Action",
+          "usage": "1 / repos long",
+          "text": "Durée 10 minutes. Version mortuaire de Fire Shield. Ne nécessite aucune concentration."
+        }
+      ]
+    },
+    {
+      "id": "horizon-brulee",
+      "name": "Horizon Brûlée",
+      "tag": "[THE STAR]",
+      "keyword": "Arc-Beam",
+      "lore": "Forgée à partir d'une racine calcinée de l'Arbre-Soleil enroulée autour d'un cœur de Nolbrim cristallisé, Horizon Brûlée transforme Eldritch Blast en rayons brûlants de feu du désert concentré.",
+      "shape": "arbalete",
+      "image": "assets/arsenal/horizon-brulee.webp",
+      "imageAlt": "Deux lames de cristal bleu liées par des racines noueuses et des pointes d'argent",
+      "aura": "oklch(0.72 0.19 255)",
+      "attack": {
+        "label": "Eldritch Blast",
+        "damage": "3d10 force",
+        "note": "Toucher +12 — DEX DD 15 pour moitié — 2 rayons (niveau 8)"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Harmonisation"
+      ],
+      "profile": [
+        {
+          "label": "Type",
+          "value": "Focus d'incantation"
+        },
+        {
+          "label": "Portée",
+          "value": "Ligne 36 m × 1,5 m"
+        },
+        {
+          "label": "Dégâts",
+          "value": "3d10 force par rayon"
+        },
+        {
+          "label": "Sauvegarde",
+          "value": "DEX DD 15"
+        },
+        {
+          "label": "Harmonisation",
+          "value": "Philippa Rougetoison"
+        },
+        {
+          "label": "Rareté",
+          "value": "Très rare"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Arc-Beam Discharge",
+          "text": "Eldritch Blast devient une ligne de 36 m infligeant 3d10 force, DEX DD 15 pour moitié des dégâts."
+        },
+        {
+          "name": "Solar Ricochet",
+          "text": "Ricoche jusqu'à 3 fois sur pierre, métal ou cristal à 45°, 9 m par segment."
+        }
+      ],
+      "spells": [
+        {
+          "name": "Primeval Awareness — Horizon Variant",
+          "level": "Bonus action",
+          "usage": "1 / repos long",
+          "text": "Pendant 1 minute, détecte la présence de Fiélons, Morts-vivants et Élémentaires dans un rayon de 1,6 km."
+        }
+      ]
+    },
+    {
+      "id": "satellite-du-monde",
+      "name": "Satellite du Monde Enseveli",
+      "tag": "[THE WORLD]",
+      "keyword": "Orbite",
+      "lore": "Une sphère funéraire gravite autour de la lame, vestige d’un monde disparu qui refuse encore de tomber.",
+      "shape": "cimeterre",
+      "image": "assets/arsenal/satellite-du-monde.webp",
+      "imageAlt": "Cimeterre courbe à lame de jade veinée et sphère funéraire gravitationnelle",
+      "aura": "oklch(0.75 0.2 145)",
+      "attack": {
+        "label": "Tranchant Orbital",
+        "damage": "1d6 + 6",
+        "note": "Toucher +11 — Finesse • Légère • Nick"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Dégâts",
+          "value": "1d6 + 6 tranchants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Finesse • Légère • Nick"
+        },
+        {
+          "label": "Défense",
+          "value": "+1 CA tant que l'arme est tenue"
+        },
+        {
+          "label": "Charges",
+          "value": "5"
+        },
+        {
+          "label": "Poids",
+          "value": "1,36 kg"
+        }
+      ],
+      "traits": [
+        {
+          "name": "CA +1",
+          "text": "En permanence tant que l'arme est tenue."
+        },
+        {
+          "name": "Charges gravitationnelles",
+          "text": "5 charges. Chaque pouvoir actif consomme 1, 2 ou 3 charges."
+        },
+        {
+          "name": "Gravité Funèbre",
+          "text": "Réaction 1 charge : réduit les dégâts de 2d8, l'attaquant a désavantage sur sa prochaine attaque."
+        },
+        {
+          "name": "Orbite Brisée",
+          "text": "Action 2 charges (18 m, CON DD 15) : 3d8 nécrotiques, étourdissement sur échec."
+        },
+        {
+          "name": "Effondrement du Monde",
+          "text": "Action 3 charges (9 m, rayon 6 m, FOR DD 15) : 4d10 nécrotiques, entrave sur échec."
+        }
+      ],
+      "spells": []
+    },
+    {
+      "id": "requiem-reine-morte",
+      "name": "Requiem de la Reine-Morte",
+      "tag": "[DEATH]",
+      "keyword": "Nécrose",
+      "lore": "Plantée dans le sol, elle couronne les morts et fauche les vivants.",
+      "shape": "batarde",
+      "image": "assets/arsenal/requiem-reine-morte.webp",
+      "imageAlt": "Grande lame noire épineuse au cœur incandescent vert nécrotique, garde en couronne",
+      "aura": "oklch(0.82 0.24 138)",
+      "attack": {
+        "label": "Requiem Funèbre",
+        "damage": "1d12 + 7",
+        "note": "Toucher +12 — Cleave sur cible adjacente"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Type d'attaque",
+          "value": "Corps à corps"
+        },
+        {
+          "label": "Allonge",
+          "value": "5 ft."
+        },
+        {
+          "label": "Dégâts",
+          "value": "1d12 + 7"
+        },
+        {
+          "label": "Type de dégâts",
+          "value": "Tranchant"
+        },
+        {
+          "label": "Toucher",
+          "value": "+12"
+        },
+        {
+          "label": "Maîtrise",
+          "value": "Cleave"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Martial, Lourde, À deux mains"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Couronne funèbre",
+          "text": "Plantée dans le sol, elle impose la peur aux morts-vivants proches."
+        },
+        {
+          "name": "Cleave",
+          "text": "Maîtrise : sur une touche, une seconde créature adjacente subit 1d12 dégâts."
+        }
+      ],
+      "spells": [
+        {
+          "name": "Blight",
+          "level": "4e",
+          "usage": "1 / jour (contact)",
+          "text": "La sève de la cible se flétrit : 8d8 nécrotique (Con annule la moitié)."
+        }
+      ]
+    },
+    {
+      "id": "orgueil-entropie",
+      "name": "Balance & Entropie",
+      "tag": "[THE LOVERS]",
+      "keyword": "Balance",
+      "lore": "L'une révèle ce qui se cache, l'autre efface ce qui devrait être vu.",
+      "shape": "dague",
+      "image": "assets/arsenal/orgueil-entropie.webp",
+      "imageAlt": "Deux dagues jumelles noires épineuses nimbées de flammes vertes",
+      "aura": "oklch(0.78 0.22 140)",
+      "attack": {
+        "label": "Danse des Amants",
+        "damage": "1d4 + 5",
+        "note": "Toucher +11 — Nick : 3 attaques par tour"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Type d'attaque",
+          "value": "Corps à corps / Lancer"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m • lancer 6 / 18 m"
+        },
+        {
+          "label": "Dégâts",
+          "value": "1d4 + 5"
+        },
+        {
+          "label": "Type de dégâts",
+          "value": "Perforant"
+        },
+        {
+          "label": "Toucher",
+          "value": "+11"
+        },
+        {
+          "label": "Maîtrise",
+          "value": "Nick"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Finesse • Légère • Lancer • Nick"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Orgueil",
+          "text": "Main principale : 2 attaques par action."
+        },
+        {
+          "name": "Entropie",
+          "text": "Main secondaire : 1 attaque par action bonus."
+        },
+        {
+          "name": "Sneak Attack",
+          "text": "+3d6 perforants, 1 fois par tour."
+        }
+      ],
+      "spells": [
+        {
+          "name": "Révélation d'Orgueil",
+          "level": "Revelation",
+          "usage": "1 / repos long",
+          "text": "Lumière vive sur 6 m : les créatures invisibles y sont révélées."
+        },
+        {
+          "name": "Disparition d'Entropie",
+          "level": "Invisibility",
+          "usage": "1 / repos long",
+          "text": "Invisible jusqu'à 1 minute, jusqu'à ce que tu attaques ou lances un sort."
+        },
+        {
+          "name": "Masque de Chair",
+          "level": "Mask of Flesh",
+          "usage": "1 / repos long",
+          "text": "Au contact, tu prends l'apparence physique exacte d'une créature pendant 1 heure."
+        }
+      ]
+    },
+    {
+      "id": "caput-tauri",
+      "name": "Caput Tauri",
+      "tag": "[THE CHARIOT]",
+      "keyword": "Percussion",
+      "lore": "Une masse née pour briser l'inertie : plus son porteur prend de vitesse, plus le Taureau frappe.",
+      "shape": "maillet",
+      "image": "assets/arsenal/caput-tauri.webp",
+      "imageAlt": "Maillet de guerre à tête de taureau noire veinée de malachite verte",
+      "aura": "oklch(0.76 0.21 150)",
+      "attack": {
+        "label": "Percussion du Taureau",
+        "damage": "2d6 + 6",
+        "note": "Toucher +11 — Lourde • À deux mains"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Dégâts",
+          "value": "2d6 + 6 contondants"
+        },
+        {
+          "label": "Charge",
+          "value": "+2d6 contondants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Bonus de vitesse",
+          "value": "+3 m"
+        },
+        {
+          "label": "Sauvegarde",
+          "value": "FOR DD 15"
+        },
+        {
+          "label": "Poids",
+          "value": "4,5 kg"
+        },
+        {
+          "label": "Rareté",
+          "value": "Rare"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Rage du Taureau",
+          "text": "Passif : vitesse de déplacement +3 m tant que l'arme est maniée."
+        },
+        {
+          "name": "Charge",
+          "text": "Après 4,5 m en ligne droite : +2d6 contondants, FOR DD 15 ou Renversée."
+        },
+        {
+          "name": "Ruée du Chariot",
+          "text": "1 / repos long : ligne de 15 m, 4d6 + 6 contondants, FOR DD 15 ou Renversée."
+        }
+      ],
+      "spells": []
+    },
+    {
+      "id": "omen-broken-sky",
+      "name": "Omen, Broken Sky",
+      "tag": "[THE EMPRESS]",
+      "keyword": "Ciel Brisé",
+      "lore": "Une lame brisée par le ciel : chaque forme qu'elle prend annonce l'orage du prochain coup.",
+      "shape": "katana",
+      "image": "assets/arsenal/omen-broken-sky.webp",
+      "imageAlt": "Katana noir et or orné de crânes, lame fêlée parcourue d'éclairs verts",
+      "aura": "oklch(0.8 0.21 285)",
+      "attack": {
+        "label": "Taillade d'Omen",
+        "damage": "1d8 + 7 + 1d12 foudre",
+        "note": "Toucher +11 — 1d10 + 7 à deux mains • 3 charges (recharge à l'aube)"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Dégâts",
+          "value": "1d8 + 7 (1d10 + 7 à deux mains)"
+        },
+        {
+          "label": "Foudre",
+          "value": "+1d12 foudre"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Charges",
+          "value": "3 • recharge à l'aube"
+        },
+        {
+          "label": "Poids",
+          "value": "1,36 kg"
+        },
+        {
+          "label": "Rareté",
+          "value": "Très rare"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Ichi No Kata — Raijin Tobari",
+          "text": "Action, 1 charge : déplacement de 9 m en ligne droite sans provoquer d'attaque d'opportunité ; une attaque par créature traversée avec 2d8 foudre supplémentaires."
+        },
+        {
+          "name": "Ni No Kata — Raijin Gyokusa",
+          "text": "Action, 2 charges : ligne de 9 m × 1,5 m, 6d8 foudre, DEX DD 15 pour la moitié."
+        },
+        {
+          "name": "San No Kata — Soten Ryodan Tachi",
+          "text": "Action, 3 charges : combo avec « Ruin, Hollow Reign ». Les deux porteurs se téléportent au contact de la cible ; le lanceur attaque normalement, l'autre ajoute 1d12 + 1d12 par charge restante. Les deux armes tombent à 0 charge."
+        }
+      ],
+      "spells": []
+    },
+    {
+      "id": "rapiere-corsaire-noye",
+      "name": "Rapière du Corsaire Noyé",
+      "tag": "[THE HANGED MAN]",
+      "keyword": "Riposte",
+      "lore": "Remontée des abysses avec son capitaine, elle n'attaque jamais la première — mais elle répond toujours.",
+      "shape": "rapiere",
+      "image": "assets/arsenal/rapiere-corsaire-noye.webp",
+      "imageAlt": "Rapière à lame fine bleu acier, garde dorée ouvragée sertie de gemmes violettes et pommeau courbe",
+      "aura": "oklch(0.72 0.14 195)",
+      "attack": {
+        "label": "Estocade du Noyé",
+        "damage": "1d8 + 4",
+        "note": "Toucher +11 — Finesse • +1 magique"
+      },
+      "flags": [
+        "Pact Weapon",
+        "Hex Weapon"
+      ],
+      "profile": [
+        {
+          "label": "Dégâts",
+          "value": "1d8 + 4 perforants"
+        },
+        {
+          "label": "Portée",
+          "value": "1,5 m"
+        },
+        {
+          "label": "Propriétés",
+          "value": "Finesse • +1 attaque et dégâts"
+        },
+        {
+          "label": "Dés de supériorité",
+          "value": "2 × d8 • repos court ou long"
+        },
+        {
+          "label": "Défense",
+          "value": "+1 CA sans armure lourde ni bouclier"
+        }
+      ],
+      "traits": [
+        {
+          "name": "Attaque menaçante",
+          "text": "1 dé : SAG DD 13 ou désavantage contre toute créature autre que toi jusqu'à la fin de son prochain tour."
+        },
+        {
+          "name": "Frappe distrayante",
+          "text": "1 dé : le prochain jet d'attaque contre la cible par une autre créature a l'avantage."
+        },
+        {
+          "name": "Attaque désarmante",
+          "text": "1 dé : FOR DD 13 ou la cible lâche un objet de ton choix qu'elle tient."
+        },
+        {
+          "name": "Riposte",
+          "text": "1 dé • Réaction : si une créature te rate au corps à corps, attaque d'arme contre elle."
+        },
+        {
+          "name": "Agilité du bretteur",
+          "text": "Passif : +1 CA si tu ne portes pas d'armure lourde et n'utilises pas de bouclier."
+        }
+      ],
+      "spells": []
+    }
+  ],
+  "justice": {
+    "id": "justice",
+    "name": "Justice",
+    "keyword": "La main du Reliquaire",
+    "lore": "Elle ne choisit pas le coupable : elle désigne celui que le pacte a marqué.",
+    "shape": "reliquaire",
+    "aura": "oklch(0.72 0.16 260)"
+  },
+  "justiceCard": {
+    "tag": "[JUSTICE]",
+    "name": "La main du Reliquaire",
+    "keyword": "Reliquaire",
+    "lore": "Le bras traverse la matière : seul le coupable en garde la marque.",
+    "aura": "oklch(0.78 0.22 145)",
+    "attack": {
+      "label": "Reliquary Rend",
+      "damage": "(1d6 tranchant + 6) ×2",
+      "note": "2 attaques"
+    },
+    "profile": [
+      {
+        "label": "Type d'attaque",
+        "value": "Corps à corps"
+      },
+      {
+        "label": "Allonge",
+        "value": "5 ft."
+      },
+      {
+        "label": "Dégâts",
+        "value": "1d6 + 14"
+      },
+      {
+        "label": "Type de dégâts",
+        "value": "Tranchant"
+      },
+      {
+        "label": "Poids",
+        "value": "2 lb."
+      },
+      {
+        "label": "Maîtrise",
+        "value": "Oui"
+      },
+      {
+        "label": "Propriétés",
+        "value": "Attachée, Légère"
+      }
+    ],
+    "flags": [
+      "Pact Weapon",
+      "Hex Weapon"
+    ],
+    "traits": [
+      {
+        "name": "Spectral Form",
+        "text": "Le bras traverse la matière non magique."
+      },
+      {
+        "name": "Resistance",
+        "text": "Dégâts nécrotiques."
+      }
+    ],
+    "spells": [
+      {
+        "name": "Blight",
+        "level": "4e",
+        "usage": "1 charge / jour (contact)"
+      },
+      {
+        "name": "Unseen Servant",
+        "level": "1er",
+        "usage": "À volonté",
+        "text": "Le serviteur apparaît comme une présence funéraire (mains spectrales, voile, reliques flottantes)."
+      }
+    ]
+  }
+}
