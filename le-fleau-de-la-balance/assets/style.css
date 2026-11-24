@@ -26,3 +26,14 @@
 .ability-narration h5 { margin: 0 0 5px; color: #e6d6a7; font-size: .85rem; }
 .ability-narration p { margin: 0; }
 .ability-narration blockquote { margin: 5px 0 0; font-size: 1.05rem; }
+
+.power-panel { margin: 20px 0 28px; padding: 14px; border: 1px solid var(--line); border-radius: 12px; }
+.power-panel h2 { margin: 0 0 12px; }
+.power-filters { display: flex; flex-wrap: wrap; gap: 6px; }
+.power-filters button { padding: 7px 10px; }
+#power-count { margin: 10px 0 0; color: #bdb0ce; }
+#power-results { max-height: 360px; overflow-y: auto; }
+.power-result .arsenal-body { overflow-wrap: anywhere; }
+@media (max-width: 480px) {
+  nav a { padding: 10px 7px; font-size: .88rem; }
+}
