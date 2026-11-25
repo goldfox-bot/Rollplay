@@ -16,11 +16,11 @@
       "imageAlt": "Bras spectral verdoyant du Reliquaire",
       "attack": {
         "label": "Reliquary Rend",
-        "hit": "+13",
-        "damageDice": "1d6 + 14",
+        "hit": "+11",
+        "damageDice": "1d6 + 7",
         "damageType": "Tranchants",
         "context": "Corps à corps • Allonge 1,5 m",
-        "note": "2 attaques par action"
+        "note": "Reliquary Rend : (1d6 + 7) ×2"
       },
       "stats": [
         {
@@ -59,42 +59,19 @@
           "name": "Blight",
           "kind": "spell",
           "actionType": "action",
-          "level": "4e",
-          "uses": {
-            "max": 1,
-            "recharge": "jour"
-          },
-          "range": "Contact",
+          "level": "Pacte : emplacement de niveau 4",
+          "range": "30 ft (9 m)",
           "areaType": "cible",
           "savingThrow": "CON",
           "savingThrowDC": "DD de sort",
           "damageDice": "8d8",
           "damageType": "Nécrotiques",
           "additionalEffect": "Moitié en cas de réussite.",
-          "description": "La sève et l'humeur vitale de la cible se flétrissent au contact du reliquaire.",
+          "description": "La vitalité de la cible se flétrit à distance.",
           "narration": {
-            "description": "Je referme les doigts du Reliquaire sur sa peau. Sous ma paume, les veines noircissent jusqu’au bord de la manche.",
+            "description": "Je referme les doigts du Reliquaire dans le vide. Les veines de la cible noircissent.",
             "quotes": [
               "Tu peux lâcher prise."
-            ]
-          }
-        },
-        {
-          "name": "Unseen Servant",
-          "kind": "spell",
-          "actionType": "action",
-          "level": "1er",
-          "uses": {
-            "max": 1,
-            "recharge": "volonté"
-          },
-          "range": "18 m",
-          "additionalEffect": "Serviteur invisible • 1 heure.",
-          "description": "Le serviteur apparaît comme une présence funéraire : mains spectrales, voile, reliques flottantes.",
-          "narration": {
-            "description": "Je pose ma coupe dans le vide. Une main sous un voile de deuil la reçoit et attend que je lui indique la table.",
-            "quotes": [
-              "Sois aimable. Sers d’abord l’invité."
             ]
           }
         }
@@ -115,7 +92,7 @@
       "imageAlt": "Grande lame noire épineuse au cœur incandescent vert nécrotique",
       "attack": {
         "label": "Requiem Funèbre",
-        "hit": "+12",
+        "hit": "+11",
         "damageDice": "1d12 + 7",
         "damageType": "Tranchants",
         "context": "Corps à corps • Allonge 1,5 m",
@@ -148,15 +125,11 @@
           "name": "Couronnement du Repos Noir",
           "kind": "activeAbility",
           "actionType": "action",
-          "uses": {
-            "max": 1,
-            "recharge": "jour"
-          },
           "range": "9 m",
           "areaType": "cylindre",
           "areaSize": "Rayon 3 m • hauteur 6 m",
           "savingThrow": "DEX",
-          "savingThrowDC": "DD de sort",
+          "savingThrowDC": "DD 17",
           "damageDice": "4d6",
           "damageType": "Nécrotiques",
           "additionalEffect": "Moitié en cas de réussite.",
@@ -166,16 +139,13 @@
             "quotes": [
               "À genoux. Sa Majesté entre."
             ]
-          }
+          },
+          "level": "emplacement de niveau 2"
         },
         {
           "name": "Déni par la Garde",
           "kind": "reaction",
           "actionType": "reaction",
-          "uses": {
-            "max": 2,
-            "recharge": "repos"
-          },
           "trigger": "Un sort ciblé ou un projectile vous touche",
           "damageDice": "-2d10",
           "damageType": "Dégâts subis",
@@ -186,20 +156,17 @@
             "quotes": [
               "Sa Majesté ne reçoit pas."
             ]
-          }
+          },
+          "level": "emplacement de niveau 1"
         },
         {
           "name": "Procession de la Tombe",
           "kind": "activeAbility",
           "actionType": "action",
-          "uses": {
-            "max": 1,
-            "recharge": "jour"
-          },
           "areaType": "ligne",
           "areaSize": "18 m × 1,5 m",
           "savingThrow": "DEX",
-          "savingThrowDC": "DD de sort",
+          "savingThrowDC": "DD 17",
           "damageDice": "5d8",
           "damageType": "Nécrotiques",
           "additionalEffect": "Moitié en cas de réussite • traverse toutes les créatures.",
@@ -209,7 +176,8 @@
             "quotes": [
               "Faites place au cortège."
             ]
-          }
+          },
+          "level": "emplacement de niveau 3"
         }
       ]
     },
@@ -217,7 +185,7 @@
       "id": "scythe-liturgie",
       "category": "[THE SUN]",
       "name": "Scythe de la Lithurgie des Cendres",
-      "subtitle": "Faux dorée • Rare",
+      "subtitle": "Faux dorée • Très rare",
       "lore": "La lame est longue, mate, constellée de gravures funéraires. Elle ne brûle plus. Elle fauche avec lenteur et certitude.",
       "tags": [
         "Pact Weapon",
@@ -253,7 +221,7 @@
         },
         {
           "label": "Rareté",
-          "value": "Rare"
+          "value": "Très rare"
         }
       ],
       "abilities": [
@@ -261,10 +229,6 @@
           "name": "Veil Shield — Quiet Passing",
           "kind": "spell",
           "actionType": "action",
-          "uses": {
-            "max": 1,
-            "recharge": "repos long"
-          },
           "range": "Personnelle",
           "damageDice": "2d8",
           "damageType": "Nécrotiques",
@@ -275,7 +239,8 @@
             "quotes": [
               "Ne soulève pas le voile."
             ]
-          }
+          },
+          "level": "emplacement de niveau 4"
         }
       ]
     },
@@ -294,11 +259,11 @@
       "imageAlt": "Deux lames de cristal bleu liées par des racines noueuses",
       "attack": {
         "label": "Eldritch Blast",
-        "hit": "+12",
+        "hit": "+11",
         "damageDice": "3d10",
         "damageType": "Force",
         "context": "Sort • Ligne 36 m × 1,5 m",
-        "note": "2 rayons (niveau 8) • 3d10 force par rayon • DEX DD 15 pour demi-dégâts"
+        "note": "2 rayons (niveau 8) • 3d10 force par rayon • DEX DD 17 pour demi-dégâts"
       },
       "stats": [
         {
@@ -315,7 +280,7 @@
         },
         {
           "label": "Sauvegarde",
-          "value": "DEX DD 15"
+          "value": "DEX DD 17"
         },
         {
           "label": "Harmonisation",
@@ -324,6 +289,10 @@
         {
           "label": "Rareté",
           "value": "Très rare"
+        },
+        {
+          "label": "Dégâts d’arme",
+          "value": "1d10 + 7"
         }
       ],
       "abilities": [
@@ -336,7 +305,7 @@
           "areaType": "ligne",
           "areaSize": "Ligne 36 m × 1,5 m",
           "savingThrow": "DEX",
-          "savingThrowDC": "DD 15",
+          "savingThrowDC": "DD 17",
           "damageDice": "3d10",
           "damageType": "Force",
           "additionalEffect": "Dégâts complète en cas d'échec, moitié en cas de réussite. Perce créatures et objets fragiles ; arrêté par la pierre et le métal.",
@@ -354,7 +323,7 @@
           "actionType": "passive",
           "level": "Arc-Beam",
           "savingThrow": "DEX",
-          "savingThrowDC": "DD 15",
+          "savingThrowDC": "DD 17",
           "additionalEffect": "Jusqu'à 3 ricochets • 9 m par segment • nouveaux jets de sauvegarde.",
           "description": "Si un rayon frappe une surface de pierre, de métal ou de cristal à un angle d'environ 45°, il rebondit. Chaque segment impose un nouveau jet de DEX et inflige les mêmes dégâts.",
           "narration": {
@@ -363,33 +332,14 @@
               "Tu croyais que je te visais ?"
             ]
           }
-        },
-        {
-          "name": "Primeval Awareness — Horizon Variant",
-          "kind": "bonusAction",
-          "actionType": "bonusAction",
-          "uses": {
-            "max": 1,
-            "recharge": "repos long"
-          },
-          "range": "1,6 km",
-          "additionalEffect": "Durée 1 minute • détecte la présence, pas la position.",
-          "description": "Tu sens la présence des Fiélons, des Morts-vivants et des Élémentaires.",
-          "narration": {
-            "description": "Je serre les racines autour du cristal. Une pulsation remonte jusqu’à mon coude. Je relève la tête et écoute.",
-            "quotes": [
-              "Il y a autre chose avec nous."
-            ]
-          }
         }
       ]
     },
     {
       "id": "satellite-du-monde",
-      "charges": 5,
       "category": "[THE WORLD]",
       "name": "Satellite du Monde Enseveli",
-      "subtitle": "Cimeterre • Rare",
+      "subtitle": "Cimeterre • Très rare",
       "lore": "Une sphère funéraire gravite autour de la lame, vestige d’un monde disparu qui refuse encore de tomber.",
       "tags": [
         "Pact Weapon",
@@ -424,10 +374,6 @@
           "value": "+1 CA tant que l'arme est tenue"
         },
         {
-          "label": "Charges",
-          "value": "5"
-        },
-        {
           "label": "Poids",
           "value": "1,36 kg"
         }
@@ -437,10 +383,6 @@
           "name": "Gravité Funèbre",
           "kind": "reaction",
           "actionType": "reaction",
-          "uses": {
-            "max": 1,
-            "recharge": "charges"
-          },
           "trigger": "Tu es touchée par une attaque",
           "damageDice": "-2d8",
           "damageType": "Dégâts subis",
@@ -451,20 +393,17 @@
             "quotes": [
               "Reprends ta garde. Si tu peux."
             ]
-          }
+          },
+          "level": "emplacement de niveau 1"
         },
         {
           "name": "Orbite Brisée",
           "kind": "activeAbility",
           "actionType": "action",
-          "uses": {
-            "max": 2,
-            "recharge": "charges"
-          },
           "range": "18 m",
           "areaType": "cible",
           "savingThrow": "CON",
-          "savingThrowDC": "DD 15",
+          "savingThrowDC": "DD 17",
           "damageDice": "3d8",
           "damageType": "Nécrotiques",
           "additionalEffect": "Échec : dégâts complets + Étourdi jusqu’à la fin du prochain tour de la cible. Réussite : moitié des dégâts, aucun étourdissement. La sphère revient immédiatement.",
@@ -473,21 +412,18 @@
             "quotes": [
               "Elle revient toujours."
             ]
-          }
+          },
+          "level": "emplacement de niveau 4"
         },
         {
           "name": "Effondrement du Monde",
           "kind": "activeAbility",
           "actionType": "action",
-          "uses": {
-            "max": 3,
-            "recharge": "charges"
-          },
           "range": "9 m",
           "areaType": "sphere",
           "areaSize": "Rayon 6 m",
           "savingThrow": "FOR",
-          "savingThrowDC": "DD 15",
+          "savingThrowDC": "DD 17",
           "damageDice": "4d10",
           "damageType": "Nécrotiques",
           "additionalEffect": "Échec : dégâts complets + Entravé jusqu’à la fin du prochain tour de la créature. Réussite : moitié des dégâts, aucune entrave.",
@@ -497,7 +433,8 @@
             "quotes": [
               "Restez. Je n’ai pas fini."
             ]
-          }
+          },
+          "level": "emplacement de niveau 4"
         }
       ]
     },
@@ -505,7 +442,7 @@
       "id": "orgueil-entropie",
       "category": "[THE LOVERS]",
       "name": "Balance & Entropie",
-      "subtitle": "Dagues jumelles • Rare",
+      "subtitle": "Dagues jumelles • Très rare",
       "lore": "Deux lames opposées : l'une révèle ce qui se cache, l'autre efface ce qui devrait être vu.",
       "tags": [
         "Pact Weapon",
@@ -546,19 +483,13 @@
       ],
       "abilities": [
         {
-          "name": "Révélation d'Orgueil",
+          "name": "See Invisibility",
           "kind": "spell",
           "actionType": "bonusAction",
-          "level": "Revelation",
-          "uses": {
-            "max": 1,
-            "recharge": "repos long"
-          },
-          "range": "Soi-même • 1 minute",
-          "areaType": "rayon",
-          "areaSize": "rayon 6 m",
-          "additionalEffect": "Lumière vive sur 6 m : les créatures invisibles dans la zone sont révélées et ne peuvent bénéficier de leur invisibilité tant qu'elles y restent.",
-          "description": "Orgueil émet une lumière vive pendant toute la durée.",
+          "level": "emplacement de niveau 2",
+          "range": "Soi-même • 1 heure",
+          "additionalEffect": "Tu vois les créatures et objets invisibles.",
+          "description": "Sort See Invisibility.",
           "narration": {
             "description": "Je lève Orgueil. Sa lumière remplit l’espace autour de moi. Un visage apparaît là où, une seconde plus tôt, je ne voyais qu’un mur.",
             "quotes": [
@@ -567,17 +498,12 @@
           }
         },
         {
-          "name": "Disparition d'Entropie",
+          "name": "Invisibility",
           "kind": "spell",
           "actionType": "bonusAction",
-          "level": "Invisibility",
-          "uses": {
-            "max": 1,
-            "recharge": "repos long"
-          },
-          "range": "Soi-même • jusqu'à 1 minute",
-          "additionalEffect": "Tu deviens invisible jusqu'à la fin de la durée, jusqu'à ce que tu attaques ou lances un sort.",
-          "description": "Aucun maintien de concentration indiqué sur l'objet.",
+          "level": "emplacement de niveau 2",
+          "range": "Soi-même • jusqu’à 1 heure",
+          "additionalEffect": "Invisible jusqu’à 1 heure, concentration ; prend fin si la cible attaque ou lance un sort.",
           "narration": {
             "description": "Je baisse Entropie le long de ma jambe. Mon reflet s’efface le premier, puis mes contours disparaissent devant eux.",
             "quotes": [
@@ -586,17 +512,12 @@
           }
         },
         {
-          "name": "Masque de Chair",
+          "name": "Alter Self",
           "kind": "spell",
           "actionType": "bonusAction",
-          "level": "Mask of Flesh",
-          "uses": {
-            "max": 1,
-            "recharge": "repos long"
-          },
-          "range": "Contact • 1 heure",
-          "additionalEffect": "Après avoir touché une créature, tu prends exactement son apparence physique.",
-          "description": "La transformation reproduit parfaitement l'apparence visuelle, mais pas la voix, les capacités ou les pouvoirs. (Disguise Self)",
+          "level": "emplacement de niveau 2",
+          "range": "Soi-même • jusqu’à 1 heure",
+          "additionalEffect": "Transformation physique selon le sort Alter Self ; concentration.",
           "narration": {
             "description": "Je lui effleure la joue. Mes traits se déplacent sous mes doigts jusqu’à prendre les siens. Quand je parle, ma voix est toujours la mienne.",
             "quotes": [
@@ -610,7 +531,7 @@
       "id": "caput-tauri",
       "category": "[THE CHARIOT]",
       "name": "Caput Tauri",
-      "subtitle": "Maillet de guerre • Rare",
+      "subtitle": "Maillet de guerre • Très rare",
       "lore": "Une masse née pour briser l'inertie. Plus son porteur prend de vitesse, plus le Taureau frappe comme un bélier lancé contre le monde.",
       "tags": [
         "Pact Weapon",
@@ -654,7 +575,7 @@
         },
         {
           "label": "Rareté",
-          "value": "Rare"
+          "value": "Très rare"
         }
       ],
       "abilities": [
@@ -1007,7 +928,7 @@
         },
         {
           "label": "Rareté",
-          "value": "Rare"
+          "value": "Très rare"
         }
       ],
       "traits": [
@@ -1019,9 +940,9 @@
       "spells": [
         {
           "name": "Veil Shield — Quiet Passing",
-          "level": "Action",
-          "usage": "1 / repos long",
-          "text": "Durée 10 minutes. Version mortuaire de Fire Shield. Ne nécessite aucune concentration."
+          "level": "emplacement de niveau 4",
+          "usage": "emplacement de niveau 4",
+          "text": "Durée 10 minutes • résistance aux dégâts radiants • nécrose qui vous frappe au corps à corps."
         }
       ]
     },
@@ -1038,7 +959,7 @@
       "attack": {
         "label": "Eldritch Blast",
         "damage": "3d10 force",
-        "note": "Toucher +12 — DEX DD 15 pour moitié — 2 rayons (niveau 8)"
+        "note": "Toucher +11 — DEX DD 17 pour moitié — 2 rayons (niveau 8)"
       },
       "flags": [
         "Pact Weapon",
@@ -1059,7 +980,7 @@
         },
         {
           "label": "Sauvegarde",
-          "value": "DEX DD 15"
+          "value": "DEX DD 17"
         },
         {
           "label": "Harmonisation",
@@ -1068,26 +989,23 @@
         {
           "label": "Rareté",
           "value": "Très rare"
+        },
+        {
+          "label": "Dégâts d’arme",
+          "value": "1d10 + 7"
         }
       ],
       "traits": [
         {
           "name": "Arc-Beam Discharge",
-          "text": "Eldritch Blast devient une ligne de 36 m infligeant 3d10 force, DEX DD 15 pour moitié des dégâts."
+          "text": "Eldritch Blast devient une ligne de 36 m infligeant 3d10 force, DEX DD 17 pour moitié des dégâts."
         },
         {
           "name": "Solar Ricochet",
           "text": "Ricoche jusqu'à 3 fois sur pierre, métal ou cristal à 45°, 9 m par segment."
         }
       ],
-      "spells": [
-        {
-          "name": "Primeval Awareness — Horizon Variant",
-          "level": "Bonus action",
-          "usage": "1 / repos long",
-          "text": "Pendant 1 minute, détecte la présence de Fiélons, Morts-vivants et Élémentaires dans un rayon de 1,6 km."
-        }
-      ]
+      "spells": []
     },
     {
       "id": "satellite-du-monde",
@@ -1126,37 +1044,40 @@
           "value": "+1 CA tant que l'arme est tenue"
         },
         {
-          "label": "Charges",
-          "value": "5"
-        },
-        {
           "label": "Poids",
           "value": "1,36 kg"
+        },
+        {
+          "label": "Rareté",
+          "value": "Très rare"
         }
       ],
       "traits": [
         {
           "name": "CA +1",
           "text": "En permanence tant que l'arme est tenue."
-        },
-        {
-          "name": "Charges gravitationnelles",
-          "text": "5 charges. Chaque pouvoir actif consomme 1, 2 ou 3 charges."
-        },
+        }
+      ],
+      "spells": [
         {
           "name": "Gravité Funèbre",
-          "text": "Réaction 1 charge : réduit les dégâts de 2d8, l'attaquant a désavantage sur sa prochaine attaque."
+          "level": "emplacement de niveau 1",
+          "usage": "emplacement de niveau 1",
+          "text": "La sphère s’interpose et absorbe une partie de l’impact. L’attaquant subit désavantage sur son prochain jet d’attaque."
         },
         {
           "name": "Orbite Brisée",
-          "text": "Action 2 charges (18 m, CON DD 15) : 3d8 nécrotiques, étourdissement sur échec."
+          "level": "emplacement de niveau 4",
+          "usage": "emplacement de niveau 4",
+          "text": "Échec : dégâts complets + Étourdi jusqu’à la fin du prochain tour de la cible. Réussite : moitié des dégâts, aucun étourdissement. La sphère revient immédiatement. • DD 17"
         },
         {
           "name": "Effondrement du Monde",
-          "text": "Action 3 charges (9 m, rayon 6 m, FOR DD 15) : 4d10 nécrotiques, entrave sur échec."
+          "level": "emplacement de niveau 4",
+          "usage": "emplacement de niveau 4",
+          "text": "Échec : dégâts complets + Entravé jusqu’à la fin du prochain tour de la créature. Réussite : moitié des dégâts, aucune entrave. • DD 17"
         }
-      ],
-      "spells": []
+      ]
     },
     {
       "id": "requiem-reine-morte",
@@ -1171,7 +1092,7 @@
       "attack": {
         "label": "Requiem Funèbre",
         "damage": "1d12 + 7",
-        "note": "Toucher +12 — Cleave sur cible adjacente"
+        "note": "Toucher +11 — Cleave sur cible adjacente"
       },
       "flags": [
         "Pact Weapon",
@@ -1196,7 +1117,7 @@
         },
         {
           "label": "Toucher",
-          "value": "+12"
+          "value": "+11"
         },
         {
           "label": "Maîtrise",
@@ -1205,6 +1126,10 @@
         {
           "label": "Propriétés",
           "value": "Martial, Lourde, À deux mains"
+        },
+        {
+          "label": "Rareté",
+          "value": "Très rare"
         }
       ],
       "traits": [
@@ -1219,10 +1144,22 @@
       ],
       "spells": [
         {
-          "name": "Blight",
-          "level": "4e",
-          "usage": "1 / jour (contact)",
-          "text": "La sève de la cible se flétrit : 8d8 nécrotique (Con annule la moitié)."
+          "name": "Couronnement du Repos Noir",
+          "level": "emplacement de niveau 2",
+          "usage": "emplacement de niveau 2",
+          "text": "Moitié en cas de réussite. • DD 17"
+        },
+        {
+          "name": "Déni par la Garde",
+          "level": "emplacement de niveau 1",
+          "usage": "emplacement de niveau 1",
+          "text": "Réduit les dégâts reçus."
+        },
+        {
+          "name": "Procession de la Tombe",
+          "level": "emplacement de niveau 3",
+          "usage": "emplacement de niveau 3",
+          "text": "Moitié en cas de réussite • traverse toutes les créatures. • DD 17"
         }
       ]
     },
@@ -1273,6 +1210,10 @@
         {
           "label": "Propriétés",
           "value": "Finesse • Légère • Lancer • Nick"
+        },
+        {
+          "label": "Rareté",
+          "value": "Très rare"
         }
       ],
       "traits": [
@@ -1291,22 +1232,22 @@
       ],
       "spells": [
         {
-          "name": "Révélation d'Orgueil",
-          "level": "Revelation",
-          "usage": "1 / repos long",
-          "text": "Lumière vive sur 6 m : les créatures invisibles y sont révélées."
+          "name": "See Invisibility",
+          "level": "emplacement de niveau 2",
+          "usage": "emplacement de niveau 2",
+          "text": "Tu vois les créatures et objets invisibles."
         },
         {
-          "name": "Disparition d'Entropie",
-          "level": "Invisibility",
-          "usage": "1 / repos long",
-          "text": "Invisible jusqu'à 1 minute, jusqu'à ce que tu attaques ou lances un sort."
+          "name": "Invisibility",
+          "level": "emplacement de niveau 2",
+          "usage": "emplacement de niveau 2",
+          "text": "Invisible jusqu’à 1 heure, concentration ; prend fin si la cible attaque ou lance un sort."
         },
         {
-          "name": "Masque de Chair",
-          "level": "Mask of Flesh",
-          "usage": "1 / repos long",
-          "text": "Au contact, tu prends l'apparence physique exacte d'une créature pendant 1 heure."
+          "name": "Alter Self",
+          "level": "emplacement de niveau 2",
+          "usage": "emplacement de niveau 2",
+          "text": "Transformation physique selon le sort Alter Self ; concentration."
         }
       ]
     },
@@ -1356,7 +1297,7 @@
         },
         {
           "label": "Rareté",
-          "value": "Rare"
+          "value": "Très rare"
         }
       ],
       "traits": [
@@ -1518,8 +1459,8 @@
     "aura": "oklch(0.78 0.22 145)",
     "attack": {
       "label": "Reliquary Rend",
-      "damage": "(1d6 tranchant + 6) ×2",
-      "note": "2 attaques"
+      "damage": "(1d6 + 7) ×2",
+      "note": "Toucher +11 • 2 attaques"
     },
     "profile": [
       {
@@ -1532,7 +1473,7 @@
       },
       {
         "label": "Dégâts",
-        "value": "1d6 + 14"
+        "value": "1d6 + 7"
       },
       {
         "label": "Type de dégâts",
@@ -1569,14 +1510,9 @@
       {
         "name": "Blight",
         "level": "4e",
-        "usage": "1 charge / jour (contact)"
-      },
-      {
-        "name": "Unseen Servant",
-        "level": "1er",
-        "usage": "À volonté",
-        "text": "Le serviteur apparaît comme une présence funéraire (mains spectrales, voile, reliques flottantes)."
+        "usage": "Emplacement de pacte niveau 4 • 30 ft (9 m)"
       }
     ]
-  }
+  },
+  "patchDate": "2026-11-25"
 }
