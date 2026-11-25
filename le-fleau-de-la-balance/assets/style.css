@@ -37,3 +37,6 @@
 @media (max-width: 480px) {
   nav a { padding: 10px 7px; font-size: .88rem; }
 }
+
+/* Codex personnel */
+.codex-home{padding:24px 0}.codex-home>small,.codex-entry>small{letter-spacing:.16em;color:var(--gold);font-size:.72rem}.codex-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,160px),1fr));gap:10px}.codex-grid a{display:flex;flex-direction:column;justify-content:center;min-height:100px;padding:15px;border:1px solid #645537;border-radius:8px;background:linear-gradient(145deg,#201b25,#101815)}.codex-grid a:hover,.codex-grid a:focus-visible{border-color:var(--green)}.codex-grid strong{color:#e6d6a7;font-family:Georgia,serif;font-size:1.12rem}.codex-entry{padding:22px;margin:16px 0;border:1px solid var(--line);border-left:2px solid var(--gold);background:#15111d;border-radius:8px}.codex-entry h2{margin:8px 0}.codex-muted{color:#bdb0ce}.codex-entry p:last-child{margin-bottom:0}
