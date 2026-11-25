@@ -1,4 +1,550 @@
-<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Le Fléau de la Balance</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/app.js"></script></head><body><header><div class="hero"><small>PHILIPPA ROUGETOISON</small><h1>Le Fléau de la Balance</h1><p>Codex personnel · Championne de Gran Brijit</p></div></header><main><div class="codex-home"><small>LE CODEX DE LA CHAMPIONNE</small><h2>Choisir un registre</h2><div class="codex-grid"><a href="#persona"><small>Persona</small><strong>Philippa Rougetoison</strong></a><a href="#memoires"><small>Mémoires</small><strong>Avant les campagnes</strong></a><a href="#chroniques"><small>Chroniques</small><strong>Thaldera &amp; Istra Belig</strong></a><a href="#cosmologie"><small>Cosmologie</small><strong>Les puissances du Pacte</strong></a><a href="#grimoire"><small>Grimoire</small><strong>Sorts &amp; combinaisons</strong></a><a href="#relations"><small>Relations</small><strong>Le cercle de Philippa</strong></a><a href="#quetes"><small>Quêtes</small><strong>Obligations de la Championne</strong></a><a href="#archives"><small>Archives</small><strong>Historique des règles</strong></a><a href="#arsenal"><small>Combat</small><strong>Arsenal du Pacte</strong></a><a href="#reactions"><small>Roleplay</small><strong>Tirades & réactions</strong></a></div></div><nav><a href="#persona">Codex</a><a href="#arsenal">Arsenal</a><a id="quick-power-link" href="#capacites" hidden>Pouvoirs</a><a href="#reactions">Réactions</a><a href="#philosophie">Philosophie</a><a href="#notes">Notes</a></nav><section class="codex-entry" id="persona"><small>PERSONA</small><h2>Philippa Rougetoison</h2><p>Demi-elfe drow · Occultiste 8 / Barde 3 · Championne désignée par Gran Brijit.</p><p class="codex-muted">Le Fléau de la Grande Balance. Son rapport à la liberté et à l’autorité constitue un axe de lecture, non une vérité imposée au personnage.</p></section><section class="codex-entry" id="memoires"><small>MÉMOIRES</small><h2>Avant les campagnes</h2><p>Menzoberranzan, la Tour Collectionneuse, les Trois Clés de Mélideth et les Maraudeurs de Joyaux Tendres.</p><p class="codex-muted">Archive autobiographique intégrale à importer depuis le texte original.</p></section><section class="codex-entry" id="chroniques"><small>CHRONIQUES</small><h2>Thaldera &amp; Istra Belig</h2><p>Les aventures et les événements de campagne sont à distinguer des souvenirs personnels.</p><p class="codex-muted">Chronologie détaillée à intégrer depuis les sources originales.</p></section><section class="codex-entry" id="cosmologie"><small>COSMOLOGIE</small><h2>Les puissances du Pacte</h2><p>Vassago · Arbre-Soleil · Gran Brijit · Grande Balance.</p><p class="codex-muted">La Grande Balance mesure le Bien et le Mal. Gran Brijit confie à Philippa des missions de préservation de l’équilibre.</p></section><section class="codex-entry" id="grimoire"><small>GRIMOIRE</small><h2>Sorts &amp; combinaisons</h2><p>Bestow Curse · Bane · Unsettling Words · Acceptation · Poids de l’Éternité · Rupture.</p><p class="codex-muted">Fiches complètes et coûts à confirmer depuis les sources de jeu. Aucun effet inédit n’est ajouté.</p></section><section class="codex-entry" id="relations"><small>RELATIONS</small><h2>Le cercle de Philippa</h2><p>Jane Merigold · Harfang Tsuren · Olyssane · Gran Brijit · Vassago.</p><p class="codex-muted">Les relations et leur évolution seront documentées séparément.</p></section><section class="codex-entry" id="quetes"><small>QUÊTES</small><h2>Obligations de la Championne</h2><p>Ne pas ouvrir de portail entre Cap Cornes et Havre Noir. Trouver et tuer Oren Sidaï à Roshen Buru.</p><p class="codex-muted">Statut d’accomplissement à confirmer.</p></section><section class="codex-entry" id="archives"><small>ARCHIVES</small><h2>Historique des règles</h2><p>Patch du 25 novembre 2026 : huit armes concernées ; rapière du Corsaire Noyé inchangée.</p><p class="codex-muted">Les anciennes versions restent consultables dans l’historique Git.</p><a href="https://calintz17.github.io/Thaldera/#/patch/2026-11-25">Patch officiel du MJ</a></section><div class="tools"><input id="search" type="search" placeholder="Rechercher un pouvoir ou une tirade…" aria-label="Recherche"><button id="onlyfav" aria-pressed="false">☆ Favoris</button></div><section id="capacites" class="power-panel" hidden>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Le Fléau de la Balance</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/app.js"></script></head><body><header><div class="hero"><small>PHILIPPA ROUGETOISON</small><h1>Le Fléau de la Balance</h1><p>Codex personnel · Championne de Gran Brijit</p></div></header><main><div class="codex-home"><small>LE CODEX DE LA CHAMPIONNE</small><h2>Choisir un registre</h2><div class="codex-grid"><a href="#persona"><small>Persona</small><strong>Philippa Rougetoison</strong></a><a href="#memoires"><small>Mémoires</small><strong>Avant les campagnes</strong></a><a href="#chroniques"><small>Chroniques</small><strong>Thaldera &amp; Istra Belig</strong></a><a href="#cosmologie"><small>Cosmologie</small><strong>Les puissances du Pacte</strong></a><a href="#grimoire"><small>Grimoire</small><strong>Sorts &amp; combinaisons</strong></a><a href="#relations"><small>Relations</small><strong>Le cercle de Philippa</strong></a><a href="#quetes"><small>Quêtes</small><strong>Obligations de la Championne</strong></a><a href="#archives"><small>Archives</small><strong>Historique des règles</strong></a><a href="#arsenal"><small>Combat</small><strong>Arsenal du Pacte</strong></a><a href="#reactions"><small>Roleplay</small><strong>Tirades & réactions</strong></a></div></div><nav><a href="#persona">Codex</a><a href="#arsenal">Arsenal</a><a id="quick-power-link" href="#capacites" hidden>Pouvoirs</a><a href="#reactions">Réactions</a><a href="#philosophie">Philosophie</a><a href="#notes">Notes</a></nav><section class="codex-entry" id="persona"><small>PERSONA</small><h2>Philippa Rougetoison</h2><p>Demi-elfe drow · Occultiste 8 / Barde 3 · Championne désignée par Gran Brijit.</p><p class="codex-muted">Le Fléau de la Grande Balance. Son rapport à la liberté et à l’autorité constitue un axe de lecture, non une vérité imposée au personnage.</p></section><section class="codex-entry" id="memoires"><small>MÉMOIRES</small><h2>Avant les campagnes</h2><p>Menzoberranzan, la Tour Collectionneuse, les Trois Clés de Mélideth et les Maraudeurs de Joyaux Tendres.</p><p class="codex-muted">Document historique intégral ci-dessous ; les niveaux et pouvoirs anciens ne remplacent pas les statistiques actuelles.</p><details class="arsenal-reference"><summary>Lire le document original intégral</summary><div class="arsenal-body" style="white-space:pre-wrap;overflow-wrap:anywhere">PHILIPPA ROUGETOISON
+
+
+
+
+
+PRESENTATION 
+
+Alias : Mon trésor, Fili, Ti’pitite
+Âge : 27 ans
+Genre : Féminin
+Origine : Outre-terre (née d’une lignée drow métissée et d’une humaine esclave)
+Taille : 1m78
+Corpulence : Fine et athlétique — silhouette vive et nerveuse, élégance acérée
+Posture : Détendue mais maîtresse d’elle — gestuelle maîtrisée, regard perçant
+Peau : Sénoise et chaleureureuse 
+Cheveux : Longs, ondulés, rouge profond aux reflets cuivre
+Détail capillaire : Souvent nouée en tresse, ou en  queue-de-cheval
+Yeux : Écarlate
+Signe distinctif : Bras gauche magique, offert par l’arbre-soleil
+Forme des mains : Longues, élégantes, doigts fins et précis
+
+
+
+
+ COMPÉTENCES ET CAPACITÉS
+Pouvoir magique : Warlock 6, Barde 2
+Warlock : Pacte de la Lame (Vassago) + Pacte de l’Hexblade
+Maîtrise : Invocation d’armes et d’esprits, 
+Spécialité : Magelame de contrôle — manipule les esprits liés                                      
+Style : Envoûteuse et adaptation : charme, violence, feu
+
+ MENTALITÉS &amp; PSYCHÉE
+Pardon : Rare. Pardonne par stratégie, jamais par oubli.
+Perception &amp; Intuition : Détecteur d’indices.
+Traumatismes : Profonds et répétés — trahison, possession, perte de contrôle.
+Gestion des traumas : Lutte permanente, mécanismes de fuite émotionnelle.
+Stress : Stratège adaptatif — garde son sang-froid en apparence, brûle en silence.
+Obsessions : Contrôle, pouvoir, reconnaissance, Collection
+Réaction face au danger : Réactive et méthodique — anticipe et frappe.
+Niveau de violence : Pragmatique, parfois sadique sous stress extrême.
+Expression des émotions : Mesurée, joue avec les apparences.
+Style de communication : Manipulatrice et rusée — charme, ironie, persuasion, provocation
+Confiance en soi : Faux confiante — affiche une assurance flamboyante, cache des doutes.
+Estime de soi : Perfectionniste intranquille — se juge par ses succès magiques.
+Mission externe : Faire tomber La Griffe.
+Obligation interne : Briser la domination de Vassago. Comprendre ce que signifie le mot liberté pour elle.
+Contradiction interne : Soif de liberté vs dépendance au pouvoir.
+Alignement : Chaotique Bon — fait le bien à sa manière, souvent en défiant l’ordre établi. 
+MBTI : ENTP – L’Innovatrice manipulatrice. Charismatique, curieuse, provocatrice intellectuelle. Elle débat, séduit, déconstruit, recrée.
+ “La vérité n’a de valeur que si elle brûle quelque chose.”
+Ennéagramme : Individualiste et Performeur → recherche d’identité et de reconnaissance à travers la création et la mise en scène. 
+Blessure centrale : rejet et sentiment d’être “un outil sans essence propre”.
+Archétype : Le Bouffon - Joyeux et espiègle, le Bouffon utilise l'humour et la ruse pour amuser les autres et défier les conventions, cherchant à vivre le moment présent avec légèreté.
+Drivers : Sois-fort + Fais-plaisir. Cache la vulnérabilité sous la maîtrise, offre l’illusion d’une douceur contrôlée. Cherche la reconnaissance par l’utilité et la brillance.
+SLUAI (Sociabilité) : SLUEC – Autonome Émotif Ouvert. Indépendante, sensible, réceptive, en quête d’intensité. Apprécie les liens rares mais vrais. Se retire quand elle se sent trahie.
+Intégrité : Praticienne de l’éthique. Tente d’être juste mais joue souvent avec la morale si le but est supérieur. 
+“Mentir pour sauver une âme vaut mieux que dire la vérité pour la condamner.”
+Créativité : Visionnaire Inspirée. Fusionne art, magie et rhétorique en un seul acte. Sa créativité sert autant la beauté que la manipulation.
+Ouverture : Curieuse critique. Analyse tout, change souvent d’avis, mais garde son centre de gravité moral ( Fluctuable hein ) 
+Égocentrisme : Stratège opportuniste. Voit les relations comme des échanges de pouvoir ou de savoir, mais sans cynisme total.
+ Optimisme : Réaliste inquiet. Espère le mieux, prévoit le pire.
+Gestion du stress : Stratège adaptatif. Utilise la magie, la provocation,  la musique et l’humour noir pour se rééquilibrer.
+ Traumatologie : Sévère et complexe. Possession démoniaque, exil, perte d’identité : elle fonctionne en dépit de la douleur.
+Gestion des traumas : Lutte permanente. Philippa a appris à danser sur la braise de ses blessures sans les éteindre.
+
+
+Traits dominants
+Séductrice provocatrice – chaque mot est une pique ou une provocation .
+
+
+Contrôle émotionnel extrême – exprime ce qu’elle choisit de laisser paraître.
+
+
+Curiosité métaphysique – fascinée par la structure du destin et de la divinité.
+
+
+Fierté spirituelle – refuse de n’être qu’un instrument des dieux.
+
+
+Humour noir et charme cynique – déflecteurs constants de son angoisse existentielle.
+Contradiction centrale Philippa veut être libre des dieux… mais sa magie, sa survie et son identité viennent d’eux. Cette tension nourrit son génie, sa colère et son charisme.
+
+METHODE DE COMBAT 
+Philippa ne transporte pas ses armes comme tout le monde. Elle les cache dans des cartes de tarot, soigneusement marouflées de glyphes infernaux et de bénédictions du Soleil-Arbre. Quatre cartes, quatre armes, quatre caprices du destin. The Sun — sa faux brûlante — ne surgit que lorsqu’elle tire la carte à l’envers, comme si l’arme se moquait d’elle et choisissait elle-même le moment d’exploser dans la bataille. The Tower, son arbalète lourde, apparaît pour lui offrir la possibilités de “silence” ses ennemis. Les dagues jumelles Orgueil et Entropie se manifestent toujours ensemble, offrant la lumière et l’invisibilité — autant dire que c’est une loterie permanente. Enfin, The Shard, une pierre de mage, qui a tendan ce à sortir dans les pire moment . Résultat : Philippa combat au rythme du tarot, naviguant entre hasard, stratégie et mauvaise foi cosmique — incapable de savoir si la prochaine carte va lui donner une arme, une victoire, ou un gros problème.
+
+
+Son bras magique ne rentre pas dans son jeu de tarot. C’est un héritage étrange : un mélange de bénédiction, de dette et de fardeau. Gravé d’arabesque corruscnte qui s’illuminent comme des étoiles filante, il pulse au rythme des frappes monastiques d’un culte qui n’existe plus. Au repos, on dirait une sculpture de chair et de muscle, mais en combat il se transforme : chaque frappe laisse une traînée lumineuse et brulante. Ce bras lui permet de bloquer une lame de géant, d’esquiver comme un ascète, d’attaquer avec une brutalité solaire. Il fait de Philipa une moniale ratée, une sorcière improvisée, une guerrière involontaire — mais son bras, lui sert de secret et attend qu’on l’appelle, prêt à frapper.
+Philippa ne se bat jamais “proprement”. Elle n’a pas de style académique, ni d’école martiale clairement définie : elle a un système — chaotique, brillant, dangereux — qui n'appartient qu’à elle.
+1. Elle improvise — toujours.
+Philippa ne planifie pas un combat. Elle réagit, puis explose.
+Elle tire une carte au hasard en amont du combat, dégaine l’arme qu’elle obtient, et construit toute la séquence autour de ce tirage imprévisible. C’est une combattante adverse-réactive : elle crée le chaos, puis s’y déplace comme si elle en était la maîtresse.
+2. Elle utilise le tarot comme moteur tactique
+Chaque arme tire son propre style — et Philippa adapte instantanément sa manière de bouger :
+The Sun (faux-flamme) → frappes circulaires, balayages, ruptures de ligne, menace dissuasive. On cherche a impressionner et intimider.
+
+
+The Tower (arbalète) → immobilisation, tirs de rupture, finition à distance. On cherche a couvrir le compagnon ou éliminer les faibles menaces.
+
+
+Orgueil &amp; Entropie (dagues) → combat rapproché, feintes, harcèlement, attaques sournoises. On cherche l’invisibilté et les coups critiques.
+
+
+The Shard (pierre de mage) → contrôle de la distance, Contre-attaque, magie létale. Pour soutenir un pair ou déranger l’adversaire.
+
+
+Sa stratégie consiste à embrasser le hasard, et à transformer ce chaos en supériorité temporaire.
+
+3. Son bras magique : le dernier recours
+Son bras n’est pas juste une arme. C’est un cadre, un rythme, un souffle. Il impose à Philippa une méthode monastique malgré elle :
+gestes courts, précis,
+
+
+économie de mouvement,
+
+
+ancrage au sol et suite au corps à corps
+
+
+frappes éclair comme un moine martial.
+
+
+4. Elle détourne l’attention : magie, sarcasme et illusions
+Philippa parle pendant qu’elle combat.  Elle insulte, provoque, persifle — et pendant ce temps :
+son bras charge une frappe,
+
+
+une carte apparait entre ses doigts,
+
+
+elle applique les ténèbres dans la zone
+
+
+Elle est brillante pour créer de micro-ouvertures, souvent verbales.
+
+6. Sa stratégie globale : ouvrir, surprendre, punir
+Si on devait la résumer en trois étapes :
+1. Déséquilibrer
+Un mot, une feinte, un tirage soudain → le rythme adverse se brise.
+2. Surprendre
+Elle surgit là où l’ennemi ne pense pas :
+ hauteur, flanc, retournement, ou carrément un changement d’arme instantané.
+3. Punir
+Quand elle voit une ouverture, elle frappe très fort,
+ quel que soit l’outil en main.
+
+7. Mais elle ne sait pas s’arrêter
+C’est une force et une faiblesse. Stratégiquement, cela donne : un style nerveux et rapide mais elle s’expose trop rapidement sans pouvoir tenir la durée.  Elle se bat comme quelqu’un qui n’a pas le droit de perdre — parce qu’en vérité, elle a pas une constitution/vitalité capable d’encaisser trois tours de combat.
+
+🔥 En résumé
+La stratégie de Philippa, c’est : le chaos maîtrisé. Un mélange d’arts martiaux accidentels, de magie choisie par d’autres, de tarot instable, et de volonté brute. Elle ne danse pas dans le combat.  Elle improvise la musique, casse les instruments, puis invente une nouvelle mélodie avec les débris.
+
+Lecture psychologique de Philippa Rougetoison.
+I. Identité mouvante
+Philippa Rougetoison est une femme qui ne tient jamais tout à fait en place, ni dans un rôle, ni dans une foi. Elle est née entre les mondes : drow sans en être une, humaine sans y appartenir, disciple de deux entités qui s’excluent mutuellement. Chez elle, la personnalité n’est pas une essence : c’est un masque vivant, une scène de théâtre en perpétuelle réécriture. Elle vit dans la tension du paradoxe. Tout ce qu’elle aime la consume — et tout ce qu’elle hait la définit. Elle s’est liée à un démon par désir de puissance, et à un Arbre par instinct de survie. De cette double alliance est née une fracture qu’elle maquille d’ironie, de parfum, et d’une éloquence féline. Chaque mot qu’elle prononce est une provocation autant qu’un mensonge, une tentative de reprendre le contrôle du monde qui a, un jour, décidé à sa place. Philippa n’est ni une victime ni une prédatrice. Elle est une alchimiste du pouvoir, fascinée par la transformation : des émotions en armes, de la foi en magie, du chaos en harmonie. Elle ne cherche pas la vérité : elle veut fabriquer sa propre version de la vérité.
+
+II. Le charisme comme bouclier
+Chez Philippa, l'attitude est une défense. Elle tergiverse trop, trop vite, trop évidemment — comme si chaque vérité pouvait la trahir. Ses réflexes sont instinctifs : elle ressent, elle séduit et détourne. Elle a hérité de Vassago le goût de plaire et du piège dialectique, et de Grande-Brigitte l’envie de briller et d’être acceptée.. 
+Sous la maîtrise, il y a la peur : peur de redevenir l’esclave d’un autre, peur d’être effacée par la voix du démon, peur de ne plus savoir qui elle est quand elle ne joue plus aucun rôle.
+Son humour noir est un anesthésiant. Sa beauté, une arme. Sa musique, une confession déguisée. Tout chez elle est une forme de coping artistique : chaque sort, chaque chanson, chaque sourire est une tentative de donner forme à un chaos intérieur.
+
+III. La psyché de la survivante
+Philippa porte les marques des survivants :
+une mémoire trop nette,
+
+
+un instinct de fuite raffiné,
+
+
+un talent exceptionnel pour faire croire qu’elle va bien.
+
+
+Elle ne panique jamais ; elle calcule et réévalue. Même blessée, même seule, elle garde cette lueur derrière les yeux — une intelligence animale, celle des créatures qui refusent d’être chassées.
+Mais elle souffre d’un mal plus subtil : la désincarnation. Elle vit souvent hors de son propre corps, comme si la chair n’était qu’un vêtement. Ce bras magique qu’elle arbore n’est pas qu’un artefact — c’est une métaphore parfaite de son esprit : un membre reconstruit, plus fort que l’original, mais étranger à elle-même.
+Sous ses sarcasmes se cache une mélancolie aiguë. Elle envie les gens simples, ceux qui croient encore sans douter. Mais elle ne peut plus revenir en arrière : son expérience l’a vaccinée contre la candeur.
+Face à Vassago, elle a longtemps été l’élève brillante, docile, puis la rebelle. Mais une part d’elle reste dépendante de cette noirceur : il est son démon intérieur, le seul qui ait su lui offrir un miroir de puissance. Sa quête est celle de la réconciliation intérieure : trouver un point d’équilibre entre la domination infernale et la compassion divine. Ce n’est pas une lutte du bien contre le mal, mais une négociation permanente entre deux moitiés d’elle-même. Elle se voit comme un instrument sacrilège : forgée pour servir, mais consciente, donc insoumise.
+
+IV. Le cœur et la faille
+Philippa aime avec excès. Son attachement est une forme de dévoration : elle ne supporte pas la tiédeur. Quand elle aime, elle s’expose — et aussitôt se punit de cette faiblesse. Son orgueil la protège, mais la condamne aussi à la solitude. Elle veut être admirée, redoutée, désirée, mais au fond, elle cherche une chose bien plus simple : être crue. Sa relation aux autres oscille entre séduction et méfiance. Elle attire par sa chaleur, puis repousse par sa lucidité. Peu de gens supportent de la regarder vraiment, car elle les regarde en retour, de trop près. Et quand elle comprend vos failles, elle les effleure du bout des doigts — non par cruauté, mais par curiosité. Comme un chat qui teste la texture du monde avant d’y croire.
+
+VI. Portrait final : l’Amphibie du feu
+Philippa Rougetoison n’est pas une héroïne, ni une simple manipulatrice. C’est une créature liminale, faite pour survivre entre deux plans, deux dieux, deux vérités. Elle incarne la complexité de la rédemption : celle qui comprend, mais qui ne sait toujours pas la différence entre le pouvoir et la liberté. Sa lumière vient de son ombre. Son rire cache sa fatigue. Et sous chaque victoire, une voix rauque lui murmure encore :
+« Tu n’as gagné que le droit de recommencer. »
+Philippa Rougetoison incarne l’équilibre impossible entre la domination et la rédemption. Son esprit est un duel entre Vassago, la tentation du contrôle absolu, et Grande-Brigitte, l’espoir de son libre-arbitre. Elle avance en funambule sur cette ligne de feu, armée de musique et d’ironie. Chaque victoire la rapproche d’elle-même, mais chaque sort la consume un peu plus.
+« J’apprends à briller sans brûler. Mais parfois, j’oublie la différence. »
+
+
+Souvenirs de Philippa Rougetoison 
+I. Enfant illétigime, née de rien
+ Sous la terre, je n’avais pas encore de nom. Je me souviens du son avant la lumière. Des cris avant les mots. Et d’un battement de cœur — celui de ma mère, esclave — qui sonnait comme un tambour dans une caverne humide. Je suis née dans le sang, dans le sel, dans l’écho des chaînes. Les prêtresses disaient que ma naissance était une faute, une tache dans le tissu parfait de leur cité. Mon père, archimage de Sorcere, voyait un cobaye parfait. Les Drows ne voient pas la vie comme un don : c’est une hiérarchie. On naît utile, ou on meurt inutile. Ma mère s’appelait Selyra, une simple ensorceleuse des forêts du nord. Elle fut capturée lors d’un raid de nuit sur la surface — un de ces pillages rituels que les Maisons drows appellent “moissons”. On descend sur le monde d’en haut, on brûle, on prend, on ramène. Les cris de ceux qu’ils enlèvent s’éteignent dans les tunnels, avalés par les pierres. Ma mère était belle, disent ceux qui l’ont vue avant qu’elle se brise : des cheveux couleur de cuivre. Une peau aussi noire et que sa voix était d’eau claire.
+Mon père, Gromph Baenre, appartenait à la Maison Baenre, une lignée matriarcale cruelle et érudite, dirigée par la Matrone Mère Yvonnel Baenre, ma grand-mère de ténèbres. Gromph est un individu cynique, mégalomane et obsédé par le pouvoir arcanique. C’est l'un des lanceurs de sorts profanes les plus puissants de tout l'Outreterre. Un maître des glyphes, un collectionneur de souffrances. Il ne m’a jamais regardée autrement que comme une erreur utile. Je sais que j’ai deux soeurs célèbres : Liriel Baenre et Yvonnel Baenre II. Quand à moi, je devins un cobaye avant même de savoir marcher.
+J’ai grandis dans un labyrinthe de pierre et de verre sombre où la lumière n’existe pas, seulement la lueur des sorts. Là-bas, tout est échange, trahison, domination. Les prêtresses gouvernent, les mages intriguent, les esclaves prient pour mourir avant la prochaine expérience. Ma mère et moi vivions dans les bas-quartiers du complexe de Narbonel, dans une caserne d’esclave. Elle nettoyait les instruments, cuisinait, préparait les potions, soignait ceux qu’on ne voulait pas encore jeter. Je dormais sous les tables, entre les odeurs et de poisson et de viandes de rothés. 
+Père a fait de nous des sujets.
+Ses mages testaient des sorts de transfert d’âme, des glyphes de transformation, des poisons mentaux. Je me souviens de la brûlure du premier cercle magique, tracé sur ma peau nue. Je me souviens du rire de Zyn’Dar quand je survivis. Il disait que j’avais “le sang des deux mondes” — une anomalie stable, parfaite pour ses recherches. Ma mère priait encore la surface et la soleil d’automne. Je ne comprenais pas. Je n’avais jamais vu le jour.
+
+
+
+
+
+
+
+
+II. Menzoberranzan
+Menzoberranzan est située dans le Nord de l'Outreterre (Underdark), à environ 3 kilomètres sous la surface de Faerûn.
+La Caverne Immense : La cité s'étend dans une immense caverne en forme de flèche, longue de plusieurs kilomètres et haute de plus de 300 mètres.
+L'Éclairage Féerique : Le plafond et les murs de la caverne sont illuminés par un feu féerique (faerzress), une lumière magique aux teintes de bleu, de vert et de violet qui donne aux tunnels un éclat spectral.
+Architecture Gothique : Les habitations sont sculptées dans d'énormes stalagmites et stalactites de pierre, donnant l'impression de tours gothiques sombres. Les Maisons Nobles construisent des domaines massifs et complexes, souvent en forme d'araignée ou ornés de motifs arachnéens.
+Narbondel : La caractéristique la plus unique est Narbondel, une immense colonne de basalte au centre de la ville. L'Archimage de Sorcere la recouvre rituellement de flammes magiques du bas vers le haut chaque jour, servant ainsi de seule horloge pour les drows.
+III. Les Districts Clés
+La ville est divisée en plusieurs zones distinctes :
+Quartier des Maisons Nobles : Le secteur le plus somptueux où résident les huit Maisons les plus puissantes (comme la Maison Baenre ou la défunte Maison Do'Urden). Ces zones sont souvent protégées par la magie et l'architecture, car seuls les nobles (pouvant léviter grâce à la magie drow) peuvent accéder à certains étages.
+Tier Breche (L'Académie) : Située sur un plateau, c'est le centre éducatif avec ses trois écoles :
+Arach-Tinilith : L'école des Prêtresses de Lolth (exclusivement féminine).
+Sorcere : L'école des Mages (principalement masculine).
+Melee Magthere : L'école des Guerriers (principalement masculine).
+Donigarten (Le Lac) : Un grand lac intérieur qui fournit l'eau, les poissons, les anguilles et les rothés profonds (sortes de bovins souterrains) qui constituent l'essentiel de l'alimentation drow (principalement à base de champignons et d'animaux d'Outreterre).
+Quartier du Commerce : Le secteur où se déroule l'activité commerciale avec des marchands drows (y compris des organisations puissantes comme les Bregan D'aerthe) et, occasionnellement, des marchands de la surface ou d'autres races de l'Outreterre.
+
+IV. Culture et Structure Sociale
+Menzoberranzan est l'incarnation de la dévotion à Lolth, la Déesse-Démon Araignée.
+Matriarcat Absolu : La ville est régie par un matriarcat théocratique strict. Le pouvoir appartient aux Matrones Mères des Maisons Nobles, qui sont également les plus puissantes prêtresses de Lolth.
+La Trahison est la Règle : L'intrigue, la conspiration, la trahison et l'assassinat sont des outils acceptés pour l'ascension sociale. Lolth récompense le succès et le chaos, et ne protège pas les faibles. L'élimination rituelle et discrète d'une Maison rivale est considérée comme une étape légitime vers le pouvoir.
+Le Rôle des Mâles : Les mâles drows sont systématiquement considérés comme inférieurs, leurs rôles étant limités à l'excellence martiale (guerriers, assassins) ou arcanique (mages). Ils ne peuvent pas fonder de Maison Noble ni détenir l'autorité religieuse.
+L'Esclavage : La société repose sur l'esclavage. Des milliers de non-drows (humains, nains, gnomes, orcs, etc.) sont réduits en esclavage pour le travail physique, les sacrifices et le divertissement.
+En somme, Menzoberranzan est une cité de terreur permanente où la vie d'un drow (ou, pire, d'un non-drow) dépend entièrement des caprices et des plans secrets de ceux qui sont plus haut dans l'échelle du pouvoir.
+
+
+V. La mort de mère
+La dernière fois que je l’ai vue, elle était attachée à une table de pierre. Ils voulaient tester un rituel  — lier une âme à une autre, comme on relie deux sources de pouvoir. Zyn’Dar disait que l’amour maternel était un vecteur énergétique pur. Mon père se contenta de ricaner. Ils me forcèrent  à regarder. Je me souviens de la lumière noire qui la traversa, du cri qui fit vibrer les glyphes, du silence après. Et puis de la cendre qui s’échappa de sa bouche, fine comme un soupir. J’avais treize ans. Je n’ai pas pleuré. Les larmes n’ont pas de place dans les cavernes. Je me suis simplement figée — et j’ai senti quelque chose se casser sans bruit dans ma poitrine. Ils ont gardé son corps quelques jours, pour “observer les résidus magiques”. Moi, je suis restée près d’elle, jusqu’à ce qu’il ne reste plus rien. C’est ce jour-là que j’ai appris à ne plus appeler personne “mère”.
+
+VI. Le livre et la fuite
+Je grandissais dans l’ombre de ses meurtriers. Père disait que j’étais la preuve vivante que le croisement entre lumière et ombre pouvait engendrer un pouvoir nouveau. Je devenais son instrument, un cobaye avec qui jouer des sorts. Mais j’apprenais, en silence. Chaque nuit, je fouillais la bibliothèque inférieure. Je mémorisais les runes, les schémas, les sorts interdits.
+Je ne cherchais pas la vengeance : je cherchais une porte. Un soir, entre deux tomes de conjuration, j’ai trouvé un parchemin scellé d’un fil d’argent : Transitus Arcanum — une formule de passage dimensionnel. Il manquait la moitié du texte, mais j’en compris l’essence : ouvrir, non pas où, mais quand la volonté le décide. Je l’ai volé. Et dans ma cellule, j’ai tracé les glyphes avec mon propre sang. Quand le cercle s’est activé, le sol a disparu sous mes pieds. Le cri de mon geolier, bras droit du paternel,  résonna derrière moi :
+“Nous aurons ta peau trop claire !”
+Je n’ai jamais répondu. Je tombai dans une lumière pâle, entre deux mondes. Et pour la première fois, le silence n’avait plus d’écho.
+
+VII. La Tour Collectionneuse
+Je me suis réveillée dans un lieu sans fin, une spirale de verre. Des vitrines, des artefacts, des êtres figés — des âmes emprisonnées dans la matière. C’était la Tour Collectionneuse, perdue dans la Gisombre, un plan intermédiaire entre rêve et oubli. Là, je l’ai rencontré. Une voix d’homme, douce et serpentine, sortit d’un miroir fissuré :
+“Quelle curiosité que voilà… une âme entre les mondes.”
+Il se nomma Vassago, gardien des choses perdues, démon des pactes et des souvenirs. Il disait vouloir m’aider. Je n’avais plus rien, plus personne, pas même une ombre pour me tenir compagnie. Il me proposa un marché :
+“Je te donne un nom, Philippa Rougetoison, un pouvoir, un but. En échange, tu me donnes ce qu’on t’a demandé toujours refusé.”
+Je ne compris pas tout. J’acceptai.  La Tour vibra. Les vitrines se brisèrent. Les esprits figés se mirent à hurler. Et moi, au milieu de ce chaos, je sentis ma magie naître — sauvage, affamée. Je venais de signer le contrat qui me rendrait libre… et prisonnière à nouveau. Je me réveillai sur une plage de la surface, nue, couverte de cendres. Le soleil me frappa au visage — ce même soleil dont ma mère m’avait parlé. Je tombai à genoux, incapable de le regarder, incapable de croire qu’il pouvait exister. Et dans ma tête, la voix de Vassago souffla :
+“Bienvenue dans le vrai monde, mon trésor. Brûle-le bien.”
+C’est là que commença ma vie de Philippa Rougetoison. Libre. Puissante. Et à jamais marquée par le feu des autres.  
+IIX. Au service de la Tour.
+« Vassago ne m’a pas libérée. Il m’a simplement offert une cage plus vaste. »
+La Tour qui respire. La Tour n’était pas faite de pierre. Elle palpitait Ses murs vibraient comme un cœur lointain, et les couloirs changeaient d’angle chaque fois que je clignais des yeux. Je compris vite : ce n’était pas un lieu, mais un être. Vassago. Un esprit ancien, vaste comme une prison d’étoiles. Il ne me parla jamais en face. Sa voix naissait du métal, du verre, des artéfacts empilés dans le néant :
+
+“Chaque chose rare mérite un écrin. Toi, Philippa, tu seras ma main.”
+Et moi, naïve de survie, je crus à la promesse : tu voyageras librement. 
+Libre, oui — mais pour lui. Pour rapporter ce que le monde refusait de lui céder.
+
+L’éducation du Collectionneur
+Vassago n’enseignait pas, il façonnait. Chaque retour en Gisombre était un jugement. Il observait mes trouvailles, mes fautes, mes hésitations. Ses paroles coulaient comme du venin poli :
+“Ta valeur se mesure à ce que tu prends, pas à ce que tu comprends.”
+Il me donna ma première arme : une faux haute comme moi, forgée d’ombre et de murmures. Une lame qui absorbait la lumière de ce qu’elle tuait. Avec elle, je tranchai mes premières vies. J’étais jeune, mais déjà sa préférée : non pas la plus puissante, mais la plus docile à ses codes. Enfin c’est ce qu’il n’avait de cesse de me repéter. Il m’appelait son “trésor”. Il me chargeait d’extraire des reliques précises, souvent dans les zones frontières — là où le monde réel et le monde fendu s’effleurent.
+I.  La Crypte de Vau’Lir
+Une nécropole drow abandonnée, scellée sous des toiles de siècles. Je dus m’y glisser entre des ombres encore vivantes, volatiles comme des regrets. La relique : un calice forgé dans les os d’un oracle, encore tiède d’oraison. Je le rapportai. Vassago me félicita en m’offrant la capacité d’invoquer les ténèbres pures. C’est ce soir-là que je compris que chaque récompense était une chaîne invisible.
+II.  Le Vol de la Corde de Harpas
+Une citadelle bardique suspendue entre deux falaises. Vassago voulait la harpe d’un ancien demi-dieu, prisonnier d’un temple dédié à Corellon. La harpe était connu pour passionner de musique quiconque effleurait sa corde. Je dus séduire un archiviste, infiltrer la salle, et tuer le garde du couloir sans bruit. Quand j’ai effleuré la corde enchantée, elle a hurlé d’un cri parfait. Vassago ricana dans ma tête.
+III.  Les Cendres d’Ilmareth
+Un mage déchu avait tenté d’invoquer son double à travers un miroir. Je fus envoyée pour briser le sort et rapporter les fragments du miroir. Vassago m’offrit la capacité de voir dans mes propres ténèbres.
+IV. Les années du gris
+Je vivais entre deux mondes. Quand je dormais dans la Gisombre, la Tour me nourrissait d’illusions : couloirs parfumés, banquets muets, musique de cristal. Quand je revenais sur la surface, je voyais la saleté, le chaos, la vérité. J’étais une voleuse, une tueuse, une érudite, une diplomate. Toujours au service de la Tour. Chaque artefact que je lui rapportais disparaissait aussitôt entre les murs vivants de la Tour. Et je sentais, à chaque retour, que l’ombre me comprenait mieux que la lumière. Il disait :
+“Tu ne me sers pas, Philippa. Tu pousses les murs pour me combler.”
+
+V. La quête des Trois Clés
+Sa mission la plus périlleuse arriva à la cinquième année du pacte :
+Retrouver les Trois Clés de Mélideth, des artefacts capables d’ouvrir les coffres des dieux. Elles étaient gardées par trois maîtres de guilde : un alchimiste fou, une prêtresse nécromancienne, et un mage astral. Je n’en tuai qu’un. Les deux autres, je les trompais. Et j’en ressortis marquée : la prêtresse, tombée amoureuse de moi, me maudit d’un sort qui figea ma nature. «  Qu’un mensonge quotidien infiltre ton destin » Des lors, je fut obligé de mentir chaque jour. Vassago fut ravi de l’ironie
+
+
+La malédiction de la langue menteuse.
+ Origine : infligée par une prêtresse dupée par Philippa Rougetoison
+ Type : Malédiction spirituelle persistante
+ Durée : Permanente jusqu’à levée par un sort Souhait.
+Philippa est condamnée à mentir chaque jour (au moins une fois entre deux longs repos), même par omission ou par une demi-vérité volontaire.
+ Si elle échoue, oublie, ou si son mensonge est découvert publiquement :
+Elle subit désavantage à tous les jets de Charisme (Persuasion, Tromperie, Intimidation, Représentation, etc.) jusqu’à son prochain long repos.
+
+
+Les sorts Zone de Vérité et Détection du Mensonge lui infligent 1d4 dégâts psychiques par tour (aucun jet de sauvegarde).
+
+
+Dans un lieu saint ou face à un symbole de Vérité (miroir pur, serment divin, flamme sincère, etc.), sa voix se déforme légèrement — un sifflement ou un écho, signe que la malédiction réagit.
+
+
+
+VI. Entre liberté et servitude
+Vassago me laissait parfois des semaines sur la surface. Je marchais sans but, entre les ports, les temples, les bordels. Je jouais beaucoup aux cartes, je buvais trop, dormais peu. Mais toujours, la Tour m’appelait. Toujours, la voix de Vassago glissait sous mes rêves :
+“As-tu trouvé quelque chose à m’offrir, mon trésor ?”
+
+VII. Conclusion
+Je ne me suis jamais vraiment échappée de la Tour. J’ai simplement appris à en sortir sans qu’elle le remarque. Aujourd’hui encore, chaque fois que je ferme les yeux, je sens ses couloirs respirer autour de moi. Je sais qu’il me regarde. Et je sais qu’un jour, il voudra reprendre tout ce qu’il m’a prêté — ma vie y comprise.
+Mais d’ici là, je séduis, je provoque, je mens et parfois… je chante.
+Parce qu’au fond, je suis encore l’enfant d’un laboratoire drow. Et que la liberté, je l’ai apprise en servitude.
+
+ Les Maraudeurs de Joyaux Tendres 
+Souvenir des jours où j’ai cru être quelqu’un d’autre.
+I. Le goût de l’air
+Quand je les ai rencontrés, je ne cherchais rien.  Pas la gloire, pas la rédemption.  Juste un peu de silence — et un contrat bien payé. Ils s’appelaient les Maraudeurs de Joyaux Tendres.  Un nom ridicule, presque attendrissant.  Un groupe de trois : un nain clerc, un elfe rôdeur, et un paladin aux yeux trop clairs pour ce monde.  Moi, j’étais l’étrangère, la magicienne de passage avec une lame qu’on ne voulait pas trop regarder de près.
+Le nain s’appelait Sfiri, prêtre d’un dieu trompeur, jovial et fatiguant, mais avec un rire qui faisait fondre les murs. Orion, l’elfe sylvain, se mouvait comme une ombre dans les branches — rapide, nerveux, toujours le premier à flairer le danger.
+ Et Arannis, l’elfe paladin… Je ne l’aimais pas.  Il avait cette lumière en lui qui me brûlait quand il me regardait trop longtemps. Mais il me parlait avec douceur. Comme si ma damnation ne le dérangeait pas.
+
+II. Le contrat du Dragon de Phandaline
+Nous devions traquer un dragon, et proteger les habitants. Moi, je cherchais surtout un moyen de mettre la main sur son trésor. C’était le genre de mission qui paie bien, ou qui enterre ses héros.
+Pendant trois semaines, nous avons suivi ses traces — fumée, os, cendres.
+Rien ne nous préparait à la montagne crevassée où nous pensions le trouver.
+Un gouffre de mille mètres, des pics comme des dents. Et moi, la sorcière du groupe, je me sentais presque… utile. Je tenais le feu de camp. Je traduisais les runes. Je riais — parfois. Quand Sfiri me taquinait sur mes “habitudes de démoniste de luxe”, quand Orion me lançait des pommes pour tester mes réflexes, quand Arannis posait sa main gantée sur mon épaule sans oser y laisser plus qu’une seconde. J’avais oublié, pour un instant, que j’étais liée à quelque chose de noir.
+
+III. La crevasse
+Le dragon n’était pas là. Seul son sillage : un golem d’or et les traces d’un culte tordu.
+Orion a fait un faux pas, il a basculé dans le vide. J’ai vu ses doigts riper sur la pierre, ses yeux s’écarquiller. Je n’ai pas réfléchi. J’ai bondi. J’ai changé ma place contre la sienne. Je n’ai senti que le vent. Puis le choc. Et le noir.
+
+IV. L’Outre-Terre, encore
+Je me suis réveillée dans le froid humide. Les stalactites pleuraient comme des cierges.  L’air sentait la moisissure et la magie ancienne. L’Outre-Terre.  Mon berceau, mon tombeau.  J’avais chuté si profond que même la lumière du monde m’avait oubliée. J’ai appelé mes compagnons — ma voix n’a répondu qu’à elle-même.  Et puis, dans le silence… il a parlé. “Te voilà de retour dans les entrailles, mon trésor.” Vassago. Sa voix coulait des parois, chaude et cruelle. “Tu m’as manqué. Toi qui croyais pouvoir t’enfuir vers la lumière.” Je voulais hurler.  Mais j’étais faible, blessée, vidée de magie. Alors je l’ai laissé parler. Et il a su. Il savait tout. “Tu as goûté à la chaleur des autres. À leur foi, leur camaraderie… et te voilà à nouveau seule. Tu vois, ma fille: rien ne t’attend là-haut.  Reviens. Laisse-moi te guérir.”
+
+V. Le second pacte
+Je n’ai pas résisté longtemps. Les blessures me rongeaient. La faim, la peur, la solitude. Et puis la honte — celle d’avoir cru que j’étais différente. Alors j’ai dit oui, encore. Pas pour la puissance. Pas pour l’ambition. Mais parce que je ne supportais plus la peur de mourir. Des tentacules d’ombre s’enroulèrent autour de mes bras, de ma gorge, de mes pensées. Et une énergie brûlante coula dans mes veines, comme du métal liquide. Mon regard brillait d’un éclat fauve. Je n’étais plus Philippa la vivante. J’étais Philippa La main du serment brisé.
+
+VI. L’homme d’argent
+J’ai appris plus tard qu’Orion avait survécu à la chute. Que Sfiri et Arannis et Orion allait bien. Qu’ils avaient cherché mon corps pendant des jours, avant d’ériger un cairn de pierre au bord de la crevasse. J’ai cherché à les rejoindre avec le portail de l’ordre d’argent. Mais mon destin en a décidé autrement, mon destin s’appelle Grande-Brigitte. 
+
+VII. L’aveu
+Parfois, je rêve encore du campement des maraudeurs. Des rires autour du feu, de la voix de Sfiri qui chantait faux, des histoires d’Orion sur les traques du nord, du silence d’Arannis qui valait mille prières. Et quand je me réveille, Vassago murmure toujours la même chose : “Ils t’ont remplacée, par un druide curieux”
+Peut-être. Mais au fond, je sais qu’il ment. Parce que même dans sa noirceur, il envie ce que j’ai perdu : l’amitié désintéressé. Ce que lui ne pourra jamais collectionner.
+Le Manoir des Ligaments 
+L’aube de ma seconde vie.
+I. L’aube brisée
+J’errais encore entre deux mondes. Ni vivante, ni morte. Vassago m’avait rendue à la surface, mais je n’étais qu’un corps creux, une marionnette tenue par des fils d’ombre. Je me souviens du marais, des ronces qui chantaient à l’envers, du vent qui murmurait des prières oubliées. Puis, soudain, la lumière. Une lumière impossible. Un soleil qui ne brûlait pas, mais chantait. Je crus d’abord à une illusion de Vassago — une de ses tentations pour m’enchaîner davantage. Mais non. C’était autre chose. Quelque chose de vivant, de chaud, de terrifiant. J’avais atteint un lieu qui n’appartient à aucun plan : le Feywild, ou peut-être le reflet du Feywild dans le rêve d’un dieu. Et au centre de ce monde de luxuriance et de fièvre végétale, s’élevait une demeure faite d’os et de roses : le Manoir des Ligaments.
+
+II. La Maison qui respire
+Le manoir était vivant. Un oeil énorme servait de porte.  Ses murs palpitaient comme un ventre endormi, et des lianes de chair reliaient les pièces entre elles. Rien n’était fixe : les couloirs ondulaient, les escaliers montaient et descendaient à la même seconde. Et dans le petit salon. Grande-Brigitte, touillait sa marmite.
+
+III. Grande-Brigitte
+Elle ne ressemblait à rien de ce que j’avais vu. Ni femme, ni déesse, ni fée — mais tout cela à la fois. Son visage était vieux, sa peau noir et ses yeux pellucide.  Des papillons de nuit voltigeaient dans ses cheveux tressés de lueurs.
+“Ti-pitite” dit-elle en riant, sa voix roulant comme un tonnerre doux.
+“Tu sens encore le fiel de ton patron, ma pauvre enfant. Et pourtant, regarde-toi : tu luis malgré lui.
+Je reculais d’un pas, pas par révérence — par instinct. 
+Son regard me traversait comme une dague +2. 
+“Je ne suis pas venue pour me prosterner,dis-je. Je veux être libre.” 
+Elle rit encore, un rire chaud, presque moqueur.
+“Libre ? Il n’y a pas de liberté sans feu, ma belle. Et toi, t’as oublié comment brûler!”
+Elle leva la main, et les murs s’écartèrent. Une chaleur immense me frappa au visage. Devant moi s’ouvrait le jardin du Soleil, et en son centre, un arbre. 
+
+
+IV. L’Arbre-Soleil
+C’était un colosse doré, ses branches tissées de lumière et de flammes figées. Son tronc suintait une sève incandescente, mêlant or et feu liquide. Chaque feuille portait un souvenir, chaque racine battait comme un cœur.
+“Voici l’Arbre-Soleil, Ti’pitite. Il offre, mais il prend. Ce que tu lui donnes, il le grave à jamais dans sa mémoire.”
+
+
+
+
+Je m’avançai. Grande-Brigitte posa sa main sur mon épaule pour arracher le tatouage de Vassago, celui du corbeau qui salissait mon dos. Son contact était celui d’une brute et d’une mère à la fois.  La chaleur de l’arbre me déchirait la peau, mais une paix étrange m’envahissait. Pour la première fois, je sentais que le feu ne voulait pas me détruire, mais me purifier.
+“Je n’ai rien à offrir,” dis-je. Tout ce que j’étais appartient à Vassago.”
+Grande-Brigitte sourit, presque triste.
+“Alors donne-nous ce qu’il ne peut pas posséder : ta main qui agit, ton bras qui frappe. Donne-le à l’Arbre, et reprends ton âme.”
+
+V. Le Sacrifice
+Je tendis mon bras gauche. Les flammes s’y agrippèrent comme à un filon d’or. Elles montèrent lentement, brûlant la chair sans douleur, la transformant en lumière. Je vis mes doigts s’ouvrir et se dissoudre dans l’éclat. Le cri que je poussai n’était pas de souffrance — c’était une délivrance. Le feu se fit sève. La lumière devint matière. Et là où mon bras se terminait, l’Arbre me rendit un membre nouveau : un bras de braise et d’ambre. La marque sifflante du Soleil s’imprima sur ma peau, sur ma nuque, comme si j’étais un veau. Un glyphe mouvant, respirant, chantant. Le Sceau du Soltree.
+
+VI. Le Lien de la Flamme
+“Ton feu n’appartient plus à la Tour, Ti-pitite.
+Il est tien. Mais n’oublie jamais : le Soleil éclaire, oui…
+… mais il laisse des ombres derrière tout ce qu’il touche.”
+
+VII. Le retour
+Quand je sortis du Manoir des Ligaments, j’étais étrangement entière pour la première fois. Mon bras flamboyait doucement, mon cœur battait double — une pulsation d’ombre et une pulsation de soleil. Vassago hurlait dans ma tête, incapable de rompre le lien qu’elle venait de tisser. Et Grande-Brigitte, en écho lointain, riait encore :
+“Ti-pitite, t’as enfin compris :
+la liberté, c’est pas de fuir ses chaînes.
+C’est d’en forger une qu’on choisit soi-même.”
+
+
+Les aventures de Thalderra 
+I. Malquesar, Corvalis et le service de Grande-Brigitte
+Ah… Malquesar, la ville qui respire ailleurs. Une petite bourgade charmante, si on oublie qu’elle disparaît de la carte tous les sept ans pour réapparaître dans un autre plan d’existence. On dit qu’elle transplane comme un poisson saute d’un courant à l’autre.
+Moi, j’appelle ça : une excuse cosmique pour ne jamais ranger ses affaires. Les habitants vivent cela avec une résignation amusée.  Le mestre du village, lui, surveille les pierres de translation comme on veille un cœur malade. Et justement, ce cœur bat mal :  Malquesar doit bientôt quitter le Feywild… pour les Enfers. Personne n’en parle à voix haute. Humains, sylvains, gnomes… Tous vivent comme si la fin n’était qu’un conte, mais je voyais leurs ombres, un peu trop longues, un peu trop nerveuses à l’approche du crépuscule. 
+Je me suis retrouvée dans cette ville par hasard — ou peut-être par une main invisible qui tire encore trop fort sur mon fil.  Le village était en effervescence :
+ des émissaires féeriques débarquaient pour enquêter sur la disparition d’une pierre précieuse, une gemme technologico-magique qui faisait partie du mécanisme permettant à Malquesar de voyager d’un plan à l’autre. Sans elle, l’enchantement se brise. Sans elle, la ville tombe dans le néant. Le mestre tremblait en silence. Les émissaires souriaient trop poliment. Tout cela sentait le chaos retenu derrière des rideaux de soie.
+C’est à Malquesar que j’ai rencontré Liora. Une tieffeline marquée par Asmodée, mais sans la moindre intention d’honorer son héritage. Elle riait, mais juste avec les yeux.
+Elle avait fui les Enfers par une faille magique improbable et faisait tout pour ne jamais y retourner. Nous avons rapidement sympathisé — la solidarité des survivantes, je suppose.
+ Elle comprenait la fuite.
+ Elle comprenait la honte.
+ Elle comprenait le prix des pactes.
+Et puis il y avait lui… Arlow. Le firbolg timide et immense. Aux yeux trop doux pour un corps aussi massif. Il s’entraînait à écrire des lettres, maladroitement, pour une famille éloignée qui attendait de ses nouvelles. Il me rappelait ce que la gentillesse peut coûter.
+ Et ce qu’elle peut sauver. Dans une autre vie, j’aurais voulu l’aider. Dans celle-ci…
+ Je n’avais que mes armes et pas le temps pour ses niaseries.
+Les pistes  de la pierre volée conduisaient toutes au même endroit : quelqu’un manipulait toute  la ville. Quelqu’un voulait que Malquesar se brise avant son heure, ou pire, détourner la pierre et son usage à des fins terribles.
+Et ce quelqu’un… c’était un autre sorcier de Vassago. Un rival. Un collègue. Un chien enragé voulant me passer devant pour gagner la faveur de notre maître commun. Ce monstre avait pris les traits d’une enfant, fichue changelin, pour assister la pauvre Liora qui n’y avait vu que du feu. Il a pensé bon de croire que j’allais prendre pitié de sa forme : j’ai transpersé sa psychée et je l’ai suivi dans la fôret
+ Il était lâche, invisible, rapide, glissant comme une anguille. Il riait en me traitant de “demi-drow ratée”. Il m’a presque eue — presque. J’ai laissé parler ma faux et mon bras vengeur. Il ne reste de lui qu’une odeur de mucus brûlé.
+La pierre de transplantation était sauve et ses dagues sont dans mes paumes: Orgueil et Entropie. Des lames jumelles, vibrantes d’une magie mauvaise, prêtes à couper le destin lui-même.Je les ai prises. Elles sont miennes et elles le resteront.
+ Je les manie comme une réponse — un refus d’être encore la proie de quelqu’un d’autre.
+Malquesar et repartie, mais sans moi, et sans son voleur. Le mestre a remis la pierre en place.  La ville respire de nouveau. Elle bougera bientôt, vers les Enfers ou ailleurs — ce n’est plus mon problème. Je suis repartie vers le lointain, un peu plus lourde, un peu plus lucide, un peu plus armée.  Liora m’a serrée dans ses bras avant mon départ.
+Je crois qu’elle pensait que nos routes se recroiseraient dans un endroit bien pire.
+II. Corvalis et le service de Grande-Brigitte
+
+Apres Malquesar, un nouveau continent. Rien de familier. Et la ville de Corvalis, étouffée sous le joug du Dominion Sol, débordant de portiers en armure et de sourires qui sentent l’inquiètude. Une rumeur avait attiré l’oreille de Grande-Brigitte : un joyau tombé du ciel devait être présenté à la noblesse lors d’un bal ducal. Elle voulait que je le dérobe pour elle. Et moi… j’ai obéis, parce que je lui dois ma liberté. Ou ce qu’il en reste. 
+Parfois, je me demande : Brigitte est-elle vraiment différente de Vassago ? Elle rit plus fort, certes. Elle jure mieux, aussi. Mais un pacte reste un pacte, même solaire. Le temps me dira si j’ai sauté d’une cage pour en rejoindre une autre. Pour l’instant, je marche.
+Pour approcher le joyau, j’ai dû infiltrer Corvalis. Je me suis rapprochée du Voile, une organisation clandestine qui déteste profondément la comtesse locale.
+Rien d’étonnant : on la soupçonne de vendre des êtres vivants comme on vend un chargement d’épices. Une femme charmante.
+Le responsable du Voile, Lavande, a été clair :
+ “Tu veux notre aide ? La comtesse est un problème, il faut régler ce problème .”
+ J’ai accepté. Comme d’habitude, je l’ai fait en souriant, sans trop réfléchir à ce que cela disait de moi.
+Pour approcher le palais, j’ai joué la carte la plus vieille du monde : séduire le fils du comte.
+Un garçon imbuvable et naïf… et suffisamment seul pour voir en moi une aventure exotique. Il m’a ouvert les portes qu’aucune clé n’aurait déverrouillées.
+Le reste… Je ne sais pas si je l’ai choisi, ou si la nuit l’a choisi pour moi.
+Dans une aile isolée du palais, j’ai trouvé la comtesse Elle n’était pas seule ; la magie suintait des murs. Le combat a été sale, chaotique, brûlant. Quand elle est tombée, j’aurais voulu croire que c’était de la justice. Mais en la regardant mourir, je n’ai vu qu’un miroir de plus. Son spectre ma suivi quelques heures, littéralement
+
+Le joyau, lui, n’était pas un joyau. Pas un artefact. Pas un fragment céleste.
+C’était un enfant. Un Néphilim. Un métis divin tombé du ciel, ligoté comme une bête rare.
+J’aurais dû fuir. J’aurais dû dire non. Mais j’ai avancé, la marque du Soltree brûlant dans mon coup J’ai pris l’enfant dans mes bras, et j’ai senti la lumière de l’Arbre vibrer en lui.
+Je l’ai offert à Grande-Brigitte, comme demandé.
+Je devrais me sentir soulagée. Je devrais croire que c’est un acte juste. Mais cette nuit-là, en quittant le palais, j’ai murmuré dans le noir : “Qu’ai-je fait ?”
+Et aucune voix — ni celle de Vassago, ni celle de Brigitte — n’a répondu.
+
+III. Lumenlid et Obaline.
+Un brin de liberté. L’illusion d’une légèreté retrouvée. J’ai quitté Corvalis, dont les portes se sont refermées derrière moi comme des mâchoires. Je me suis envolée vers Lumenlid, Là-bas, j’ai trouvé refuge et profiter d’un instrument : la lyre de Dorian. Je l’accorde maladroitement, mais chaque corde me rappelle que mes mains peuvent encore créer autre chose que des blessures.  Pendant quelques semaines, j’ai respiré. J’ai ri même — un peu.  L’air froid des cimes m’a fait croire que j’étais libre.
+Mais les vallées finissent toujours par rappeler les déchues.
+Je suis redescendue vers Obaline, cité tendue comme un arc. Les soldats du Dominion Sol y patrouillent avec la ferveur des croyants et l’ennui des tyrans. J’ai découvert que mon nom circulait sur leurs parchemins — une prime maigre, mais suffisante pour m’obliger à raser les murs.  Heureusement, l’avis manque de détails : une “femme rousse, suspecte d’actes ésotériques.”  Autant dire : la moitié du port.
+C’est à Obaline que j’ai croisé le Voile, ce réseau de contrebandiers à la morale souple mais au cœur étonnamment droit.  Nous avons passé un marché :
+ En échange de la libération d’un prisonnier politique — un révolutionnaire au verbe plus tranchant que ses chaînes —, ils m’ouvriraient l’embarcadère et m’aideraient à quitter la ville sans bruit. Ainsi fut fait. Le gardien m’a vu, les bras lui en son tombés. Je n’ai laissé derrière moi que quelques traces de cendre.
+Le fleuve m’attendait, indifférent. Et moi, j’avais déjà une nouvelle direction : retrouver la piste de Lagriffe, ces marchands d’âmes que j’avais juré de réduire en poussière.
+ Leur odeur flotte vers le bled de Lunsk, là où la lumière se perd dans la boue.
+
+
+IV. Lunsk et Voros
+
+Lunsk.
+Ville vaseuse, ville qui colle aux bottes comme aux consciences.
+J’y ai retrouvé mon contact du Voile : une lapine nerveuse, vive, bien trop futée pour son propre bien. Elle est amoureuse de Lavande, note pour moi-même, ça pourrait s’avérer utile. Elle m’a introduit aupres d’un contact, un revendeur de lagriffe… et j’ai faibli. J’ai manqué de cran dans la boue juste parceque le pauvre bougre avait une famille à nourrir. J’ai laissé les monstres de Lagriffe briser, vendre, mutiler. Ils se sont échapper et je me suis juré que ce serait la dernière fois.
+Plus jamais.
+
+Voros.
+Un choc. Une ville de marchands et de filous, où chaque ruelle sent la sueur, l’encens et le mensonge.  J’y ai respiré plus librement qu’à Lunsk …tout en étant observée comme une pièce d’or ambulante.
+C’est là que j’ai rencontré Elka. Une ex-lankdenec de l’impératrice d’Aterra — autrement dit, une femme qui a déjà tranché mille vies de sa lame. Redoutable.Magnétique. Elle sourit comme moi : avec les dents.
+Elka m’a menée à Bernard, un druide hermite au regard fendu comme une vieille pierre.
+Il qui déteste Lagriffe avec une ferveur presque religieuse.
+À trois, nous avons infiltré un de leurs entrepôts.
+Pièges, murailles, gardes… Le tout s’est terminé dans l’obscurité, sous les hurlements et les coups de faux. Un carnage, mais un carnage utile.
+Nous avons libéré les prisonniers. Des ombres maigres. Des souvenirs ambulants. Ils sont partis vers Lunsk, escortés par un contact du Voile. Qu’ils survivent ou non… c’était plus que ce que Lagriffe leur offrait.
+
+Elka, bien sûr, ne m’a pas aidée pour mes beaux yeux rouges. Elle voulait quelque chose en retour : la tête de Screll, chef local du Voile. Un tabaxi drogué, imprudent, à moitié génial et à moitié mort depuis trois ans. Elle voulait sa place. Elle voulait régner sur Voros.
+J’ai accepté. Parce que je lui devais la vie. Parce que je comprenais ce qu’elle voulait.
+PArceque j’ai vu une oppotunité. Parce que je fais ce qu’il faut. Presque toujours.
+J’avais un plan. J’avais réfléchi à tout. Screll devait mourir proprement, discrètement.
+ Sans me mettre le Voile à dos, une overdose, propre et sans bavure, ou plutôt beaucoup.
+Mais rien ne se passe jamais proprement autour de moi. Le plan a dégénéré.
+ Le local s’est changée en boucherie.  Cris. Flammes. Du sang sur les murs.
+ Et moi, au centre de tout comme si je m’y complaisais — comme si le massacre me reconnaissait.
+Elka est montée au pouvoir sur cette scène de mort.
+Une reine couronnée de suud. Et moi ? J’ai essuyé ma faux, rangé mes cartes de tarots et continué ma route : Direction l’île aux Moines — nouvelle piste, dernier murmure menant à Lagriffe. Et cette fois, je ne suis pas seule.
+J’ai rencontré Jane, une tabaxi aux griffes comme des rasoirs, échappée de justesse à ses geôliers. Dans ses yeux, j’ai vu la même rage que dans les miens.
+Elle ne veut plus être une proie. Moi non plus.
+À deux, nous allons faire trembler Lagriffe.
+Et que le ciel s’écroule —  je suis prête.
+
+V. L’ïle au moine
+ Ce calvaire.
+ Infiltration, sang, et… foi de berger. Je ne sais même plus pourquoi j’espérais que les choses seraient simples. Avec Jane, nous avions un objectif clair : localiser le Berger, ce membre haut placé de Lagriffe, aussi cruel que méthodique.  L’Île aux Moines semblait un bon point de départ — une île abbandonnée, du moins en apparence.
+Ça, c’était avant le pélican. Un volatile monstrueusement agressif qui a décidé de me prendre pour une intruse sur SON île. Je ne sais pas ce qu’ils nourrissent ici, mais plus jamais je ne sous-estimerai un oiseau.
+Heureusement, l’odorat exceptionnel de Jane nous a rapidement remis sur la voie : les relents de peur, de métal et de sueur froide que Lagriffe laisse partout où elle passe. Mais l’île ne souffrait pas seulement de Lagriffe.
+Au loin, rôdaient des silhouettes de gobelins déformés — leurs yeux trop larges, leurs armes trop dentées.  Des éclaireurs de quelque chose de pire.
+
+
+Et dans une ruelle, nous avons trouvé les premiers signes d’un désastre :
+un culte démoniaque, ses reliques laissées, et des moines réduits à de la poussière sacrée. L’endroit criait la fuite. Les fidèles avaient abandonné les lieux, trop vite.
+Nous avons tué les démons qui infestaient les ruines. Facilement — trop facilement.
+Cela m’a mise mal à l’aise. Un prédateur qui se laisse égorger n’annonce jamais rien de bon.
+Dans un ancien puits de prière scellé, nous avons trouvé l’entrée des souterrains.
+Le passage de Jane. Sa prison. Son enfer. Et sous la terre, le miens.
+Les murs transpiraient la magie noire et la souffrance. Les chaînes racontaient des histoires que je ne veux jamais réentendre. Et au fond, une salle entière… pleine de survivants alignés comme du bétail. Un stock. Une réserve.
+C’est là que j’ai vu Liora. Liora de Malquesar, rencontrée autrefois dans la fleuristerie de la cité-mouvante. Elle était vivante, à peine, comme si une partie de son âme avait été troquée contre le silence. Nous l’avons libérée. Peu importait les risques : plus jamais je ne laisserai Lagriffe reprendre quelqu’un que j’ai déjà sauvé.
+
+La remontée nous a conduites à l’intérieur de la Cathédrale de l’Île aux Moines,  une carcasse d’or et de sel, rongée par la magie et les supplications abandonnées. Et là, nous avons rencontré l’ennemie finale : Le Berger. Une tieffeline souriante, calme, dangereuse comme une lame bien huilée. Le combat fut bref mais intense.  Je n’ai pas eu le luxe de la subtilité.  Jane non plus.  Elle a dû dévoiler sa… transformation.  Sa seconde peau.
+ Son monstre intérieur, né de cristaux chassés sous la chair, taillés dans la souffrance des émissaires du Dominion. Cela m’a glacée.  J’ai vu ce genre de horreurs dans les laboratoires de mon père.  Et pourtant — elle a tenu debout. Elle a combattu.  Elle s’est battue pour moi, pour Liora, pour elle-même. À deux, nous avons mis le Berger en déroute. Elle s’est enfuie, blessée, furieuse, mais vivante.  Nous avons posé genoux, exténuée et  malheureusement persuadées de la revoir un jour.
+Jane regarde toujours ses mains après la bataille.  Ses griffes.  Ses cristaux.  Elle murmure que c’est de la magie corrompue. Moi, j’appelle ça par son nom : du courage à poil ras.
+
+
+VI. Havre-Noir, ou le goût du sang dans l’écume
+Havre-Noir. Le nom dit tout. Une ville comme une balafre sur la côte, où les vagues frappent les coques noires des navires comme des recouvreurs venus réclamer des dettes anciennes.
+Dorian disait toujours :
+“Qui bat l’écume, ramasse la mousse. Miiiaaark.”
+ Je pensais qu’il exagérait.
+ J’avais tort.
+J’y suis arrivée avec Jane, Liora, et une poignée de prisonniers encore tapis dans mon ombre. Tous cabossés, à bout, portant les cicatrices de l’île aux Moines, de la jungle sombre, et de cette escarmouche avec la bête éclipsante.
+Mais Havre-Noir n’est pas un endroit où l’on se repose.  C’est un endroit où l’on tient, ou l’on cède. Nous avons trouvé refuge dans une chambre au-dessus d’une taverne, infestée de marins trahis par la mer. Jane a cherché à oublier — à grandes pintes de lait.  Liora… se contentait d’attendre que le noir passe. Et moi ?
+ Moi, j’ai commis l’erreur de serrer la main d’un homme jovial. Un Lankdenec, comme Elka.
+ Note à moi-même : Elka est activement recherchée. Citer son nom attire les ennuis.
+ L’homme m’a capturée comme une bleue, et sans Jane, je ne serais peut-être pas en train d’écrire ces lignes. Apparemment, l’Impératrice me cherche. Et ça, ça ne sent pas bon du tout.
+La ville sentait la peur. Les ruelles étaient trop calmes. Les regards trop insistants. Et les ombres… trop nombreuses. On aurait dit que toute la cité retenait son souffle.
+J’ai vite compris pourquoi. Le maître des lieux, un pirate colossal, avait renforcé ses patrouilles. Et la Malpeste rôdait la nuit, ramassant ceux que personne ne réclamerait : dockers, bateleurs, voyageurs solitaires.  J’ai compris ce que “Malpeste” voulait dire quand j’ai vu le premier cadavre : peau bleue, yeux ouverts.  Un avertissement.  Ou une signature.
+Nous étions venues à Havre-Noir pour retrouver Lagriffe.  Et, comme toujours, la piste a commencé dans les tavernes. Un nom, un murmure, un mot d’ombre : “L’Assemblage.”  Un navire, ou plutôt des dizaines, réunis  — officiellement fermés pour cause de Malpeste. C’était la bonne direction.
+L’enquête a vite tourné au cauchemar : pas de maladie, mais une malédiction ancienne. Une âme noyée, trahie par son équipage, revenue chercher vengeance. Nous avons réagi comme d’habitude : sans réfléchir. Sans plan. Juste le bras en feu, la rage au ventre. La lumière du Soltree a déchiré la nuit. Les cris ont suivi, puis sang à gicler, celui du revenant — pas le mien.
+Quand la poussière est retombée, dans la maison du vieux marin terrifié, nous étions encore debout. Lui tremblait. Moi aussi. On a picolé. Le lendemain, quelque chose avait changé. L’Assemblage avait rouvert.
+Nous avons été reçues par le colosse lui-même, plus puissant que tout ce que j’avais vu. L’Empereur-corsaire. Quand il m’a serré la main, il m’a broyé les os. Il faut que j’arrête de serrer la main des hommes, aussi jolie soit elle. Je suis restée droite. Fière. Et j’ai cru voir, derrière son masque, un éclat de respect.Puis il nous a confié un secret. Un vrai. Que je n’écrirai pas ici. Ou peut être que je l’ai déjà fait.
+Havre-Noir n’était plus une simple étape. C’était un point de convergence.
+Un port d’attache. Et pour la première fois, j’ai senti le feu de Brigitte et l’ombre de Vassago s’aligner dans la même direction. Vers Camont.
+
+VI. Le résumé des notes du Maître de Jeu (Partie 2) détaille une phase de la campagne marquée par des enquêtes urbaines, des quêtes planaires et la préparation technique des héroïnes pour les défis à venir.
+1. L'Enquête à Havre-Noir et Camont
+Cette section se concentre sur la traque de l'organisation « La Griffe » et la résolution de mystères locaux.
+Havre-Noir : L'arrivée en ville est marquée par le rituel du Rocher aux Nœuds, où les marins jurent fidélité à Sycomore. Une enquête est menée sur une série de meurtres liés à l'équipage du Brumeux, un navire disparu il y a vingt ans, dont le seul survivant connu est Derek Varn.
+Corruption et Infiltration : À Camont, le groupe découvre une corruption douanière orchestrée par le Duc. Une mission d'infiltration majeure a lieu dans la Villa Graham, une demeure truffée de pièges mécaniques et protégée par une gélatine verte, où un gang rival nommé les « Épingles » opère simultanément.
+Sycomore Brise-Pavois : Le « Seigneur Goudron » est présenté comme une figure d'autorité imposante, interdisant toute contrebande et surveillant de près la compagnie Titan Inc.
+2. La Quête de la Première Flamme
+Gran Brijit pousse Philippa à franchir une étape cruciale dans son lien avec l'Arbre-Soleil.
+Le Rituel du Portail : Gran Brijit ouvre un portail vers le Plan du Feu en utilisant un Astral Dreadnaught comme conduit vivant ; Philippa et ses compagnons doivent être « avalés » pour changer de plan.
+Survie à Pyrrah : Les PJ arrivent sur une roche brûlante où la chaleur inflige des dégâts constants à moins de posséder une protection spécifique. Ils atteignent la cité de Pyrrah, où l'Incarnat de la Flamme est vénéré et où circule une prophétie concernant les « cheveux de flamme ».
+La Flamme primordiale que Philippa doit dérober est l’âme d’unjeune garçon, moine, doux et gardien de la ville. Elle doit le tuer pour prendre la flamme 
+Philippe se refuse à tuer le jeune homme et son arbre-soleil lui fera payer dès son retour à la maison de grande Brigitte. 
+Un combat entre grande Brigitte, Nolbrim l’inventeur, Bourre-pif l’Automate, grande Brigitte, Jane et Philippe contre l’incarnation de l’arbre soleil. La maison de grande Brigitte dans le fey-wild est détruite - Philippe n’est plus l’élue de l’arbre du feu. 
+Grande Brigitte propose à Philippa de changer d’allégeance et de devenir une élue de la Balance - élue de l’équilibre du monde sous l’égide de grande Brigitte elle-même. Elle accepte et récupère un bras nécromantique. 
+3. Stabilisation de Jane et l'Hexacore
+L'instabilité de Jane : L'ingénieur Nolbrim avertit Jane que ses cristaux internes créent des interférences dangereuses et qu'elle a besoin d'un Hexacore pour stabiliser son flux énergétique.
+Donjon d'Aram Sharûn : Pour obtenir cet Hexacore, le groupe explore les ruines de la Tour de Résonance d'Aram Sharûn au milieu du désert, protégée par des Golems arcaniques.
+Armement de Philippa : Philippa reçoit un nouveau prototype d'arme stable nommé « Horizon Brûlée », bien que Brijit précise qu'il manque encore un « souffle de vie » pour l'invoquer via une carte de tarot. Horizon brûlé est en fait deux pistolet arcanique qui concentre ses eldricht blast 
+Jane et Philippe retourne dans le passé pour accéder à l’Hexacore dont nolbrim se servira pour stabiliser Jane et lui offrir une nouvelle capacité de « métamorphose » qui lui propose différent forme de combat - mage - monstre - rogue 
+4. Secrets de la Caravane et du Vignoble
+Le voyage vers Port-Doëlan révèle des histoires personnelles sombres parmi les alliés.
+Le Vignoble Dimir : Les PJ interviennent dans un vignoble où les propriétaires, Dimir et Iulia, retiennent des employés (dont Spano) sous une captivité psychologique qu'ils justifient par la discipline. Dimir et Iula meurent, Spano est libéré et reprendra le vignoble
+La Caravane de Quadim : Durant le trajet vers Port-Doëlan, ils rencontrent une caravane hétéroclite. Parmi les voyageurs, Magdalena cache un secret majeur : elle a survécu à des expérimentations de la « Lumière Noire » à Sol Novem et porte des cristaux implantés dans son dos. Lors du trajet, une gardienne et amie de Jane est assassiné. Forçant Jane et Philippa à mener l’enquête pour se rendre compte quelle avait été empoisonnés. C’est finalement Quadim lui même qui s’avèrent être le responsable et un agent de vassago, l’ancien patron de philippa . Il parvient à s’enfuir.
+Les ruines de Lathandre : Jane et Philippa font un détour vers les ruines d’un temple, où elles retrouvent les traces des moines de l’île au moine, ainsi que le démon qui les avait pourchassés - elle l'exécute.
+Port-Blanc : La Caravane s’arrête à port Blanc, où Jane et Philippa apprennent que les élevages de Port-Blanc sont nourrit avec les cadavre de la guerre de la Vera. Elle s’enfuit en connaissance du secret et non sans se fâcher avec l’une des 4 grandes familles de la ville. 
+5. La chute de Port-Doelän
+Arrivée à port-doelän, Jane retrouve par hasard sa soeur, Vespera qui tient un bordel dans le sud de la ville. Philippa trouve un repaire de L’aile d’argent. Elles sympathisent avec Barok un chanteur d’opéra et sa garde du corps. Le dirigeant de la ville est très puissant et très aimé de tous, mais tout le monde ignore qu’il finance Lagriffe pour le compte de Vassago. Elles forment une alliance ttemporaire avec Leur ennemie absolu, la démone Absalom. Jane et Philippa unissent leur force avec leurs alliés pour faire tomber leur ennemi, la directrice de Lagriffe. Et s’attaque ensuite à Bartholoméus Spezza. Un second démon majeur accompagne Bartholomeus, ce qui rend le combat, long, intense et épuisant. Après la mort de Bartholoméus, elles découvrent un sous-marin, qui leur permettra de fuir la ville et de traverser l'océan du grand ouest. Leur mission est maintenant de prévenir l’arbre titan, Kataron ( l’arbre de l’eau ) du danger que représente Vassago.
+
+Philippa prend un niveau et devient donc 7 niveaux de warlock et 3 niveaux de barde.
+
+6. Agran et les bas-fond marin
+Après un voyage inquiétant, et en traversant l’océan par les fonds marins Jane et Philippa font  escale à Agran, une ville sous-marine où elles sympathisent avec Ink, une jeune sirène qui rejoint leur équipage. lors d’un combat avec une sorcière des eaux, Philippa et Jane découvrent un fragment de l’arbre du temps, un fragment surpuissant et l’emporte avec elles.
+6. Istran, le nouveau continent et Kesras-Tauroc
+Jane et Philippa arrivent au sud d’un nouveau continent, où elle ne parle pas la langue.
+Elle pourchasse maintenant Absalom qui s’est évadée et court maintenant de nouvelles terres en tout carnage et toute impunité. Olyssane, qui a promis à son roi, Sycomore Brisepavois, d’ouvrir une voie maritime pour sa conquête, se dirige vers le village côtier de cap-korn. Olyssance part avec la jeune Ink. 
+Jane et Philippa rejoigne la capitale de l’actuel region keras-tauroc ou tout n’est qu’honneur et combat sanglant. Elles font leur preuve dans l’arène et obtiennent les cornes d’or de kerast-toroc. elle passe un deal avec le dirigeant d’une mine et s'apprête à lancer un commerce entre les deux continents pour Vespera, la sœur de Jane. 
+
+Absalom les retrouve en premier et leur lance le sort “modifie memory”. Elles vivront pendant pres d’un mois à keras-tauroc sous ‘l'influence d’absalom avant d'assassiner contre leur gré un dignitaire de la ville et un ambassadeur de la region voisine “ Roshen-Buru” 
+
+Elle rencontre un druide, diplomate de Roshen-Buru nommé harfang, ( un nouveau joueur de la campagne ) et mene l'enquête pour prouver leur propre innocence. elle parviennent à trouver le complice d’absalom, un vieu général extremiste et le livre aux autorités avant de reprendre la route.
+
+7. Istran, le nouveau continent et Kap-Corn
+
+
+Jane et Phillipa et Harfang embarque sur un navire et remonte la ricvière jusqu’à Kap-Corn, sur la route un warlock de vassago attaque le bateau, Phillipa, Jane et Harfang le tuent et rejoigne la ville où elles retrouvent Olyssane et Ink. Après un accrochage avec un héritier de keras-tauroc elle manipule un mage local avec de la drogue ( de la suud ) et le rendre accro afin qu’il ouvre un portail vers Port-Doelan pour Vespéra la soeur de Jane. 
+
+
+8. Istran, le nouveau continent et Azuren-Kaï
+Jane et Phillipa et Harfang arrivent à et changent de look pour mieux passer inaperçu. cela leur sera inutile puisqu’elles se mettront à dos et assassinent un guerrier d’une noble famille lors d’une escarmouche dans un ryokan.  Azuren Kaï est dans la région de roshen buru ( région et moeurs = japon ). Un créature étrange, les attaquent la nuit, en le tuant, Phillipa réalise que c’est une marionnette de paille.. Etrange…
+</div></details><a href="assets/persona-original.txt">Texte original</a></section><section class="codex-entry" id="chroniques"><small>CHRONIQUES</small><h2>Thaldera &amp; Istra Belig</h2><p>Les aventures et les événements de campagne sont à distinguer des souvenirs personnels.</p><p class="codex-muted">Chronologie détaillée à intégrer depuis les sources originales.</p></section><section class="codex-entry" id="cosmologie"><small>COSMOLOGIE</small><h2>Les puissances du Pacte</h2><p>Vassago · Arbre-Soleil · Gran Brijit · Grande Balance.</p><p class="codex-muted">La Grande Balance mesure le Bien et le Mal. Gran Brijit confie à Philippa des missions de préservation de l’équilibre.</p></section><section class="codex-entry" id="grimoire"><small>GRIMOIRE</small><h2>Sorts &amp; combinaisons</h2><p>Bestow Curse · Bane · Unsettling Words · Acceptation · Poids de l’Éternité · Rupture.</p><p class="codex-muted">Fiches complètes et coûts à confirmer depuis les sources de jeu. Aucun effet inédit n’est ajouté.</p></section><section class="codex-entry" id="relations"><small>RELATIONS</small><h2>Le cercle de Philippa</h2><p>Jane Merigold · Harfang Tsuren · Olyssane · Gran Brijit · Vassago.</p><p class="codex-muted">Les relations et leur évolution seront documentées séparément.</p></section><section class="codex-entry" id="quetes"><small>QUÊTES</small><h2>Obligations de la Championne</h2><p>Ne pas ouvrir de portail entre Cap Cornes et Havre Noir. Trouver et tuer Oren Sidaï à Roshen Buru.</p><p class="codex-muted">Statut d’accomplissement à confirmer.</p></section><section class="codex-entry" id="archives"><small>ARCHIVES</small><h2>Historique des règles</h2><p>Patch du 25 novembre 2026 : huit armes concernées ; rapière du Corsaire Noyé inchangée.</p><p class="codex-muted">Les anciennes versions restent consultables dans l’historique Git.</p><a href="https://calintz17.github.io/Thaldera/#/patch/2026-11-25">Patch officiel du MJ</a></section><div class="tools"><input id="search" type="search" placeholder="Rechercher un pouvoir ou une tirade…" aria-label="Recherche"><button id="onlyfav" aria-pressed="false">☆ Favoris</button></div><section id="capacites" class="power-panel" hidden>
 <h2>Pouvoirs en combat</h2>
 <div class="power-filters" role="group" aria-label="Type de pouvoir">
 <button type="button" data-power-filter="" aria-pressed="true">Tous</button>
