@@ -1,0 +1,332 @@
+{
+  "date": "2026-11-25",
+  "scope": "Les modifications explicitement listées par le patch ; les autres statistiques ne sont pas certifiées par ce document.",
+  "weapons": [
+    {
+      "nom": "Requiem de la Reine-Morte",
+      "arcane": "DEATH",
+      "changes": [
+        {
+          "field": "Rareté",
+          "previous": "Rare",
+          "current": "Very Rare"
+        },
+        {
+          "field": "Toucher",
+          "previous": "+12",
+          "current": "+11"
+        },
+        {
+          "field": "Dégâts",
+          "previous": "1d12+8",
+          "current": "1d12+7"
+        },
+        {
+          "field": "Couronnement du Repos Noir",
+          "previous": "1/jour",
+          "current": "Spell Slot level 2"
+        },
+        {
+          "field": "Procession de la Tombe",
+          "previous": "1/jour",
+          "current": "Spell Slot level 3"
+        },
+        {
+          "field": "Déni par la Garde",
+          "previous": "2/repos",
+          "current": "Spell Slot level 1"
+        },
+        {
+          "field": "Jet de sauvegarde (Couronnement, Procession)",
+          "previous": "15",
+          "current": "17"
+        }
+      ],
+      "average": {
+        "de": "46",
+        "vers": "44",
+        "s": "down"
+      }
+    },
+    {
+      "nom": "La main du Reliquaire",
+      "arcane": "JUSTICE",
+      "changes": [
+        {
+          "field": "Toucher",
+          "previous": "+13",
+          "current": "+11"
+        },
+        {
+          "field": "Dégâts",
+          "previous": "1d6+15",
+          "current": "1d6+7"
+        },
+        {
+          "field": "Reliquary Rend",
+          "previous": "(1d6+12) x2",
+          "current": "(1d6+7) x2"
+        },
+        {
+          "field": "Blight",
+          "previous": "1/jour",
+          "current": "Pact Spell Slot level 4"
+        },
+        {
+          "field": "Blight, portée",
+          "previous": "Contact",
+          "current": "30 ft"
+        },
+        {
+          "field": "Unseen Servant",
+          "previous": "À volonté",
+          "current": "Supprimé"
+        }
+      ],
+      "average": {
+        "de": "53",
+        "vers": "37",
+        "s": "down"
+      }
+    },
+    {
+      "nom": "Scythe de la Lithurgie des Cendres",
+      "arcane": "THE SUN",
+      "changes": [
+        {
+          "field": "Rareté",
+          "previous": "Rare",
+          "current": "Very Rare"
+        },
+        {
+          "field": "Toucher",
+          "previous": "+12",
+          "current": "+11"
+        },
+        {
+          "field": "Veil Shield, Quiet Passing",
+          "previous": "1/jour",
+          "current": "Spell Slot level 4"
+        },
+        {
+          "field": "Extra 3d8 nécrotique",
+          "previous": "1/repos court",
+          "current": "Supprimé"
+        }
+      ],
+      "average": {
+        "de": "45",
+        "vers": "45",
+        "s": "iso"
+      }
+    },
+    {
+      "nom": "Satellite du Monde Enseveli",
+      "arcane": "THE WORLD",
+      "changes": [
+        {
+          "field": "Rareté",
+          "previous": "Rare",
+          "current": "Very Rare"
+        },
+        {
+          "field": "Toucher",
+          "previous": "+12",
+          "current": "+11"
+        },
+        {
+          "field": "Gravité Funèbre",
+          "previous": "1 charge",
+          "current": "Spell Slot level 1"
+        },
+        {
+          "field": "Orbite Brisée",
+          "previous": "2 charges",
+          "current": "Spell Slot level 4"
+        },
+        {
+          "field": "Effondrement du Monde",
+          "previous": "3 charges",
+          "current": "Spell Slot level 4"
+        },
+        {
+          "field": "Jet de sauvegarde (Orbite Brisée, Effondrement)",
+          "previous": "15",
+          "current": "17"
+        }
+      ],
+      "average": {
+        "de": "37",
+        "vers": "37",
+        "s": "iso"
+      }
+    },
+    {
+      "nom": "Balance et Entropie",
+      "arcane": "THE LOVERS",
+      "changes": [
+        {
+          "field": "Rareté",
+          "previous": "Rare",
+          "current": "Very Rare"
+        },
+        {
+          "field": "Disguise Self",
+          "previous": "À volonté",
+          "current": "Supprimé"
+        },
+        {
+          "field": "Invisibility",
+          "previous": "À volonté",
+          "current": "Spell Slot level 2"
+        },
+        {
+          "field": "Disappearance",
+          "previous": "",
+          "current": "devient Invisibility"
+        },
+        {
+          "field": "Disappearance",
+          "previous": "1/jour, 1 minute",
+          "current": "Spell Slot level 2, 1 heure"
+        },
+        {
+          "field": "Revelation",
+          "previous": "",
+          "current": "devient See Invisibility"
+        },
+        {
+          "field": "Revelation",
+          "previous": "1/jour, 1 minute",
+          "current": "Spell Slot level 2, 1 heure"
+        },
+        {
+          "field": "Mask of Flesh",
+          "previous": "",
+          "current": "devient Alter Self"
+        },
+        {
+          "field": "Mask of Flesh",
+          "previous": "1/jour",
+          "current": "Spell Slot level 2"
+        }
+      ],
+      "average": {
+        "de": "53",
+        "vers": "53",
+        "s": "iso"
+      }
+    },
+    {
+      "nom": "Horizon Brûlée",
+      "arcane": "THE STAR",
+      "changes": [
+        {
+          "field": "Rareté",
+          "previous": "Rare",
+          "current": "Very Rare"
+        },
+        {
+          "field": "Toucher",
+          "previous": "+12",
+          "current": "+11"
+        },
+        {
+          "field": "Dégâts",
+          "previous": "1d10+8",
+          "current": "1d10+7"
+        },
+        {
+          "field": "Primeval Awareness",
+          "previous": "1/repos long",
+          "current": "Supprimé"
+        },
+        {
+          "field": "Arc-Beam Discharge, jet de sauvegarde",
+          "previous": "15",
+          "current": "17"
+        }
+      ],
+      "average": {
+        "de": "66",
+        "vers": "63",
+        "s": "down"
+      }
+    },
+    {
+      "nom": "Caput Tauri",
+      "arcane": "THE CHARIOT",
+      "changes": [
+        {
+          "field": "Rareté",
+          "previous": "Rare",
+          "current": "Very Rare"
+        },
+        {
+          "field": "Ruée du Chariot, reset",
+          "previous": "Aube",
+          "current": "Repos long"
+        }
+      ],
+      "average": {
+        "de": "45",
+        "vers": "45",
+        "s": "iso"
+      }
+    },
+    {
+      "nom": "Omen, Broken Sky",
+      "arcane": "THE EMPRESS",
+      "changes": [
+        {
+          "field": "Attunement",
+          "previous": "Requise",
+          "current": "Supprimée"
+        }
+      ],
+      "average": {
+        "de": "54",
+        "vers": "54",
+        "s": "iso"
+      }
+    }
+  ],
+  "discrepancies": [
+    {
+      "weapon": "horizon-brulee",
+      "status": "correction",
+      "text": "Dégâts d’arme 1d10 + 7 (patch). Arc-Beam utilise le nombre normal de rayons d’Eldritch Blast ; Liveplay donne 3 rayons au niveau total 11. Les 3d10 par rayon restent distincts des dégâts d’arme."
+    },
+    {
+      "weapon": "orgueil-entropie",
+      "status": "divergence",
+      "text": "Les anciennes fiches du joueur indiquent action bonus pour Invisibility, See Invisibility et Alter Self ; Liveplay MJ indique action. Le patch ne fixe pas le type d’action. Faire arbitrer le cas spécifique de l’arme ; ne pas assimiler la variante joueur à un effet validé."
+    },
+    {
+      "weapon": "requiem-reine-morte",
+      "status": "divergence",
+      "text": "La chronologie MJ indique la vente de Requiem à Oren Sidaï ; le patch ultérieur contient sa fiche. La présence dans l’arsenal ne prouve pas la possession actuelle."
+    },
+    {
+      "weapon": "rapiere-corsaire-noye",
+      "status": "hors-patch",
+      "text": "Aucune ligne du patch pour cette arme : anciennes valeurs conservées sans validation nouvelle."
+    }
+  ],
+  "checks": {
+    "corpusCount": 163,
+    "corpusExactMatch": true,
+    "liveplay": {
+      "hp": 91,
+      "ca": 18,
+      "slots": {
+        "1": 4,
+        "2": 2
+      },
+      "pact": {
+        "n": 2,
+        "lvl": 4
+      }
+    }
+  }
+}

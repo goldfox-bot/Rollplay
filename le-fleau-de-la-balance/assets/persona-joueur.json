@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "source": "Persona Rougetoison, document historique fourni par le joueur ; notes de personnage et interprétations distinctes du canon MJ.",
+  "historical": {
+    "file": "assets/persona-original.txt",
+    "status": "archive historique non actualisée",
+    "warning": "Occultiste 6 / barde 2, Vassago, ancien arsenal et alignement historique : ne pas utiliser comme état actuel."
+  },
+  "canonPersonnel": [
+    {
+      "title": "Titre personnel",
+      "text": "Le Fléau de la Grande Balance."
+    },
+    {
+      "title": "Direction artistique",
+      "text": "Occultisme funéraire, vévés, gothique cérémoniel, Tarot ; flammes spectrales émeraude, or vieilli et ombres violettes."
+    },
+    {
+      "title": "Doctrine de combat",
+      "text": "La Loi de l’Équilibre impose l’adaptation à l’arme invoquée au hasard ; les tirades sont du roleplay, pas des bonus de règles."
+    }
+  ],
+  "interpretations": [
+    {
+      "title": "La Grande Balance",
+      "text": "Lecture personnelle : l’équilibre moral peut exiger de s’opposer aussi bien à une puissance vertueuse qu’à une puissance maléfique. Ce n’est pas une règle cosmologique supplémentaire validée par le MJ."
+    },
+    {
+      "title": "Psychologie",
+      "text": "Le Persona historique interprète le charisme, l’ironie, la quête de contrôle et la tension entre liberté et dépendance. À lire comme une interprétation du joueur."
+    },
+    {
+      "title": "Combinaisons",
+      "text": "Bane, Mind Sliver et Unsettling Words peuvent préparer un jet de sauvegarde selon leurs conditions. Bestow Curse : la version maison de réduction permanente et les effets détaillés de Thanaturgie demandent une confirmation écrite ; ne pas les substituer aux entrées Liveplay."
+    }
+  ],
+  "unconfirmed": [
+    {
+      "name": "Rupture",
+      "text": "Mentionnée dans les notes personnelles, absente de la liste Liveplay importée ; effets et disponibilité à confirmer."
+    },
+    {
+      "name": "Comprehend Languages",
+      "text": "La fiche MJ confirme la compréhension magique des langues, mais le nom du sort n’est pas listé dans Liveplay."
+    },
+    {
+      "name": "Acceptation / Poids de l’Éternité",
+      "text": "Présents dans Liveplay ; les fiches détaillées ne sont pas incluses dans cette source."
+    }
+  ]
+}

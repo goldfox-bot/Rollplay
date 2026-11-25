@@ -1,0 +1,647 @@
+{
+  "version": 1,
+  "source": "Disposition historique conservée ; les textes proviennent exclusivement de corpus.json.",
+  "weapons": [
+    {
+      "anchor": "arme-0",
+      "weaponId": "justice",
+      "title": "XI · JUSTICE — Main du Reliquaire",
+      "signature": "Prédatrice, intrusive, spectrale",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            37
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            55,
+            56,
+            57
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            58,
+            59,
+            60
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            61,
+            62,
+            63
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            64,
+            65,
+            66
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            38
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-1",
+      "weaponId": "requiem-reine-morte",
+      "title": "XIII · DEATH — Requiem de la Reine-Morte",
+      "signature": "Souveraine, implacable, cérémonielle",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            39
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            67,
+            68,
+            69
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            70,
+            71,
+            72
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            73,
+            74,
+            75
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            76,
+            77,
+            78
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-2",
+      "weaponId": "orgueil-entropie",
+      "title": "VI · THE LOVERS — Balance & Entropie",
+      "signature": "Trompeuse, ambidextre, contradictoire",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            41
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            79,
+            80,
+            81
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            82,
+            83,
+            84
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            85,
+            86,
+            87
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            88,
+            89,
+            90
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            42
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-3",
+      "weaponId": "omen-broken-sky",
+      "title": "III · THE EMPRESS — Omen, Broken Sky",
+      "signature": "Élégante, imprévisible, fulgurante",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            43
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            91,
+            92,
+            93
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            94,
+            95,
+            96
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            97,
+            98,
+            99
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            100,
+            101,
+            102
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            44
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-4",
+      "weaponId": "horizon-brulee",
+      "title": "XVII · THE STAR — Horizon Brûlée",
+      "signature": "Géométrique, calculatrice, architecturale",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            45
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            103,
+            104,
+            105
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            106,
+            107,
+            108
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            109,
+            110,
+            111
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            112,
+            113,
+            114
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            46
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-5",
+      "weaponId": "caput-tauri",
+      "title": "VII · THE CHARIOT — Caput Tauri",
+      "signature": "Inexorable, écrasante, cinétique",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            47
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            115,
+            116,
+            117
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            118,
+            119,
+            120
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            121,
+            122,
+            123
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            124,
+            125,
+            126
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            48
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-6",
+      "weaponId": "satellite-du-monde",
+      "title": "XXI · THE WORLD — Satellite du Monde Enseveli",
+      "signature": "Gravitationnelle, orbitale, suffocante",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            49
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            127,
+            128,
+            129
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            130,
+            131,
+            132
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            133,
+            134,
+            135
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            136,
+            137,
+            138
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            50
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-7",
+      "weaponId": "scythe-liturgie",
+      "title": "XIX · THE SUN — Liturgie des Cendres",
+      "signature": "Solennelle, inéluctable, purificatrice",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            51
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            139,
+            140,
+            141
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            142,
+            143,
+            144
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            145,
+            146,
+            147
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            148,
+            149,
+            150
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "anchor": "arme-8",
+      "weaponId": "rapiere-corsaire-noye",
+      "title": "XII · THE HANGED MAN — Rapière du Corsaire Noyé",
+      "signature": "Insolente, acrobatique, saline",
+      "groups": [
+        {
+          "title": "Invocation",
+          "subtitle": "Au moment de l’invocation · 1 entrée(s)",
+          "ids": [
+            53
+          ]
+        },
+        {
+          "title": "Frappe de justesse",
+          "subtitle": "CA +0 à +2 · 3 entrée(s)",
+          "ids": [
+            151,
+            152,
+            153
+          ]
+        },
+        {
+          "title": "Frappe dominante",
+          "subtitle": "CA +5 ou plus · 3 entrée(s)",
+          "ids": [
+            154,
+            155,
+            156
+          ]
+        },
+        {
+          "title": "Coup critique",
+          "subtitle": "Critique confirmé · 3 entrée(s)",
+          "ids": [
+            157,
+            158,
+            159
+          ]
+        },
+        {
+          "title": "Exécution",
+          "subtitle": "Coup fatal confirmé par le MJ · 3 entrée(s)",
+          "ids": [
+            160,
+            161,
+            162
+          ]
+        },
+        {
+          "title": "Renvoi",
+          "subtitle": "Au moment du renvoi · 1 entrée(s)",
+          "ids": [
+            54
+          ]
+        }
+      ]
+    }
+  ],
+  "reactions": [
+    {
+      "title": "Attaque ratée",
+      "subtitle": " · 5 entrée(s)",
+      "ids": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "title": "Échec critique",
+      "subtitle": " · 5 entrée(s)",
+      "ids": [
+        5,
+        6,
+        7,
+        8,
+        9
+      ]
+    },
+    {
+      "title": "Parade remarquable",
+      "subtitle": " · 5 entrée(s)",
+      "ids": [
+        10,
+        11,
+        12,
+        13,
+        14
+      ]
+    },
+    {
+      "title": "Coup critique subi",
+      "subtitle": " · 5 entrée(s)",
+      "ids": [
+        15,
+        16,
+        17,
+        18,
+        19
+      ]
+    },
+    {
+      "title": "Adversaire résilient",
+      "subtitle": " · 5 entrée(s)",
+      "ids": [
+        20,
+        21,
+        22,
+        23,
+        24
+      ]
+    },
+    {
+      "title": "Adversaire puissant",
+      "subtitle": " · 5 entrée(s)",
+      "ids": [
+        25,
+        26,
+        27,
+        28,
+        29
+      ]
+    }
+  ],
+  "philosophy": [
+    {
+      "title": "Face à un héros vertueux",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        30
+      ]
+    },
+    {
+      "title": "Face à un être maléfique",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        31
+      ]
+    },
+    {
+      "title": "Accusée d’être mauvaise",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        32
+      ]
+    },
+    {
+      "title": "Pourquoi tuer ?",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        33
+      ]
+    },
+    {
+      "title": "Adversaire à épargner",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        34
+      ]
+    },
+    {
+      "title": "Face à un justicier",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        35
+      ]
+    },
+    {
+      "title": "Annonce du titre",
+      "subtitle": " · 1 entrée(s)",
+      "ids": [
+        36
+      ]
+    }
+  ]
+}

@@ -263,7 +263,7 @@
         "damageDice": "3d10",
         "damageType": "Force",
         "context": "Sort • Ligne 36 m × 1,5 m",
-        "note": "2 rayons (niveau 8) • 3d10 force par rayon • DEX DD 17 pour demi-dégâts"
+        "note": "3 rayons (niveau total 11, fiche MJ Liveplay) • 3d10 force par rayon • DEX DD 17 pour demi-dégâts"
       },
       "stats": [
         {
@@ -959,7 +959,7 @@
       "attack": {
         "label": "Eldritch Blast",
         "damage": "3d10 force",
-        "note": "Toucher +11 — DEX DD 17 pour moitié — 2 rayons (niveau 8)"
+        "note": "Toucher +11 — DEX DD 17 pour moitié — 3 rayons (niveau total 11, fiche MJ Liveplay)"
       },
       "flags": [
         "Pact Weapon",
@@ -1514,5 +1514,32 @@
       }
     ]
   },
-  "patchDate": "2026-11-25"
+  "patchDate": "2026-11-25",
+  "verification": {
+    "patch": "2026-11-25",
+    "source": "assets/mj/patchnotes.json",
+    "liveplay": "assets/mj/philippa-liveplay.json",
+    "notes": [
+      {
+        "weapon": "horizon-brulee",
+        "status": "correction",
+        "text": "Dégâts d’arme 1d10 + 7 (patch). Arc-Beam utilise le nombre normal de rayons d’Eldritch Blast ; Liveplay donne 3 rayons au niveau total 11. Les 3d10 par rayon restent distincts des dégâts d’arme."
+      },
+      {
+        "weapon": "orgueil-entropie",
+        "status": "divergence",
+        "text": "Les anciennes fiches du joueur indiquent action bonus pour Invisibility, See Invisibility et Alter Self ; Liveplay MJ indique action. Le patch ne fixe pas le type d’action. Faire arbitrer le cas spécifique de l’arme ; ne pas assimiler la variante joueur à un effet validé."
+      },
+      {
+        "weapon": "requiem-reine-morte",
+        "status": "divergence",
+        "text": "La chronologie MJ indique la vente de Requiem à Oren Sidaï ; le patch ultérieur contient sa fiche. La présence dans l’arsenal ne prouve pas la possession actuelle."
+      },
+      {
+        "weapon": "rapiere-corsaire-noye",
+        "status": "hors-patch",
+        "text": "Aucune ligne du patch pour cette arme : anciennes valeurs conservées sans validation nouvelle."
+      }
+    ]
+  }
 }
