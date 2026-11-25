@@ -1,0 +1,9 @@
+{
+ "version": 2,
+ "fichiers": [
+  "monde.json",
+  "thaldera.json",
+  "roshen-buru.json",
+  "keras-tauroc.json"
+ ]
+}

@@ -1,0 +1,124 @@
+{
+ "quetes": [
+  {
+   "titre": "La vraie mort",
+   "texte": "Pour donner la vraie mort aux démons vaincus, il faut les trouver et les détruire dans leur plan d'origine."
+  },
+  {
+   "titre": "Les tours noires",
+   "texte": "Des tours noires se dressent maintenant en Dominion Sol et nous avons enfin compris son plan : utiliser les fragments de Titans comme réceptacle pour reproduire le rituel du PSA-84, et ascender au rang de Dieu."
+  },
+  {
+   "titre": "Le vrai nom de l'avarice",
+   "texte": "Pour tuer définitivement Vassago, nous devons récupérer les 3 fragments du vrai nom de l'avarice."
+  },
+  {
+   "titre": "La parole d'Olyssane",
+   "texte": "Olyssane doit tenir parole : il faut trouver des opportunités pour Sycomore sur Istra, ou trouver le moyen de rompre son serment."
+  },
+  {
+   "titre": "Le Repos des Épées",
+   "texte": "Le fléau du Repos des Épées a été vaincu, mais nous pourrions redonner vie à la terre si nous plantons des arbres."
+  },
+  {
+   "titre": "Ink veut l'aventure",
+   "texte": "Ink veut « partir à l'aventure », nous devons l'accompagner sans la mettre en danger."
+  },
+  {
+   "titre": "La revanche de Kester",
+   "texte": "Kester Tauroc, « l'héritier », a juré de prendre sa revanche contre Olyssane, nous le recroiserons sûrement."
+  },
+  {
+   "titre": "Absalom aux Enfers",
+   "texte": "Absalom nous a échappé, après avoir compris que Vassago l'avait trahie. Nous pourrions en faire une alliée de poids, encore faut-il la retrouver… aux Enfers."
+  },
+  {
+   "titre": "Le portail de Minauros",
+   "texte": "Ankou Urameï nous a donné le passage contre un contrat et un service, à condition de suivre ses instructions à la perfection : gagner Azuren Kai, traverser via le Balam Kaal jusqu'à Uruzal, remonter le Nahur jusqu'à Tzakar, puis ouvrir le temple du Visage de l'Aigle, trou de souris vers Minauros. Le Balam Kaal part d'Azuren Kai dans trois jours."
+  },
+  {
+   "titre": "Le PSA-84",
+   "texte": "Le « Rituel du Tenraku » était en fait un blueprint appelé « PSA-84 ». Qu'est-ce que ça signifie ? Pourquoi Gran Brijit tenait-elle tant à le récupérer ? La Gardienne dit que son peuple l'étudie depuis des centaines d'années et nous renvoie vers Gran Brijit. Gran Brijit nous en a raconté une partie : c'est un fragment d'un rituel des architectes visant à élever les hommes au rang de dieux, tombé entre les mains de Vassago. Jane en a une copie de mémoire."
+  },
+  {
+   "titre": "Le Miren de Rysei",
+   "texte": "Rysei a invoqué devant nous un immense léviathan aux yeux jaunes, un Tenrai, alors que le registre des Mirenaï dit Hikari. Erreur du registre, ou a-t-elle fait évoluer son Miren, ce qui est censé être impossible ? Elle a les yeux jaunes, comme le liquide des trois fioles trouvées dans le domaine. Kynn nous invite à dîner."
+  },
+  {
+   "titre": "Des services à rendre",
+   "texte": "Nous devons un service à Ankou Urameï, à préciser dans les douze mois suivant la signature. Les Anadori nous en doivent un."
+  },
+  {
+   "titre": "Liora alchimiste",
+   "texte": "Liora veut se diversifier en alchimie, mais a besoin d'un maître. Elle pourrait nous aider si elle faisait des potions."
+  },
+  {
+   "titre": "Les talents de cartographe",
+   "texte": "Si Philippa continue à développer mes talents de cartographe, ça finira forcément par porter ses fruits."
+  },
+  {
+   "titre": "Les orphelins Merigold",
+   "texte": "Si Jane retrouvait les autres élèves de l'orphelinat Merigold, nous pourrions nous en faire des alliés."
+  },
+  {
+   "titre": "La Lumière Noire",
+   "texte": "La « Lumière Noire », responsable de la capture de Jane, agit toujours en Dominion Sol. Nous devons y mettre un terme."
+  },
+  {
+   "titre": "Le laboratoire de Jane",
+   "texte": "Nous devons trouver et détruire le laboratoire dans lequel Jane a été torturée, et qui fabrique encore des guerriers modifiés."
+  },
+  {
+   "titre": "La hache de Naevia",
+   "texte": "À quoi peut bien servir cette hache étrange, volée à Naevia, la marchande de dagues de Keras Tauroc ?"
+  },
+  {
+   "titre": "La Protectrice et Levistus",
+   "texte": "La Protectrice a fait un pacte avec Levistus pour protéger Roshen Buru. Elle a tenté de tuer Eamonn et mes compagnons. Elle doit être mise hors d'état de nuire : la Gardienne hésite sur son sort et l'enverrait loin de la ville pour un temps, à Balamor ou à Thaldera."
+  },
+  {
+   "titre": "Thibwick en danger",
+   "texte": "Thibwick Rumple, le nain de There'Duun, est peut-être en danger : la Protectrice veut le capturer."
+  },
+  {
+   "titre": "L'Arshen de Vespera",
+   "texte": "Vespera a été mise en contact avec Eamonn, et nous lui avons fourni de quoi lancer le business de l'Arshen. Il faut surveiller la reconstruction de la ville : elle nous a promis 1 % des bénéfices."
+  },
+  {
+   "titre": "Les mercenaires de Leyenmil",
+   "texte": "Vespera a perdu un émissaire au sud de Leyenmil et ses gens se font attaquer dès qu'ils sortent de la ville. Il faudra enquêter sur ces mercenaires."
+  },
+  {
+   "titre": "La Mère de la Toile",
+   "texte": "Un étrange « zombie-araignée » nous a attaqués à Keras Tauroc, et Tobiya, corrompu dans les égouts de Roshen Buru, servait la Mère de la Toile. Elle veut des araignées dans toutes les villes d'Istra pour lever une armée. La piste mène à Balamor."
+  },
+  {
+   "titre": "Le secret de Sycomore",
+   "texte": "Tout Havre Noir croit que Sycomore Brise-Pavois est un homme. Elle est en réalité une jeune femme d'environ seize ans, balafrée. Qu'est-ce qui lui confère son immense pouvoir ? Gran Brijit dit que son destin a commencé au Repos des Épées et que c'est probablement là qu'il se terminera. Jane n'a rien pu obtenir de plus."
+  },
+  {
+   "titre": "Le secret des architectes",
+   "texte": "Gran Brijit nous a parlé des architectes, une civilisation d'avant les dieux qui bâtissait des cités volantes et a tenté d'élever les hommes au rang de dieux. Qui étaient-ils ? Les dieux en faisaient-ils partie ? Gran Brijit refuse de dire si elle en était une."
+  },
+  {
+   "titre": "La descente aux Enfers",
+   "texte": "Gran Brijit nous charge de descendre, de tuer Argonath, Naberoth et Absalom, puis de remonter en nous faisant le moins remarquer possible."
+  },
+  {
+   "titre": "Le marais de Minauros",
+   "texte": "Le marais de Minauros s'est empoisonné. Il faut nous y préparer avant la descente."
+  },
+  {
+   "titre": "Changer d'apparence",
+   "texte": "Aux Enfers, les humains sont traqués, chassés et capturés aussitôt pour être réduits en esclavage. Il nous faut trouver un moyen de changer d'apparence pour ne pas nous faire repérer."
+  },
+  {
+   "titre": "Le chapeau de Philippa",
+   "texte": "Sumeren Daïko transfère l'enchantement du chapeau de Philippa vers le masque d'Oni. Elle doit le renvoyer dans une semaine par le petit parchemin magique remis à Philippa, qui n'a plus son chapeau en attendant."
+  },
+  {
+   "titre": "Un contact à Uruzal",
+   "texte": "Les rapports du pavillon des Diplomates désignent Onaya, aubergiste d'Uruzal, comme point de contact sympathique, prête à parler aux étrangers. Les rapports parlent surtout de contrebande de sel Yaxal et de bois-fer Xalan."
+  }
+ ]
+}

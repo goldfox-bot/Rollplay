@@ -1,0 +1,468 @@
+{
+  "notes": [
+    {
+      "id": "2026-11-25",
+      "menu": "Patch note du 25/11",
+      "titre": "Patch note du 25/11",
+      "date": "25 novembre 2026",
+      "header": "img/patch/ascenseur.webp",
+      "persos": [
+        {
+          "id": "philippa",
+          "nom": "Philippa",
+          "icone": "img/patch/chibi-philippa.webp",
+          "armes": [
+            {
+              "nom": "Requiem de la Reine-Morte",
+              "arcane": "DEATH",
+              "num": "XIII",
+              "lignes": [
+                {
+                  "l": "Rareté",
+                  "de": "Rare",
+                  "vers": "Very Rare",
+                  "s": "up"
+                },
+                {
+                  "l": "Toucher",
+                  "de": "+12",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d12+8",
+                  "vers": "1d12+7",
+                  "s": "down"
+                },
+                {
+                  "l": "Couronnement du Repos Noir",
+                  "de": "1/jour",
+                  "vers": "Spell Slot level 2",
+                  "s": "down"
+                },
+                {
+                  "l": "Procession de la Tombe",
+                  "de": "1/jour",
+                  "vers": "Spell Slot level 3",
+                  "s": "down"
+                },
+                {
+                  "l": "Déni par la Garde",
+                  "de": "2/repos",
+                  "vers": "Spell Slot level 1",
+                  "s": "down"
+                },
+                {
+                  "l": "Jet de sauvegarde (Couronnement, Procession)",
+                  "de": "15",
+                  "vers": "17",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "46",
+                "vers": "44",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "La main du Reliquaire",
+              "arcane": "JUSTICE",
+              "num": "XI",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+13",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+15",
+                  "vers": "1d6+7",
+                  "s": "down"
+                },
+                {
+                  "l": "Reliquary Rend",
+                  "de": "(1d6+12) x2",
+                  "vers": "(1d6+7) x2",
+                  "s": "down"
+                },
+                {
+                  "l": "Blight",
+                  "de": "1/jour",
+                  "vers": "Pact Spell Slot level 4",
+                  "s": "down"
+                },
+                {
+                  "l": "Blight, portée",
+                  "de": "Contact",
+                  "vers": "30 ft",
+                  "s": "up"
+                },
+                {
+                  "l": "Unseen Servant",
+                  "de": "À volonté",
+                  "vers": "Supprimé",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "53",
+                "vers": "37",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Scythe de la Lithurgie des Cendres",
+              "arcane": "THE SUN",
+              "num": "XIX",
+              "lignes": [
+                {
+                  "l": "Rareté",
+                  "de": "Rare",
+                  "vers": "Very Rare",
+                  "s": "up"
+                },
+                {
+                  "l": "Toucher",
+                  "de": "+12",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Veil Shield, Quiet Passing",
+                  "de": "1/jour",
+                  "vers": "Spell Slot level 4",
+                  "s": "down"
+                },
+                {
+                  "l": "Extra 3d8 nécrotique",
+                  "de": "1/repos court",
+                  "vers": "Supprimé",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "45",
+                "vers": "45",
+                "s": "iso"
+              }
+            },
+            {
+              "nom": "Satellite du Monde Enseveli",
+              "arcane": "THE WORLD",
+              "num": "XXI",
+              "lignes": [
+                {
+                  "l": "Rareté",
+                  "de": "Rare",
+                  "vers": "Very Rare",
+                  "s": "up"
+                },
+                {
+                  "l": "Toucher",
+                  "de": "+12",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Gravité Funèbre",
+                  "de": "1 charge",
+                  "vers": "Spell Slot level 1",
+                  "s": "down"
+                },
+                {
+                  "l": "Orbite Brisée",
+                  "de": "2 charges",
+                  "vers": "Spell Slot level 4",
+                  "s": "down"
+                },
+                {
+                  "l": "Effondrement du Monde",
+                  "de": "3 charges",
+                  "vers": "Spell Slot level 4",
+                  "s": "down"
+                },
+                {
+                  "l": "Jet de sauvegarde (Orbite Brisée, Effondrement)",
+                  "de": "15",
+                  "vers": "17",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "37",
+                "vers": "37",
+                "s": "iso"
+              }
+            },
+            {
+              "nom": "Balance et Entropie",
+              "arcane": "THE LOVERS",
+              "num": "VI",
+              "lignes": [
+                {
+                  "l": "Rareté",
+                  "de": "Rare",
+                  "vers": "Very Rare",
+                  "s": "up"
+                },
+                {
+                  "l": "Disguise Self",
+                  "de": "À volonté",
+                  "vers": "Supprimé",
+                  "s": "down"
+                },
+                {
+                  "l": "Invisibility",
+                  "de": "À volonté",
+                  "vers": "Spell Slot level 2",
+                  "s": "down"
+                },
+                {
+                  "l": "Disappearance",
+                  "de": "",
+                  "vers": "devient Invisibility",
+                  "s": "up"
+                },
+                {
+                  "l": "Disappearance",
+                  "de": "1/jour, 1 minute",
+                  "vers": "Spell Slot level 2, 1 heure",
+                  "s": "up"
+                },
+                {
+                  "l": "Revelation",
+                  "de": "",
+                  "vers": "devient See Invisibility",
+                  "s": "up"
+                },
+                {
+                  "l": "Revelation",
+                  "de": "1/jour, 1 minute",
+                  "vers": "Spell Slot level 2, 1 heure",
+                  "s": "up"
+                },
+                {
+                  "l": "Mask of Flesh",
+                  "de": "",
+                  "vers": "devient Alter Self",
+                  "s": "up"
+                },
+                {
+                  "l": "Mask of Flesh",
+                  "de": "1/jour",
+                  "vers": "Spell Slot level 2",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "53",
+                "vers": "53",
+                "s": "iso"
+              }
+            },
+            {
+              "nom": "Horizon Brûlée",
+              "arcane": "THE STAR",
+              "num": "XVII",
+              "lignes": [
+                {
+                  "l": "Rareté",
+                  "de": "Rare",
+                  "vers": "Very Rare",
+                  "s": "up"
+                },
+                {
+                  "l": "Toucher",
+                  "de": "+12",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d10+8",
+                  "vers": "1d10+7",
+                  "s": "down"
+                },
+                {
+                  "l": "Primeval Awareness",
+                  "de": "1/repos long",
+                  "vers": "Supprimé",
+                  "s": "down"
+                },
+                {
+                  "l": "Arc-Beam Discharge, jet de sauvegarde",
+                  "de": "15",
+                  "vers": "17",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "66",
+                "vers": "63",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Caput Tauri",
+              "arcane": "THE CHARIOT",
+              "num": "VII",
+              "lignes": [
+                {
+                  "l": "Rareté",
+                  "de": "Rare",
+                  "vers": "Very Rare",
+                  "s": "up"
+                },
+                {
+                  "l": "Ruée du Chariot, reset",
+                  "de": "Aube",
+                  "vers": "Repos long",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "45",
+                "vers": "45",
+                "s": "iso"
+              }
+            },
+            {
+              "nom": "Omen, Broken Sky",
+              "arcane": "THE EMPRESS",
+              "num": "III",
+              "lignes": [
+                {
+                  "l": "Attunement",
+                  "de": "Requise",
+                  "vers": "Supprimée",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "54",
+                "vers": "54",
+                "s": "iso"
+              }
+            }
+          ]
+        },
+        {
+          "id": "jane",
+          "nom": "Jane",
+          "icone": "img/patch/chibi-jane.webp",
+          "armes": [
+            {
+              "nom": "La Mâchoire",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+12",
+                  "vers": "+11",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+8",
+                  "vers": "1d6+7",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "67",
+                "vers": "64",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Croc du Gentleman",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+11",
+                  "vers": "+10",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+7",
+                  "vers": "1d6+6",
+                  "s": "down"
+                },
+                {
+                  "l": "Booming Blade (effet sur touche)",
+                  "de": "Actif",
+                  "vers": "Supprimé",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "66",
+                "vers": "63",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Dagger of Absorption",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+9",
+                  "vers": "+11",
+                  "s": "up"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d4+2",
+                  "vers": "1d4+7",
+                  "s": "up"
+                }
+              ],
+              "moy": {
+                "de": "45",
+                "vers": "60",
+                "s": "up"
+              }
+            },
+            {
+              "nom": "Arc des Scories",
+              "lignes": [
+                {
+                  "l": "Toucher",
+                  "de": "+11",
+                  "vers": "+10",
+                  "s": "down"
+                },
+                {
+                  "l": "Dégâts",
+                  "de": "1d6+7",
+                  "vers": "1d6+6",
+                  "s": "down"
+                }
+              ],
+              "moy": {
+                "de": "54",
+                "vers": "51",
+                "s": "down"
+              }
+            },
+            {
+              "nom": "Shadow-Cat Armor",
+              "lignes": [
+                {
+                  "l": "Classe d'armure",
+                  "de": "18",
+                  "vers": "17",
+                  "s": "down"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

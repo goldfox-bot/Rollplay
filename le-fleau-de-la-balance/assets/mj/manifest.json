@@ -1,0 +1,58 @@
+{
+  "repository": "calintz17/Thaldera",
+  "commit": "84c6c8e0ae1d90e52b7075d9bc0d13d8b5a09770",
+  "scope": "Copies du codex public du MJ, lecture seule. Les portées originales sont conservées ; les révélations ne sont pas assimilées aux connaissances de Philippa.",
+  "files": [
+    {
+      "file": "index.json",
+      "source": "data/index.json",
+      "sha": "7ff861d67e379735b18efc078e901da270c5273a"
+    },
+    {
+      "file": "monde.json",
+      "source": "data/monde.json",
+      "sha": "919401392e66091eb2842c5ee237e283de227da3"
+    },
+    {
+      "file": "thaldera.json",
+      "source": "data/thaldera.json",
+      "sha": "5225ae6876a944ce8980ca36ef088296f637688e"
+    },
+    {
+      "file": "roshen-buru.json",
+      "source": "data/roshen-buru.json",
+      "sha": "947d2a6055e0fee0515f7fa9d5929025b76cef40"
+    },
+    {
+      "file": "keras-tauroc.json",
+      "source": "data/keras-tauroc.json",
+      "sha": "fe7fb78781d3a04a97cb571760168453490ed75d"
+    },
+    {
+      "file": "parties.json",
+      "source": "data/parties.json",
+      "sha": "bd9ef564587b68a3c17314db7d22804c8bcc3cef"
+    },
+    {
+      "file": "quetes.json",
+      "source": "data/quetes.json",
+      "sha": "560b9717ea28881a88622e2678eac2ec4a03ead6"
+    },
+    {
+      "file": "documents.json",
+      "source": "data/documents.json",
+      "sha": "2795c3a8953375e1946f058da25aed681e9a0a10"
+    },
+    {
+      "file": "patchnotes.json",
+      "source": "data/patchnotes.json",
+      "sha": "e9c4c13ef1a81842b05c5b40408a3f9470fadbe9"
+    },
+    {
+      "file": "philippa-liveplay.json",
+      "source": "data/liveplay.json",
+      "sourceSha": "a14f1ce79b28df0ec57410731e79221ef1e64eac",
+      "selection": "chars[id=philippa] uniquement ; configuration externe exclue"
+    }
+  ]
+}
